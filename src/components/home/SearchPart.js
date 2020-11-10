@@ -18,22 +18,24 @@ const useStyles = makeStyles(() => ({
   },
   searchForm: {
     display: 'flex',
-    justifyContent: 'space-between',
     margin: '130px auto 0',
     border: 'solid 2px #f1f0f5',
     borderRadius: '5px',
     background: 'inherit',
   },
-  input: {
-    width: 'inherit',
+  inputBase: {
+    width: '100%',
     padding: '0 25px',
+  },
+  input: {
     color: '#f1f0f5',
     '&::placeholder': {
       color: '#f1f0f5',
+      opacity: .8,
     },
   },
   iconButton: {
-    padding: '10px 15px',
+    padding: '10px 15px 10px 0',
     color: '#f1f0f5',
   },
   button: {
@@ -61,7 +63,8 @@ const SearchPart = () => {
                 <Grid item xs={12} sm={7} md={5} lg={4} xl={4}>
                   <Paper component="form" className={classes.searchForm}>
                     <InputBase
-                      className={classes.input}
+                      className={classes.inputBase}
+                      classes={{ input: classes.input }}
                       placeholder="Search stations &amp; genres"
                     />
                     <IconButton type="submit" className={classes.iconButton} aria-label="search">
