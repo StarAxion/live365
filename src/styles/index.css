@@ -1,11 +1,39 @@
 @font-face { 
   font-family: 'Barlow'; 
+  font-style: normal; 
+  font-weight: normal;
   src: local('Barlow'), 
   url('../assets/fonts/barlow/woff/Barlow-Regular.woff') format('woff'), 
   url('../assets/fonts/barlow/woff2/Barlow-Regular.woff2') format('woff2');
 }
 
+@font-face { 
+  font-family: 'BarlowBold'; 
+  font-style: normal; 
+  font-weight: normal;
+  src: local('BarlowBold'), 
+  url('../assets/fonts/barlow/woff/Barlow-Bold.woff') format('woff'), 
+  url('../assets/fonts/barlow/woff2/Barlow-Bold.woff2') format('woff2');
+}
+
+@font-face { 
+  font-family: 'BarlowThin'; 
+  font-style: normal; 
+  font-weight: normal;
+  src: local('BarlowThin'), 
+  url('../assets/fonts/barlow/woff/Barlow-Thin.woff') format('woff'), 
+  url('../assets/fonts/barlow/woff2/Barlow-Thin.woff2') format('woff2');
+}
+
 body {
   margin: 0;
   font-family: 'Barlow', 'Roboto', sans-serif;
+}
+
+* {
+  font-family: 'Barlow', 'Roboto', sans-serif!important;
+}
+
+h2, h5 {
+  font-family: 'BarlowBold'!important;
 }

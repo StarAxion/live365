@@ -28,6 +28,10 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: '20px',
     },
   },
+  footerInfoText: {
+    fontFamily: 'BarlowThin!important',
+    fontSize: '16px',
+  },
   logo: {
     maxWidth: "105px",
   },
@@ -35,7 +39,8 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(3),
   },
   title: {
-    fontSize: '18px',
+    fontSize: '16px',
+    fontWeight: 900,
     textTransform: 'uppercase',
     color: '#a19eb1',
   },
@@ -53,7 +58,8 @@ const useStyles = makeStyles((theme) => ({
   },
   footerSectionLink: {
     marginBottom: theme.spacing(1),
-    fontWeight: 900,
+    fontWeight: 700,
+    letterSpacing: '.5px',
     color: '#ffffff',
   },
   footer: {
@@ -63,6 +69,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   copyright: {
+    fontWeight: 900,
     color: '#5d5b65',
     marginBottom: theme.spacing(1),
   },
@@ -93,19 +100,19 @@ const Footer = () => {
                   </Link>
                 </div>
                 <Box mb="45px" display={{ xs: 'none', lg: 'block' }}>
-                  <Typography variant="body2" color="inherit">
+                  <Typography variant="body2" className={classes.footerInfoText}>
                     Live 365 is the easiest way to create an online radio station and discover hundreds of stations from every style of music and talk.
                   </Typography>
                 </Box>
                 <Typography className={classes.socialLinks}>
                   <Link href="https://www.facebook.com" target="_blank" rel="noopener" color="inherit" className={classes.socialLink}>
-                    <FacebookIcon />
+                    <FacebookIcon fontSize="large" />
                   </Link>
                   <Link href="https://www.twitter.com" target="_blank" rel="noopener" color="inherit" className={classes.socialLink}>
-                    <TwitterIcon />
+                    <TwitterIcon fontSize="large" />
                   </Link>
                   <Link href="https://www.instagram.com" target="_blank" rel="noopener" color="inherit" className={classes.socialLink}>
-                    <InstagramIcon />
+                    <InstagramIcon fontSize="large" />
                   </Link>
                 </Typography>
               </Grid>
