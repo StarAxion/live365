@@ -1,4 +1,11 @@
+@font-face { 
+  font-family: 'Barlow'; 
+  src: local('Barlow'), 
+  url('../assets/fonts/barlow/woff/Barlow-Regular.woff') format('woff'), 
+  url('../assets/fonts/barlow/woff2/Barlow-Regular.woff2') format('woff2');
+}
+
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Barlow', 'Roboto', sans-serif;
 }
