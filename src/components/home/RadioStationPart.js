@@ -5,7 +5,7 @@ import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import TitlesBlock from './TitlesBlock';
-import InfoBlock from './InfoBlock';
+import InfoBlock from '../InfoBlock';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -66,6 +66,8 @@ const RadioStationPart = () => {
 
                 <Box mb={13}>
                   <InfoBlock
+                    link='/'
+                    color='#234bff'
                     icon='img/icons/audience.png'
                     title='Audience'
                     text='Access listeners across Live365`s website, mobile applications, home devices, and more.'
@@ -73,6 +75,8 @@ const RadioStationPart = () => {
                 </Box>
                 <Box mb={13}>
                   <InfoBlock
+                    link='/'
+                    color='#d13eeb'
                     icon='img/icons/licensing.png'
                     title='Licensing'
                     text='Music licensing coverage in the United States, United Kingdom, and Canada.'
@@ -80,6 +84,8 @@ const RadioStationPart = () => {
                 </Box>
                 <Box>
                   <InfoBlock
+                    link='/'
+                    color='#9dde01'
                     icon='img/icons/monetization.png'
                     title='Monetization'
                     text='Loin Live365`s monetization program to earn revenue and lower your streaming costs.'
@@ -124,6 +130,8 @@ const RadioStationPart = () => {
               <Grid item md={6} className={classes.rightHalf}>
                 <Box mb={13}>
                   <InfoBlock
+                    link='/'
+                    color='#234bff'
                     icon='img/icons/audience.png'
                     title='Audience'
                     text='Access listeners across Live365`s website, mobile applications, home devices, and more.'
@@ -131,6 +139,8 @@ const RadioStationPart = () => {
                 </Box>
                 <Box mb={13}>
                   <InfoBlock
+                    link='/'
+                    color='#d13eeb'
                     icon='img/icons/licensing.png'
                     title='Licensing'
                     text='Music licensing coverage in the United States, United Kingdom, and Canada.'
@@ -138,6 +148,8 @@ const RadioStationPart = () => {
                 </Box>
                 <Box>
                   <InfoBlock
+                    link='/'
+                    color='#9dde01'
                     icon='img/icons/monetization.png'
                     title='Monetization'
                     text='Loin Live365`s monetization program to earn revenue and lower your streaming costs.'
