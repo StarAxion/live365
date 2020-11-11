@@ -28,6 +28,7 @@
 body {
   margin: 0;
   font-family: 'Barlow', 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 
 * {

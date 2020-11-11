@@ -11,8 +11,10 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   header: {
+    position: 'relative',
     color: '#ffffff',
     background: '#010102',
+    zIndex: '3',
   },
   logo: {
     maxWidth: '115px',

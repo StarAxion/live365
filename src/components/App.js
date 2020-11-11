@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import '../styles/App.css';
 import Home from './home/Home';
 import Listen from './listen/Listen';
@@ -14,8 +14,12 @@ const App = () => {
         <Route exact path='/' component={Home} />
         <Route exact path='/listen' component={Listen} />
         <Route exact path='/broadcast' component={Broadcast} />
+        <Route exact path='/broadcast/audience' component={Broadcast} />
+        <Route exact path='/broadcast/licensing' component={Broadcast} />
+        <Route exact path='/broadcast/monetization' component={Broadcast} />
         <Route exact path='/signup' component={SignUp} />
         <Route exact path='/login' component={LogIn} />
+        <Redirect to='/' />
       </Switch>
     </Router>
   )

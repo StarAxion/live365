@@ -4,12 +4,14 @@ import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles((theme) => ({
   button: {
+    position: 'relative',
     padding: '20px 40px',
     lineHeight: '18px',
     fontSize: '16px',
     textTransform: 'none',
     color: '#ffffff',
     background: '#234bff',
+    zIndex: '3',
     [theme.breakpoints.down('xs')]: {
       width: '100%',
     },

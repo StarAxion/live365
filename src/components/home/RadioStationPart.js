@@ -130,7 +130,7 @@ const RadioStationPart = () => {
               <Grid item md={6} className={classes.rightHalf}>
                 <Box mb={13}>
                   <InfoBlock
-                    link='/'
+                    link='/broadcast/audience'
                     color='#234bff'
                     icon='img/icons/audience.png'
                     title='Audience'
@@ -139,7 +139,7 @@ const RadioStationPart = () => {
                 </Box>
                 <Box mb={13}>
                   <InfoBlock
-                    link='/'
+                    link='/broadcast/licensing'
                     color='#d13eeb'
                     icon='img/icons/licensing.png'
                     title='Licensing'
@@ -148,7 +148,7 @@ const RadioStationPart = () => {
                 </Box>
                 <Box>
                   <InfoBlock
-                    link='/'
+                    link='/broadcast/monetization'
                     color='#9dde01'
                     icon='img/icons/monetization.png'
                     title='Monetization'
