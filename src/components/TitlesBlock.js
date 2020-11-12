@@ -5,7 +5,8 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles((theme) => ({
   title: {
     position: 'relative',
-    fontSize: '52px',
+    marginBottom: '60px',
+    fontSize: '50px',
     letterSpacing: '.5px',
     zIndex: '3',
     [theme.breakpoints.down('xs')]: {
@@ -14,9 +15,8 @@ const useStyles = makeStyles((theme) => ({
   },
   subtitle: {
     position: 'relative',
-    marginTop: '60px',
     fontFamily: 'BarlowThin!important',
-    fontSize: '24px',
+    fontSize: '20px',
     zIndex: '3',
     [theme.breakpoints.down('xs')]: {
       textAlign: 'left',

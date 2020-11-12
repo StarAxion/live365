@@ -5,14 +5,14 @@ import Button from '@material-ui/core/Button';
 const useStyles = makeStyles((theme) => ({
   button: {
     position: 'relative',
-    height: '65px',
-    padding: '0 40px',
+    height: '60px',
+    padding: '0 25px',
     fontSize: '16px',
     fontWeight: 900,
     letterSpacing: '.5px',
     textTransform: 'none',
     color: '#ffffff',
-    background: '#234bff',
+    background: '#fd6316',
     zIndex: '3',
     [theme.breakpoints.down('xs')]: {
       width: '100%',
@@ -20,19 +20,19 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const ListenNowButton = () => {
+const StartStationButton = () => {
   const classes = useStyles();
 
   return (
     <Button
       variant="contained"
-      color="primary"
+      color="secondary"
       className={classes.button}
-      href="/listen"
+      href="/broadcast/am-fm"
     >
-      Listen now
+      Start a station
     </Button>
   )
 }
 
-export default ListenNowButton;
+export default StartStationButton;

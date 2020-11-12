@@ -9,7 +9,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import ColoredBlock from '../ColoredBlock';
 import { TopLeftStrong, TopLeftLight, TopRightLight, BottomRightLight } from '../GradientCover';
 import ListenNowButton from './ListenNowButton';
-import TitlesBlock from './TitlesBlock';
+import TitlesBlock from '../TitlesBlock';
 
 const useStyles = makeStyles((theme) => ({
   root: {

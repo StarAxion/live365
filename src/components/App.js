@@ -14,9 +14,12 @@ const App = () => {
         <Route exact path='/' component={Home} />
         <Route exact path='/listen' component={Listen} />
         <Route exact path='/broadcast' component={Broadcast} />
+        <Route exact path='/broadcast/am-fm' component={Broadcast} />
         <Route exact path='/broadcast/audience' component={Broadcast} />
         <Route exact path='/broadcast/licensing' component={Broadcast} />
         <Route exact path='/broadcast/monetization' component={Broadcast} />
+        <Route exact path='/broadcast/pricing' component={Broadcast} />
+        <Route exact path='/broadcast/statistics' component={Broadcast} />
         <Route exact path='/signup' component={SignUp} />
         <Route exact path='/login' component={LogIn} />
         <Redirect to='/' />

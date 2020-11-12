@@ -8,6 +8,15 @@
 }
 
 @font-face { 
+  font-family: 'BarlowExtraBold'; 
+  font-style: normal; 
+  font-weight: normal;
+  src: local('BarlowExtraBold'), 
+  url('../assets/fonts/barlow/woff/Barlow-ExtraBold.woff') format('woff'), 
+  url('../assets/fonts/barlow/woff2/Barlow-ExtraBold.woff2') format('woff2');
+}
+
+@font-face { 
   font-family: 'BarlowBold'; 
   font-style: normal; 
   font-weight: normal;
@@ -23,6 +32,10 @@
   src: local('BarlowThin'), 
   url('../assets/fonts/barlow/woff/Barlow-Thin.woff') format('woff'), 
   url('../assets/fonts/barlow/woff2/Barlow-Thin.woff2') format('woff2');
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body {

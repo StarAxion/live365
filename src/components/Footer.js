@@ -96,7 +96,7 @@ const Footer = () => {
               <Grid item md={12} lg={3} className={classes.footerInfo}>
                 <div className={classes.footerInfoLogo}>
                   <Link href="/">
-                    <img src="img/logo.png" alt="logo" className={classes.logo} />
+                    <img src="../img/logo.png" alt="logo" className={classes.logo} />
                   </Link>
                 </div>
                 <Box mb="45px" display={{ xs: 'none', lg: 'block' }}>

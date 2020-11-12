@@ -12,11 +12,16 @@ const useStyles = makeStyles(() => ({
   imageBox: {
     borderRadius: '50%',
   },
+  icon: {
+    width: 'inherit',
+  },
   title: {
     fontSize: '32px',
+    textAlign: 'left',
   },
   text: {
     fontSize: '16px',
+    textAlign: 'left',
   },
 }));
 
@@ -27,17 +32,17 @@ const InfoBlock = (props) => {
     <>
       <Link to={props.link} className={classes.link}>
         <Box display="flex" alignItems="center">
-          <Box bgcolor={props.color} className={classes.imageBox}>
-            <img src={props.icon} alt="icon"></img>
+          <Box width={{ xs: '50px', lg: '65px' }} bgcolor={props.color} className={classes.imageBox}>
+            <img src={props.icon} alt="icon" className={classes.icon}></img>
           </Box>
-          <Box ml={3}>
+          <Box ml={{ xs: '15px', lg: '35px' }}>
             <Typography variant="h5" className={classes.title}>
               {props.title}
             </Typography>
           </Box>
         </Box>
       </Link>
-      <Box mt={1} ml="88px">
+      <Box mt={1} ml={{ xs: '65px', lg: '100px' }}>
         <Typography variant="body1" className={classes.text}>
           {props.text}
         </Typography>

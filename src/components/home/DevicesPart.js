@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
-import TitlesBlock from './TitlesBlock';
+import TitlesBlock from '../TitlesBlock';
 
 const useStyles = makeStyles(() => ({
   root: {

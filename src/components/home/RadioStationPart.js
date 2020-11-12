@@ -4,46 +4,72 @@ import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
-import TitlesBlock from './TitlesBlock';
+import TitlesBlock from '../TitlesBlock';
 import InfoBlock from '../InfoBlock';
+import StartStationButton from '../StartStationButton';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     color: '#ffffff',
     background: '#06012e',
   },
+  container: {
+    [theme.breakpoints.down('xl')]: {
+      justifyContent: 'space-between',
+    },
+    [theme.breakpoints.down('md')]: {
+      justifyContent: 'center',
+    },
+  },
   leftHalf: {
-    paddingRight: '75px',
+    [theme.breakpoints.down('xl')]: {
+      maxWidth: '470px',
+    },
     [theme.breakpoints.down('lg')]: {
-      paddingRight: '40px',
+      maxWidth: '520px',
+    },
+    [theme.breakpoints.down('md')]: {
+      maxWidth: '370px',
+      marginRight: '80px',
+    },
+    [theme.breakpoints.down('sm')]: {
+      maxWidth: '285px',
+      marginRight: 0,
+    },
+    [theme.breakpoints.down('xs')]: {
+      minWidth: '100%',
+      marginRight: 0,
     },
   },
   rightHalf: {
-    paddingLeft: '75px',
-    [theme.breakpoints.down('lg')]: {
-      paddingLeft: '40px',
+    [theme.breakpoints.down('xl')]: {
+      maxWidth: '555px',
+    },
+    [theme.breakpoints.down('md')]: {
+      maxWidth: '290px',
+    },
+    [theme.breakpoints.down('sm')]: {
+      maxWidth: '285px',
+    },
+    [theme.breakpoints.down('xs')]: {
+      minWidth: '100%',
     },
   },
   button: {
+    height: '60px',
+    marginLeft: theme.spacing(2),
     padding: '20px 40px',
-    lineHeight: '18px',
     fontSize: '16px',
+    fontWeight: 900,
+    letterSpacing: '.5px',
     textTransform: 'none',
     color: '#ffffff',
+    background: '#170954',
     [theme.breakpoints.down('xs')]: {
       width: '100%',
+      marginLeft: 0,
+      marginTop: theme.spacing(2),
     },
-  },
-  startButton: {
-    marginRight: theme.spacing(2),
-    background: '#fd6316',
-    [theme.breakpoints.down('xs')]: {
-      marginRight: 0,
-      marginBottom: theme.spacing(2),
-    },
-  },
-  learnButton: {
-    background: '#170954',
   },
 }));
 
@@ -93,10 +119,8 @@ const RadioStationPart = () => {
                 </Box>
 
                 <Box mt="80px" textAlign="center">
-                  <Button variant="contained" color="secondary" bgcolor="#fd6316" className={`${classes.button} ${classes.startButton}`} href="/">
-                    Start a station
-                  </Button>
-                  <Button variant="contained" color="primary" bgcolor="#170954" className={`${classes.button} ${classes.learnButton}`} href="/">
+                  <StartStationButton />
+                  <Button variant="contained" color="primary" className={classes.button} href="/">
                     Learn more
                   </Button>
                 </Box>
@@ -109,7 +133,7 @@ const RadioStationPart = () => {
 
         <Box display={{ xs: 'none', md: 'block' }}>
           <Box padding="115px 0 150px">
-            <Grid container justify="center" wrap="nowrap">
+            <Grid container wrap="nowrap" className={classes.container}>
               <Grid item md={6} className={classes.leftHalf}>
                 <Box mb="75px">
                   <TitlesBlock
@@ -118,10 +142,8 @@ const RadioStationPart = () => {
                   />
                 </Box>
                 <Box mt="75px">
-                  <Button variant="contained" color="secondary" bgcolor="#fd6316" className={`${classes.button} ${classes.startButton}`} href="/">
-                    Start a station
-                  </Button>
-                  <Button variant="contained" color="primary" bgcolor="#170954" className={`${classes.button} ${classes.learnButton}`} href="/">
+                  <StartStationButton />
+                  <Button variant="contained" color="primary" className={classes.button} href="/">
                     Learn more
                   </Button>
                 </Box>

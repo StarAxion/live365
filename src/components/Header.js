@@ -20,7 +20,8 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: '115px',
   },
   links: {
-    letterSpacing: '1px',
+    fontWeight: 700,
+    letterSpacing: '.5px',
     '& > * + *': {
       marginLeft: theme.spacing(4),
       [theme.breakpoints.down('sm')]: {
@@ -40,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Header = () => {
+const Header = (props) => {
   const classes = useStyles();
 
   return (
@@ -51,14 +52,11 @@ const Header = () => {
             <Toolbar>
               <Box flexGrow={1}>
                 <Link href="/">
-                  <img src="img/logo.png" alt="logo" className={classes.logo} />
+                  <img src="../img/logo.png" alt="logo" className={classes.logo} />
                 </Link>
               </Box>
-              <Box className={classes.links}>
-                <Link href="/listen" color="inherit">Listen</Link>
-                <Link href="/broadcast" color="inherit">Broadcast</Link>
-              </Box>
-              <Box component="span" ml={4} className={classes.separator} display={{ xs: 'none', sm: 'block' }}>&#124;</Box>
+              {props.children}
+              <Box component="span" className={classes.separator} display={{ xs: 'none', sm: 'block' }}>&#124;</Box>
               <Box className={classes.links} display={{ xs: 'none', sm: 'block' }}>
                 <Link href="/signup" color="inherit">Sign up</Link>
                 <Link href="/login" color="inherit">Log in</Link>
