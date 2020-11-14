@@ -101,7 +101,6 @@ const RadioStationPart = () => {
               <InfoBlock
                 mb={{ xs: '55px', sm: '30px' }}
                 link='/'
-                color='#234bff'
                 icon='img/icons/audience.png'
                 title='Audience'
                 text='Access listeners across Live365`s website, mobile applications, home devices, and more.'
@@ -109,7 +108,6 @@ const RadioStationPart = () => {
               <InfoBlock
                 mb={{ xs: '55px', sm: '30px' }}
                 link='/'
-                color='#d13eeb'
                 icon='img/icons/licensing.png'
                 title='Licensing'
                 text='Music licensing coverage in the United States, United Kingdom, and Canada.'
@@ -117,7 +115,6 @@ const RadioStationPart = () => {
               <InfoBlock
                 mb='0'
                 link='/'
-                color='#9dde01'
                 icon='img/icons/monetization.png'
                 title='Monetization'
                 text='Loin Live365`s monetization program to earn revenue and lower your streaming costs.'
@@ -171,7 +168,6 @@ const RadioStationPart = () => {
                 <InfoBlock
                   mb={{ md: '30px', lg: '98px' }}
                   link='/broadcast/audience'
-                  color='#234bff'
                   icon='img/icons/audience.png'
                   title='Audience'
                   text='Access listeners across Live365`s website, mobile applications, home devices, and more.'
@@ -179,7 +175,6 @@ const RadioStationPart = () => {
                 <InfoBlock
                   mb={{ md: '30px', lg: '98px' }}
                   link='/broadcast/licensing'
-                  color='#d13eeb'
                   icon='img/icons/licensing.png'
                   title='Licensing'
                   text='Music licensing coverage in the United States, United Kingdom, and Canada.'
@@ -187,7 +182,6 @@ const RadioStationPart = () => {
                 <InfoBlock
                   mb='0'
                   link='/broadcast/monetization'
-                  color='#9dde01'
                   icon='img/icons/monetization.png'
                   title='Monetization'
                   text='Loin Live365`s monetization program to earn revenue and lower your streaming costs.'

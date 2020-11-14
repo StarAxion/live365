@@ -70,7 +70,6 @@ const InfoBlocksPart = () => {
               <InfoBlock
                 mb={{ xs: '75px', md: '95px', lg: '120px' }}
                 link='/'
-                color='#fd6d28'
                 icon='img/icons/management.png'
                 title='Management'
                 text='Manage your stations from our web-based dashboard to upload tracks, build playlists, and schedule your 24/7 automation.'
@@ -80,7 +79,6 @@ const InfoBlocksPart = () => {
               <InfoBlock
                 mb={{ xs: '75px', md: '95px', lg: '120px' }}
                 link='/broadcast/audience'
-                color='#4e6cff'
                 icon='img/icons/audience.png'
                 title='Audience'
                 text='Access listeners across Live365`s website, mobile applications, home devices, and more.'
@@ -90,7 +88,6 @@ const InfoBlocksPart = () => {
               <InfoBlock
                 mb={{ xs: '75px', md: '95px', lg: '120px' }}
                 link='/broadcast/licensing'
-                color='#d13eeb'
                 icon='img/icons/licensing.png'
                 title='Licensing'
                 text='Music licensing coverage in the United States, United Kingdom, and Canada.'
@@ -100,7 +97,6 @@ const InfoBlocksPart = () => {
               <InfoBlock
                 mb={{ xs: '75px', md: '95px', lg: '120px' }}
                 link='/broadcast/statistics'
-                color='#0edbee'
                 icon='img/icons/statistics.png'
                 title='Statistics'
                 text='See real-time and historical listening data to gain insight on what events drive engagement.'
@@ -110,7 +106,6 @@ const InfoBlocksPart = () => {
               <InfoBlock
                 mb={{ xs: '75px', md: '95px', lg: '120px' }}
                 link='/broadcast/monetization'
-                color='#9dde01'
                 icon='img/icons/monetization.png'
                 title='Monetization'
                 text='Loin Live365`s monetization program to earn revenue and lower your streaming costs.'
@@ -120,7 +115,6 @@ const InfoBlocksPart = () => {
               <InfoBlock
                 mb={{ xs: '75px', md: '95px', lg: '120px' }}
                 link='/'
-                color='#ffe309'
                 icon='img/icons/compatibility.png'
                 title='Compatibility'
                 text='Bring your favorite Icecast encoder for plug-and-play live streaming. Or we can recommend a few.'
