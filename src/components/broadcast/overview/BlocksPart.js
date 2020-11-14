@@ -21,10 +21,10 @@ const useStyles = makeStyles((theme) => ({
       padding: '126px 0 132px',
     },
     [theme.breakpoints.down('sm')]: {
-      padding: '82px 0 76px',
+      padding: '82px 0 5px',
     },
     [theme.breakpoints.down('xs')]: {
-      padding: '85px 0 75px',
+      paddingTop: '85px',
     },
   },
   block: {

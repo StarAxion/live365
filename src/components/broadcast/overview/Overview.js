@@ -4,12 +4,13 @@ import Box from '@material-ui/core/Box';
 import Link from '@material-ui/core/Link';
 import Button from '@material-ui/core/Button';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import Header from '../Header';
+import Header from '../../Header';
 import TopPart from './TopPart';
 import BlocksPart from './BlocksPart';
 import InfoBlocksPart from './InfoBlocksPart';
 import ImagesPart from './ImagesPart';
-import Footer from '../Footer';
+import ContactPart from '../ContactPart';
+import Footer from '../../Footer';
 
 const useStyles = makeStyles((theme) => ({
   links: {
@@ -109,6 +110,7 @@ const Overview = () => {
         <BlocksPart />
         <InfoBlocksPart />
         <ImagesPart />
+        <ContactPart textTransform="uppercase" />
       </main>
 
       <Footer />

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
-import Overview from './Overview';
+import Overview from './overview/Overview';
 
 const Broadcast = () => (
   <>

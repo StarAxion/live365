@@ -3,12 +3,15 @@ import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import CardMedia from '@material-ui/core/CardMedia';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   card: {
     position: 'relative',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    margin: theme.spacing(1),
+    background: '#cecbd6',
+    borderRadius: '8px',
   },
 }));
 

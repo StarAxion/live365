@@ -5,8 +5,8 @@ import Box from '@material-ui/core/Box';
 const useStyles = makeStyles(() => ({
   block: {
     position: 'absolute',
-    width: '101%',
-    height: '101%',
+    width: '102%',
+    height: '102%',
     borderRadius: '8px',
   },
   topLeftStrong: {

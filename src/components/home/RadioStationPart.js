@@ -13,11 +13,31 @@ const useStyles = makeStyles((theme) => ({
     color: '#ffffff',
     background: '#06012e',
   },
-  container: {
+  outerContainer: {
+    [theme.breakpoints.down('xl')]: {
+      padding: '113px 0 153px',
+    },
+    [theme.breakpoints.down('lg')]: {
+      paddingTop: '110px',
+    },
+    [theme.breakpoints.down('md')]: {
+      padding: '106px 0',
+    },
+    [theme.breakpoints.down('sm')]: {
+      padding: '92px 0 80px',
+    },
+    [theme.breakpoints.down('xs')]: {
+      padding: '65px 0',
+    },
+  },
+  innerContainer: {
     [theme.breakpoints.down('xl')]: {
       justifyContent: 'space-between',
     },
     [theme.breakpoints.down('md')]: {
+      justifyContent: 'flex-start',
+    },
+    [theme.breakpoints.down('sm')]: {
       justifyContent: 'center',
     },
   },
@@ -29,16 +49,7 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: '520px',
     },
     [theme.breakpoints.down('md')]: {
-      maxWidth: '370px',
-      marginRight: '80px',
-    },
-    [theme.breakpoints.down('sm')]: {
-      maxWidth: '285px',
-      marginRight: 0,
-    },
-    [theme.breakpoints.down('xs')]: {
-      minWidth: '100%',
-      marginRight: 0,
+      maxWidth: '450px',
     },
   },
   rightHalf: {
@@ -46,13 +57,7 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: '555px',
     },
     [theme.breakpoints.down('md')]: {
-      maxWidth: '290px',
-    },
-    [theme.breakpoints.down('sm')]: {
-      maxWidth: '285px',
-    },
-    [theme.breakpoints.down('xs')]: {
-      minWidth: '100%',
+      maxWidth: '288px',
     },
   },
   button: {
@@ -79,109 +84,119 @@ const RadioStationPart = () => {
   return (
     <div className={classes.root}>
       <Container fixed>
-        <Box display={{ xs: 'block', md: 'none' }}>
-          <Box padding="65px 0">
-            <Grid container justify="center" wrap="nowrap">
-              <Grid item xs={12}>
-                <Box mb="75px">
-                  <TitlesBlock
-                    title='Create your own internet radio station.'
-                    subtitle='Listen to radio stations run by members of our community.'
-                  />
-                </Box>
+        <Box className={classes.outerContainer}>
+          <Box display={{ xs: 'block', md: 'none' }}>
+            <TitlesBlock
+              width='100%'
+              margin='0'
+              mbTitle={{ xs: '35px', sm: '48px' }}
+              alignTitle='left'
+              title='Create your own internet radio station.'
+              mbSubitle={{ xs: '70px', sm: '95px' }}
+              alignSubtitle='left'
+              subtitle='Listen to radio stations run by members of our community.'
+            />
 
-                <Box mb={13}>
-                  <InfoBlock
-                    link='/'
-                    color='#234bff'
-                    icon='img/icons/audience.png'
-                    title='Audience'
-                    text='Access listeners across Live365`s website, mobile applications, home devices, and more.'
-                  />
-                </Box>
-                <Box mb={13}>
-                  <InfoBlock
-                    link='/'
-                    color='#d13eeb'
-                    icon='img/icons/licensing.png'
-                    title='Licensing'
-                    text='Music licensing coverage in the United States, United Kingdom, and Canada.'
-                  />
-                </Box>
-                <Box>
-                  <InfoBlock
-                    link='/'
-                    color='#9dde01'
-                    icon='img/icons/monetization.png'
-                    title='Monetization'
-                    text='Loin Live365`s monetization program to earn revenue and lower your streaming costs.'
-                  />
-                </Box>
+            <Box maxWidth={{ sm: '290px' }}>
+              <InfoBlock
+                mb={{ xs: '55px', sm: '30px' }}
+                link='/'
+                color='#234bff'
+                icon='img/icons/audience.png'
+                title='Audience'
+                text='Access listeners across Live365`s website, mobile applications, home devices, and more.'
+              />
+              <InfoBlock
+                mb={{ xs: '55px', sm: '30px' }}
+                link='/'
+                color='#d13eeb'
+                icon='img/icons/licensing.png'
+                title='Licensing'
+                text='Music licensing coverage in the United States, United Kingdom, and Canada.'
+              />
+              <InfoBlock
+                mb='0'
+                link='/'
+                color='#9dde01'
+                icon='img/icons/monetization.png'
+                title='Monetization'
+                text='Loin Live365`s monetization program to earn revenue and lower your streaming costs.'
+              />
+            </Box>
 
-                <Box mt="80px" textAlign="center">
-                  <StartStationButton />
-                  <Button variant="contained" color="primary" className={classes.button} href="/">
-                    Learn more
-                  </Button>
-                </Box>
-              </Grid>
-            </Grid>
+            <Box
+              display={{ sm: 'flex' }}
+              justifyContent='center'
+              mt={{ xs: '165px', sm: '78px!important' }}
+            >
+              <StartStationButton
+                mt='0'
+                mb='0'
+              />
+              <Button variant="contained" color="primary" className={classes.button} href="/">
+                Learn more
+              </Button>
+            </Box>
           </Box>
-        </Box>
 
 
 
-        <Box display={{ xs: 'none', md: 'block' }}>
-          <Box padding="115px 0 150px">
-            <Grid container wrap="nowrap" className={classes.container}>
+          <Box display={{ xs: 'none', md: 'block' }}>
+            <Grid container wrap="nowrap" className={classes.innerContainer}>
               <Grid item md={6} className={classes.leftHalf}>
-                <Box mb="75px">
-                  <TitlesBlock
-                    title='Create your own internet radio station.'
-                    subtitle='Listen to radio stations run by members of our community.'
+                <TitlesBlock
+                  width={{ md: '322px', lg: '100%' }}
+                  margin='0'
+                  mbTitle={{ md: '44px', lg: '60px', xl: '76px' }}
+                  alignTitle='left'
+                  title='Create your own internet radio station.'
+                  mbSubitle={{ md: '88px', lg: '118px', xl: '152px' }}
+                  alignSubtitle='left'
+                  subtitle='Listen to radio stations run by members of our community.'
+                />
+
+                <Box display="flex">
+                  <StartStationButton
+                    mt='0'
+                    mb='0'
                   />
-                </Box>
-                <Box mt="75px">
-                  <StartStationButton />
                   <Button variant="contained" color="primary" className={classes.button} href="/">
                     Learn more
                   </Button>
                 </Box>
               </Grid>
+
 
               <Grid item md={6} className={classes.rightHalf}>
-                <Box mb={13}>
-                  <InfoBlock
-                    link='/broadcast/audience'
-                    color='#234bff'
-                    icon='img/icons/audience.png'
-                    title='Audience'
-                    text='Access listeners across Live365`s website, mobile applications, home devices, and more.'
-                  />
-                </Box>
-                <Box mb={13}>
-                  <InfoBlock
-                    link='/broadcast/licensing'
-                    color='#d13eeb'
-                    icon='img/icons/licensing.png'
-                    title='Licensing'
-                    text='Music licensing coverage in the United States, United Kingdom, and Canada.'
-                  />
-                </Box>
-                <Box>
-                  <InfoBlock
-                    link='/broadcast/monetization'
-                    color='#9dde01'
-                    icon='img/icons/monetization.png'
-                    title='Monetization'
-                    text='Loin Live365`s monetization program to earn revenue and lower your streaming costs.'
-                  />
-                </Box>
+                <InfoBlock
+                  mb={{ md: '30px', lg: '98px' }}
+                  link='/broadcast/audience'
+                  color='#234bff'
+                  icon='img/icons/audience.png'
+                  title='Audience'
+                  text='Access listeners across Live365`s website, mobile applications, home devices, and more.'
+                />
+                <InfoBlock
+                  mb={{ md: '30px', lg: '98px' }}
+                  link='/broadcast/licensing'
+                  color='#d13eeb'
+                  icon='img/icons/licensing.png'
+                  title='Licensing'
+                  text='Music licensing coverage in the United States, United Kingdom, and Canada.'
+                />
+                <InfoBlock
+                  mb='0'
+                  link='/broadcast/monetization'
+                  color='#9dde01'
+                  icon='img/icons/monetization.png'
+                  title='Monetization'
+                  text='Loin Live365`s monetization program to earn revenue and lower your streaming costs.'
+                />
               </Grid>
             </Grid>
           </Box>
         </Box>
-      </Container >
+      </Container>
     </div >
   )
 }

@@ -1,10 +1,10 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles((theme) => ({
   button: {
-    position: 'relative',
     height: '60px',
     padding: '0 25px',
     fontSize: '16px',
@@ -13,25 +13,29 @@ const useStyles = makeStyles((theme) => ({
     textTransform: 'none',
     color: '#ffffff',
     background: '#fd6316',
-    zIndex: '3',
     [theme.breakpoints.down('xs')]: {
       width: '100%',
     },
   },
 }));
 
-const StartStationButton = () => {
+const StartStationButton = (props) => {
   const classes = useStyles();
 
   return (
-    <Button
-      variant="contained"
-      color="secondary"
-      className={classes.button}
-      href="/broadcast/am-fm"
+    <Box
+      mt={props.mt}
+      mb={props.mb}
     >
-      Start a station
-    </Button>
+      <Button
+        variant="contained"
+        color="secondary"
+        className={classes.button}
+        href="/broadcast/am-fm"
+      >
+        Start a station
+      </Button>
+    </Box>
   )
 }
 

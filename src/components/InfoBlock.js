@@ -29,25 +29,25 @@ const InfoBlock = (props) => {
   const classes = useStyles();
 
   return (
-    <>
+    <Box mb={props.mb}>
       <Link to={props.link} className={classes.link}>
         <Box display="flex" alignItems="center">
           <Box width={{ xs: '50px', lg: '65px' }} bgcolor={props.color} className={classes.imageBox}>
             <img src={props.icon} alt="icon" className={classes.icon}></img>
           </Box>
-          <Box ml={{ xs: '15px', lg: '35px' }}>
+          <Box ml={{ xs: '16px', lg: '35px' }}>
             <Typography variant="h5" className={classes.title}>
               {props.title}
             </Typography>
           </Box>
         </Box>
       </Link>
-      <Box mt={1} ml={{ xs: '65px', lg: '100px' }}>
+      <Box mt={1} ml={{ xs: '66px', lg: '100px' }}>
         <Typography variant="body1" className={classes.text}>
           {props.text}
         </Typography>
       </Box>
-    </>
+    </Box>
   )
 }
 

@@ -3,8 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
-import TitlesBlock from '../TitlesBlock';
-import InfoBlock from '../InfoBlock';
+import TitlesBlock from '../../TitlesBlock';
+import InfoBlock from '../../InfoBlock';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -29,18 +29,6 @@ const useStyles = makeStyles((theme) => ({
       padding: '70px 0 47px',
     },
   },
-  titleBlock: {
-    [theme.breakpoints.down('xl')]: {
-      marginBottom: '60px',
-    },
-    [theme.breakpoints.down('md')]: {
-      marginBottom: '15px',
-      textAlign: 'left',
-    },
-    [theme.breakpoints.down('sm')]: {
-      marginBottom: '20px',
-    },
-  },
   gridContainer: {
     [theme.breakpoints.down('xl')]: {
       justifyContent: 'space-between',
@@ -52,14 +40,9 @@ const useStyles = makeStyles((theme) => ({
   block: {
     [theme.breakpoints.down('xl')]: {
       maxWidth: '350px',
-      marginBottom: '120px',
     },
     [theme.breakpoints.down('md')]: {
       maxWidth: '285px',
-      marginBottom: '95px',
-    },
-    [theme.breakpoints.down('sm')]: {
-      marginBottom: '75px',
     },
     [theme.breakpoints.down('xs')]: {
       minWidth: '100%',
@@ -74,15 +57,18 @@ const InfoBlocksPart = () => {
     <div className={classes.root}>
       <Container fixed>
         <Box className={classes.container}>
-          <Box className={classes.titleBlock}>
-            <TitlesBlock
-              title='Batteries included, and then some.'
-            />
-          </Box>
+          <TitlesBlock
+            width='100%'
+            margin='0'
+            mbTitle={{ xs: '87px', md: '78px', lg: '132px', xl: '120px' }}
+            alignTitle={{ sm: 'left', lg: 'center!important' }}
+            title='Batteries included, and then some.'
+          />
 
           <Grid container className={classes.gridContainer}>
             <Grid item xs={12} sm={6} md={4} className={classes.block}>
               <InfoBlock
+                mb={{ xs: '75px', md: '95px', lg: '120px' }}
                 link='/'
                 color='#fd6d28'
                 icon='img/icons/management.png'
@@ -92,6 +78,7 @@ const InfoBlocksPart = () => {
             </Grid>
             <Grid item xs={12} sm={6} md={4} className={classes.block}>
               <InfoBlock
+                mb={{ xs: '75px', md: '95px', lg: '120px' }}
                 link='/broadcast/audience'
                 color='#4e6cff'
                 icon='img/icons/audience.png'
@@ -101,6 +88,7 @@ const InfoBlocksPart = () => {
             </Grid>
             <Grid item xs={12} sm={6} md={4} className={classes.block}>
               <InfoBlock
+                mb={{ xs: '75px', md: '95px', lg: '120px' }}
                 link='/broadcast/licensing'
                 color='#d13eeb'
                 icon='img/icons/licensing.png'
@@ -110,6 +98,7 @@ const InfoBlocksPart = () => {
             </Grid>
             <Grid item xs={12} sm={6} md={4} className={classes.block}>
               <InfoBlock
+                mb={{ xs: '75px', md: '95px', lg: '120px' }}
                 link='/broadcast/statistics'
                 color='#0edbee'
                 icon='img/icons/statistics.png'
@@ -119,6 +108,7 @@ const InfoBlocksPart = () => {
             </Grid>
             <Grid item xs={12} sm={6} md={4} className={classes.block}>
               <InfoBlock
+                mb={{ xs: '75px', md: '95px', lg: '120px' }}
                 link='/broadcast/monetization'
                 color='#9dde01'
                 icon='img/icons/monetization.png'
@@ -128,6 +118,7 @@ const InfoBlocksPart = () => {
             </Grid>
             <Grid item xs={12} sm={6} md={4} className={classes.block}>
               <InfoBlock
+                mb={{ xs: '75px', md: '95px', lg: '120px' }}
                 link='/'
                 color='#ffe309'
                 icon='img/icons/compatibility.png'

@@ -15,17 +15,28 @@ const useStyles = makeStyles((theme) => ({
     color: '#ffffff',
     background: '#010101',
   },
-  footerInfo: {
-    paddingRight: '100px',
-    color: '#ffffff',
+  container: {
+    [theme.breakpoints.down('xl')]: {
+      padding: '48px 0',
+    },
     [theme.breakpoints.down('md')]: {
+      paddingBottom: '24px',
+    },
+    [theme.breakpoints.down('xs')]: {
+      paddingBottom: '16px',
+    },
+  },
+  footerInfo: {
+    paddingRight: '98px',
+    [theme.breakpoints.down('md')]: {
+      paddingRight: 0,
       marginBottom: '55px',
     },
   },
   footerInfoLogo: {
-    marginBottom: '50px',
+    marginBottom: '52px',
     [theme.breakpoints.down('md')]: {
-      marginBottom: '20px',
+      marginBottom: '24px',
     },
   },
   footerInfoText: {
@@ -33,42 +44,43 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '16px',
   },
   logo: {
-    maxWidth: "105px",
+    maxWidth: "103px",
   },
   socialLink: {
     marginRight: theme.spacing(3),
   },
-  title: {
+  footerSection: {
+    display: 'flex',
+    flexDirection: 'column',
+    minWidth: '180px',
+    [theme.breakpoints.down('xs')]: {
+      paddingBottom: '54px',
+    },
+  },
+  footerSectionTitle: {
     fontSize: '16px',
     fontWeight: 900,
     textTransform: 'uppercase',
     color: '#a19eb1',
   },
-  footerSectionLinks: {
-    display: 'flex',
-    flexDirection: 'column',
-    paddingRight: '50px',
-    [theme.breakpoints.down('sm')]: {
-      paddingRight: '100px',
-    },
-    [theme.breakpoints.down('xs')]: {
-      paddingRight: 0,
-      paddingBottom: '55px',
-    },
-  },
   footerSectionLink: {
-    marginBottom: theme.spacing(1),
+    marginBottom: theme.spacing(1.5),
     fontWeight: 700,
     letterSpacing: '.5px',
     color: '#ffffff',
   },
   footer: {
+    marginTop: '74px',
     textAlign: "right",
+    [theme.breakpoints.down('md')]: {
+      marginTop: '42px',
+    },
     [theme.breakpoints.down('xs')]: {
-      marginTop: '-70px',
+      marginTop: 0,
     },
   },
   copyright: {
+    fontSize: '16px',
     fontWeight: 900,
     color: '#5d5b65',
     marginBottom: theme.spacing(1),
@@ -90,8 +102,8 @@ const Footer = () => {
   return (
     <footer className={classes.root}>
       <Container fixed>
-        <Box padding="45px 0 50px">
-          <Box mb="70px">
+        <Box className={classes.container}>
+          <Box>
             <Grid container>
               <Grid item md={12} lg={3} className={classes.footerInfo}>
                 <div className={classes.footerInfoLogo}>
@@ -116,26 +128,29 @@ const Footer = () => {
                   </Link>
                 </Typography>
               </Grid>
-              <Grid item md={12} lg={9}>
+
+
+              <Grid item xs={12} lg={9}>
                 <Grid container>
-                  <Grid item xs={12} sm={4} md={3}>
-                    <Box mb={2}>
-                      <Typography variant="h6" className={classes.title}>Listeners</Typography>
+                  <Grid item xs={12} sm={4} md={2} className={classes.footerSection}>
+                    <Box mb={3}>
+                      <Typography variant="h6" className={classes.footerSectionTitle}>Listeners</Typography>
                     </Box>
-                    <Typography className={classes.footerSectionLinks}>
+                    <Box display="flex" flexDirection="column">
                       <Link href="/" className={classes.footerSectionLink}>
                         Where to Listen
                       </Link>
                       <Link href="/" className={classes.footerSectionLink}>
                         Support
                       </Link>
-                    </Typography>
-                  </Grid>
-                  <Grid item xs={12} sm={4} md={3}>
-                    <Box mb={2}>
-                      <Typography variant="h6" className={classes.title}>Broadcasters</Typography>
                     </Box>
-                    <Typography className={classes.footerSectionLinks}>
+                  </Grid>
+
+                  <Grid item xs={12} sm={4} md={2} className={classes.footerSection}>
+                    <Box mb={3}>
+                      <Typography variant="h6" className={classes.footerSectionTitle}>Broadcasters</Typography>
+                    </Box>
+                    <Box display="flex" flexDirection="column">
                       <Link href="/" className={classes.footerSectionLink}>
                         Start a Station
                       </Link>
@@ -148,13 +163,14 @@ const Footer = () => {
                       <Link href="/" className={classes.footerSectionLink}>
                         Support
                       </Link>
-                    </Typography>
-                  </Grid>
-                  <Grid item xs={12} sm={4} md={3}>
-                    <Box mb={2}>
-                      <Typography variant="h6" className={classes.title}>Company</Typography>
                     </Box>
-                    <Typography className={classes.footerSectionLinks}>
+                  </Grid>
+
+                  <Grid item xs={12} sm={4} md={2} className={classes.footerSection}>
+                    <Box mb={3}>
+                      <Typography variant="h6" className={classes.footerSectionTitle}>Company</Typography>
+                    </Box>
+                    <Box display="flex" flexDirection="column">
                       <Link href="/" className={classes.footerSectionLink}>
                         About
                       </Link>
@@ -164,12 +180,14 @@ const Footer = () => {
                       <Link href="/" className={classes.footerSectionLink}>
                         Jobs
                       </Link>
-                    </Typography>
+                    </Box>
                   </Grid>
                 </Grid>
               </Grid>
             </Grid>
           </Box>
+
+
           <Box className={classes.footer}>
             <Typography variant="body2" className={classes.copyright}>&copy; 2020 Live365</Typography>
             <Typography className={classes.links}>

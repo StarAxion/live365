@@ -3,8 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
-import TitlesBlock from '../TitlesBlock';
-import ImageLink from '../ImageLink';
+import TitlesBlock from '../../TitlesBlock';
+import ImageLink from '../../ImageLink';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -14,43 +14,22 @@ const useStyles = makeStyles((theme) => ({
   },
   container: {
     [theme.breakpoints.down('xl')]: {
-      padding: '185px 0 200px',
+      padding: '182px 0 210px',
     },
     [theme.breakpoints.down('lg')]: {
-      padding: '155px 0 165px',
+      padding: '155px 0 177px',
     },
     [theme.breakpoints.down('md')]: {
-      padding: '90px 0 120px',
+      padding: '90px 0 128px',
     },
     [theme.breakpoints.down('sm')]: {
-      padding: '65px 0 72px',
+      padding: '65px 0 80px',
     },
     [theme.breakpoints.down('xs')]: {
-      padding: '70px 0 48px',
-    },
-  },
-  subtitleBlock: {
-    margin: '0 auto',
-    textAlign: 'left',
-    [theme.breakpoints.down('xl')]: {
-      maxWidth: '895px',
-      marginBottom: '95px',
-    },
-    [theme.breakpoints.down('lg')]: {
-      maxWidth: '890px',
-      marginBottom: '118px',
-    },
-    [theme.breakpoints.down('md')]: {
-      maxWidth: '782px',
-      marginBottom: '90px',
-    },
-    [theme.breakpoints.down('sm')]: {
-      minWidth: '100%',
-      marginBottom: '65px',
+      padding: '70px 0 57px',
     },
   },
   imageBlock: {
-    margin: theme.spacing(1),
     [theme.breakpoints.down('xl')]: {
       maxWidth: '225px',
     },
@@ -74,13 +53,15 @@ const ImagesPart = () => {
       <Container fixed>
         <Box className={classes.container}>
           <TitlesBlock
+            width={{ xs: '100%', md: '782px', lg: '890px', xl: '895px' }}
+            margin='auto'
+            mbTitle={{ xs: '48px', lg: '68px', xl: '88px' }}
+            alignTitle={{ sm: 'left', md: 'center' }}
             title='Built for broadcasters.'
+            mbSubitle={{ xs: '78px', md: '104px', lg: '132px', xl: '110px' }}
+            alignSubtitle={{ sm: 'left', md: 'center!important', lg: 'left!important' }}
+            subtitle='Live365 has helped thousands of broadcasters get online since 1999. Learn more about how Live365 can work for your organization, business, or passion.'
           />
-          <Box className={classes.subtitleBlock}>
-            <TitlesBlock
-              subtitle='Live365 has helped thousands of broadcasters get online since 1999. Leran more about how Live365 can work for your organization, business, or passion.'
-            />
-          </Box>
 
           <Box display={{ xs: 'block', md: 'none' }}>
             <Grid container justify="center">

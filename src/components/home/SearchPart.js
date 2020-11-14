@@ -13,8 +13,6 @@ import TitlesBlock from '../TitlesBlock';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
-    justifyContent: 'space-between',
     textAlign: 'center',
     color: '#ffffff',
     background: '#06012e',
@@ -42,7 +40,8 @@ const useStyles = makeStyles((theme) => ({
   searchForm: {
     position: 'relative',
     display: 'flex',
-    margin: '130px auto 48px',
+    height: '65px',
+    margin: '0 auto',
     border: 'solid 2px #f1f0f5',
     borderRadius: '5px',
     background: 'inherit',
@@ -52,11 +51,9 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down('lg')]: {
       width: '365px',
-      marginBottom: '25px',
     },
     [theme.breakpoints.down('xs')]: {
       width: '100%',
-      marginBottom: '15px',
     },
   },
   inputBase: {
@@ -144,33 +141,7 @@ const SearchPart = () => {
             <TopRightLight />
           </ColoredBlock>
         </Box>
-      </div>
 
-
-
-      <div className={classes.innerContainer}>
-        <Container fixed>
-          <TitlesBlock
-            title='Start listening for free.'
-            subtitle='Every station is made by a real human.'
-          />
-          <Paper component="form" className={classes.searchForm}>
-            <InputBase
-              className={classes.inputBase}
-              classes={{ input: classes.input }}
-              placeholder="Search stations &amp; genres"
-            />
-            <IconButton type="submit" className={classes.iconButton} aria-label="search">
-              <SearchIcon fontSize="large" />
-            </IconButton>
-          </Paper>
-          <ListenNowButton />
-        </Container>
-      </div >
-
-
-
-      <div className={classes.outerContainer}>
         <Box display={{ xs: 'none', xl: 'block' }}>
           <ColoredBlock size='342px' color='#90ca03' right='35px' top='168px'>
             <TopRightLight />
@@ -224,6 +195,38 @@ const SearchPart = () => {
             <TopRightLight />
           </ColoredBlock>
         </Box>
+
+
+        <div className={classes.innerContainer}>
+          <Container fixed>
+            <TitlesBlock
+              width='100%'
+              margin='auto'
+              mbTitle={{ xs: '48px', lg: '50px', xl: '75px' }}
+              alignTitle='center'
+              title='Start listening for free.'
+              mbSubitle={{ xs: '75px', sm: '88px', md: '104px', lg: '100px', xl: '138px' }}
+              alignSubtitle='center'
+              subtitle='Every station is made by a real human.'
+            />
+
+            <Paper component="form" className={classes.searchForm}>
+              <InputBase
+                className={classes.inputBase}
+                classes={{ input: classes.input }}
+                placeholder="Search stations &amp; genres"
+              />
+              <IconButton type="submit" className={classes.iconButton} aria-label="search">
+                <SearchIcon fontSize="large" />
+              </IconButton>
+            </Paper>
+
+            <ListenNowButton
+              mt={{ xs: '16px', sm: '24px', xl: '48px' }}
+              mb='0'
+            />
+          </Container>
+        </div >
       </div>
     </div >
   )
