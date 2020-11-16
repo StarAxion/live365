@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     textAlign: 'left',
     color: '#ffffff',
-    background: '#06012e',
+    background: '#0F0732',
   },
   outerContainer: {
     [theme.breakpoints.down('xl')]: {
@@ -65,35 +65,34 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   label: {
-    fontWeight: 900,
-    letterSpacing: '.5px',
+    fontFamily: 'BarlowBold!important',
+    fontSize: '16px',
     color: 'inherit',
   },
   input: {
     height: '40px',
-    margin: '12px 0 20px',
+    margin: '9px 0 16px',
     padding: '0 10px',
     color: '#ffffff',
-    border: 'solid 2px #69618a',
-    borderRadius: '5px',
+    border: 'solid 2px #696189',
+    borderRadius: '4px',
   },
   textarea: {
     height: '150px',
-    margin: '12px 0 16px',
+    margin: '9px 0 16px',
     padding: '0 10px',
     color: '#ffffff',
-    border: 'solid 2px #69618a',
-    borderRadius: '5px',
+    border: 'solid 2px #696189',
+    borderRadius: '4px',
   },
   button: {
     width: '100%',
     height: '57px',
-    fontSize: '16px',
-    fontWeight: 900,
-    letterSpacing: '.5px',
+    fontSize: '20px',
     textTransform: 'none',
     color: '#ffffff',
-    background: '#fd6316',
+    background: '#fd631c',
+    borderRadius: '4px',
   },
 }));
 

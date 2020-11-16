@@ -11,13 +11,19 @@ import Footer from '../Footer';
 
 const useStyles = makeStyles((theme) => ({
   links: {
-    letterSpacing: '1px',
+    fontFamily: 'BarlowBold!important',
+    fontSize: '18px',
     '& > * + *': {
       marginLeft: theme.spacing(4),
-      [theme.breakpoints.down('sm')]: {
+      [theme.breakpoints.down('md')]: {
         marginLeft: theme.spacing(3),
       },
     },
+  },
+  link: {
+    fontFamily: 'BarlowBold!important',
+    fontSize: '18px',
+    color: 'inherit',
   },
 }));
 
@@ -28,8 +34,8 @@ const Home = () => {
     <>
       <Header>
         <Box className={classes.links}>
-          <Link href="/listen" color="inherit">Listen</Link>
-          <Link href="/broadcast" color="inherit">Broadcast</Link>
+          <Link href="/listen" className={classes.link}>Listen</Link>
+          <Link href="/broadcast" className={classes.link}>Broadcast</Link>
         </Box>
       </Header>
 

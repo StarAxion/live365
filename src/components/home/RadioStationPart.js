@@ -3,15 +3,14 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
-import Button from '@material-ui/core/Button';
 import TitlesBlock from '../TitlesBlock';
 import InfoBlock from '../InfoBlock';
-import StartStationButton from '../StartStationButton';
+import ButtonLink from '../ButtonLink';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     color: '#ffffff',
-    background: '#06012e',
+    background: '#0F0732',
   },
   outerContainer: {
     [theme.breakpoints.down('xl')]: {
@@ -49,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: '520px',
     },
     [theme.breakpoints.down('md')]: {
-      maxWidth: '450px',
+      minWidth: '500px',
     },
   },
   rightHalf: {
@@ -58,22 +57,6 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down('md')]: {
       maxWidth: '288px',
-    },
-  },
-  button: {
-    height: '60px',
-    marginLeft: theme.spacing(2),
-    padding: '20px 40px',
-    fontSize: '16px',
-    fontWeight: 900,
-    letterSpacing: '.5px',
-    textTransform: 'none',
-    color: '#ffffff',
-    background: '#170954',
-    [theme.breakpoints.down('xs')]: {
-      width: '100%',
-      marginLeft: 0,
-      marginTop: theme.spacing(2),
     },
   },
 }));
@@ -89,12 +72,9 @@ const RadioStationPart = () => {
             <TitlesBlock
               width='100%'
               margin='0'
-              mbTitle={{ xs: '35px', sm: '48px' }}
+              mbTitle={{ xs: '67px', sm: '88px' }}
               alignTitle='left'
               title='Create your own internet radio station.'
-              mbSubitle={{ xs: '70px', sm: '95px' }}
-              alignSubtitle='left'
-              subtitle='Listen to radio stations run by members of our community.'
             />
 
             <Box maxWidth={{ sm: '290px' }}>
@@ -126,13 +106,24 @@ const RadioStationPart = () => {
               justifyContent='center'
               mt={{ xs: '165px', sm: '78px!important' }}
             >
-              <StartStationButton
-                mt='0'
-                mb='0'
-              />
-              <Button variant="contained" color="primary" className={classes.button} href="/">
+              <ButtonLink
+                justify='center'
+                margin='0'
+                bg='#fd6316'
+                color='secondary'
+                link='/broadcast/am-fm'
+              >
+                Start a station
+              </ButtonLink>
+              <ButtonLink
+                justify='center'
+                margin={{ xs: '16px 0 0 0', sm: '0 0 0 16px' }}
+                bg='#170954'
+                color='primary'
+                link='/'
+              >
                 Learn more
-              </Button>
+              </ButtonLink>
             </Box>
           </Box>
 
@@ -144,22 +135,30 @@ const RadioStationPart = () => {
                 <TitlesBlock
                   width={{ md: '322px', lg: '100%' }}
                   margin='0'
-                  mbTitle={{ md: '44px', lg: '60px', xl: '76px' }}
+                  mbTitle={{ md: '80px', lg: '108px', xl: '140px' }}
                   alignTitle='left'
                   title='Create your own internet radio station.'
-                  mbSubitle={{ md: '88px', lg: '118px', xl: '152px' }}
-                  alignSubtitle='left'
-                  subtitle='Listen to radio stations run by members of our community.'
                 />
 
                 <Box display="flex">
-                  <StartStationButton
-                    mt='0'
-                    mb='0'
-                  />
-                  <Button variant="contained" color="primary" className={classes.button} href="/">
+                  <ButtonLink
+                    justify='center'
+                    margin='0'
+                    bg='#fd6316'
+                    color='secondary'
+                    link='/broadcast/am-fm'
+                  >
+                    Start a station
+                  </ButtonLink>
+                  <ButtonLink
+                    justify='center'
+                    margin='0 0 0 16px'
+                    bg='#170954'
+                    color='primary'
+                    link='/'
+                  >
                     Learn more
-                  </Button>
+                  </ButtonLink>
                 </Box>
               </Grid>
 

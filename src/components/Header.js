@@ -13,28 +13,31 @@ const useStyles = makeStyles((theme) => ({
   header: {
     position: 'relative',
     color: '#ffffff',
-    background: '#010102',
+    background: 'rgba(5, 5, 6, 0.9)',
     zIndex: '3',
   },
   logo: {
-    maxWidth: '115px',
+    maxWidth: '114px',
   },
   links: {
-    fontWeight: 700,
-    letterSpacing: '.5px',
     '& > * + *': {
       marginLeft: theme.spacing(4),
-      [theme.breakpoints.down('sm')]: {
+      [theme.breakpoints.down('md')]: {
         marginLeft: theme.spacing(3),
       },
     },
   },
+  link: {
+    fontFamily: 'BarlowBold!important',
+    fontSize: '18px',
+    color: 'inherit',
+  },
   separator: {
     marginLeft: theme.spacing(4),
     marginRight: theme.spacing(4),
-    fontSize: '28px',
+    fontSize: '29px',
     color: '#656565',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
       marginLeft: theme.spacing(3),
       marginRight: theme.spacing(3),
     },
@@ -58,8 +61,8 @@ const Header = (props) => {
               {props.children}
               <Box component="span" className={classes.separator} display={{ xs: 'none', sm: 'block' }}>&#124;</Box>
               <Box className={classes.links} display={{ xs: 'none', sm: 'block' }}>
-                <Link href="/signup" color="inherit">Sign up</Link>
-                <Link href="/login" color="inherit">Log in</Link>
+                <Link href="/signup" className={classes.link}>Sign up</Link>
+                <Link href="/login" className={classes.link}>Log in</Link>
               </Box>
             </Toolbar>
           </Grid>

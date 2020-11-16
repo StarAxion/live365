@@ -7,15 +7,15 @@ import InputBase from '@material-ui/core/InputBase';
 import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
 import ColoredBlock from '../ColoredBlock';
-import { TopLeftStrong, TopLeftLight, TopRightLight, BottomRightLight } from '../GradientCover';
-import ListenNowButton from './ListenNowButton';
+import { TopLeftStrong, TopLeftLight, TopRightLight } from '../GradientCover';
 import TitlesBlock from '../TitlesBlock';
+import ButtonLink from '../ButtonLink';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     textAlign: 'center',
     color: '#ffffff',
-    background: '#06012e',
+    background: '#0F0732',
   },
   outerContainer: {
     position: 'relative',
@@ -88,114 +88,56 @@ const SearchPart = () => {
   return (
     <div className={classes.root}>
       <div className={classes.outerContainer}>
-        <Box display={{ xs: 'none', xl: 'block' }}>
-          <ColoredBlock size='255px' color='#2143ec' left='67px' top='285px'>
+        <Box display={{ xs: 'none', lg: 'block' }}>
+          <ColoredBlock size={{ lg: '228px', xl: '255px' }} color='#284CFF' left={{ lg: '-102px', xl: '67px' }} top={{ lg: '272px', xl: '285px' }}>
             <TopLeftStrong />
           </ColoredBlock>
-          <ColoredBlock size='110px' color='#eed30c' left='212px' top='750px'>
+          <ColoredBlock size={{ lg: '97px', xl: '109px' }} color='#FFE211' left={{ lg: '30px', xl: '212px' }} top={{ xl: '750px' }} bottom={{ lg: '-18px' }}>
             <TopRightLight />
           </ColoredBlock>
-          <ColoredBlock size='67px' color='#4722e0' left='322px' top='125px' >
+          <ColoredBlock size={{ lg: '59px', xl: '66px' }} color='#4826DF' left={{ lg: '126px', xl: '322px' }} top={{ lg: '128px', xl: '125px' }} >
             <TopRightLight />
           </ColoredBlock>
-          <ColoredBlock size='138px' color='#fd6316' left='320px' top='538px' >
+          <ColoredBlock size={{ lg: '123px', xl: '138px' }} color='#FD631C' left={{ lg: '126px', xl: '320px' }} top={{ lg: '500px', xl: '538px' }} >
             <TopRightLight />
           </ColoredBlock>
-          <ColoredBlock size='110px' color='#b91117' left='388px' top='15px' >
+          <ColoredBlock size={{ lg: '97px', xl: '109px' }} color='#CD1A1A' left={{ lg: '185px', xl: '388px' }} top={{ lg: '30px', xl: '15px' }} >
+            <TopLeftLight />
+          </ColoredBlock>
+
+          <ColoredBlock size={{ lg: '306px', xl: '343px' }} color='#9CDD07' right={{ lg: '-244px', xl: '35px' }} top={{ lg: '168px', xl: '168px' }}>
+            <TopRightLight />
+          </ColoredBlock>
+          <ColoredBlock size={{ lg: '228px', xl: '255px' }} color='#16DAED' right={{ lg: '-44px', xl: '258px' }} bottom={{ lg: '-88px', xl: '-50px' }}>
+            <TopLeftLight />
+          </ColoredBlock>
+          <ColoredBlock size={{ lg: '123px', xl: '138px' }} color='#D040EA' right={{ lg: '62px', xl: '378px' }} top={{ lg: '45px', xl: '30px' }} >
+            <TopRightLight />
+          </ColoredBlock>
+          <ColoredBlock size={{ lg: '59px', xl: '66px' }} color='#4826DF' right={{ lg: '62px', xl: '376px' }} top={{ lg: '473px', xl: '510px' }} >
+            <TopRightLight />
+          </ColoredBlock>
+          <ColoredBlock size={{ lg: '97px', xl: '109px' }} color='#CD1A1A' right={{ lg: '185px', xl: '515px' }} bottom={{ lg: '142px', xl: '205px' }} >
             <TopLeftLight />
           </ColoredBlock>
         </Box>
 
-        <Box display={{ xs: 'none', lg: 'block', xl: 'none' }}>
-          <ColoredBlock size='228px' color='#2143ec' left='-102px' top='272px'>
+
+        <Box display={{ xs: 'none', sm: 'block', lg: 'none' }}>
+          <ColoredBlock size={{ sm: '140px', md: '228px' }} color='#284CFF' left={{ sm: '-67px', md: '-155px' }} bottom={{ sm: '48px', md: '80px' }} >
             <TopLeftStrong />
           </ColoredBlock>
-          <ColoredBlock size='96px' color='#eed30c' left='30px' bottom='-18px'>
+          <ColoredBlock size={{ sm: '74px', md: '123px' }} color='#FD631C' left={{ sm: '73px', md: '75px' }} bottom={{ sm: '-27px', md: '-45px' }} >
             <TopRightLight />
           </ColoredBlock>
-          <ColoredBlock size='58px' color='#4722e0' left='126px' top='128px' >
-            <TopRightLight />
-          </ColoredBlock>
-          <ColoredBlock size='125px' color='#fd6316' left='126px' top='500px' >
-            <TopRightLight />
-          </ColoredBlock>
-          <ColoredBlock size='100px' color='#b91117' left='185px' top='30px' >
-            <TopLeftLight />
-          </ColoredBlock>
-        </Box>
 
-        <Box display={{ xs: 'none', md: 'block', lg: 'none' }}>
-          <ColoredBlock size='230px' color='#2143ec' left='-155px' bottom='80px'>
-            <TopLeftStrong />
+          <ColoredBlock size={{ sm: '186px', md: '306px' }} color='#9CDD07' right={{ sm: '-162px', md: '-249px' }} top={{ sm: '42px', md: '186px' }} >
+            <TopRightLight />
           </ColoredBlock>
-          <ColoredBlock size='123px' color='#fd6316' left='75px' bottom='-45px' >
+          <ColoredBlock size={{ sm: '74px', md: '123px' }} color='#D040EA' right={{ sm: '26px', md: '58px' }} top={{ sm: '-33px', md: '62px' }} >
             <TopRightLight />
           </ColoredBlock>
         </Box>
-
-        <Box display={{ xs: 'none', sm: 'block', md: 'none' }}>
-          <ColoredBlock size='140px' color='#2143ec' left='-67px' bottom='48px'>
-            <TopLeftStrong />
-          </ColoredBlock>
-          <ColoredBlock size='75px' color='#fd6316' left='73px' bottom='-27px' >
-            <TopRightLight />
-          </ColoredBlock>
-        </Box>
-
-        <Box display={{ xs: 'none', xl: 'block' }}>
-          <ColoredBlock size='342px' color='#90ca03' right='35px' top='168px'>
-            <TopRightLight />
-          </ColoredBlock>
-          <ColoredBlock size='255px' color='#0edbee' right='258px' bottom='-50px'>
-            <TopLeftLight />
-          </ColoredBlock>
-          <ColoredBlock size='138px' color='#d13eeb' right='378px' top='30px' >
-            <TopRightLight />
-          </ColoredBlock>
-          <ColoredBlock size='65px' color='#4722e0' right='376px' top='510px' >
-            <TopRightLight />
-          </ColoredBlock>
-          <ColoredBlock size='110px' color='#b71117' right='515px' bottom='205px' >
-            <TopLeftLight />
-          </ColoredBlock>
-        </Box>
-
-        <Box display={{ xs: 'none', lg: 'block', xl: 'none' }}>
-          <ColoredBlock size='306px' color='#90ca03' right='-244px' top='168px'>
-            <TopRightLight />
-          </ColoredBlock>
-          <ColoredBlock size='228px' color='#0edbee' right='-44px' bottom='-88px'>
-            <TopLeftLight />
-          </ColoredBlock>
-          <ColoredBlock size='123px' color='#d13eeb' right='62px' top='45px' >
-            <TopRightLight />
-          </ColoredBlock>
-          <ColoredBlock size='60px' color='#4722e0' right='62px' top='473px' >
-            <BottomRightLight />
-          </ColoredBlock>
-          <ColoredBlock size='100px' color='#b71117' right='185px' bottom='142px' >
-            <TopRightLight />
-          </ColoredBlock>
-        </Box>
-
-        <Box display={{ xs: 'none', md: 'block', lg: 'none' }}>
-          <ColoredBlock size='306px' color='#90ca03' right='-249px' top='186px'>
-            <TopRightLight />
-          </ColoredBlock>
-          <ColoredBlock size='123px' color='#d13eeb' right='58px' top='62px' >
-            <TopRightLight />
-          </ColoredBlock>
-        </Box>
-
-        <Box display={{ xs: 'none', sm: 'block', md: 'none' }}>
-          <ColoredBlock size='188px' color='#90ca03' right='-162px' top='42px'>
-            <TopRightLight />
-          </ColoredBlock>
-          <ColoredBlock size='75px' color='#d13eeb' right='26px' top='-33px' >
-            <TopRightLight />
-          </ColoredBlock>
-        </Box>
-
 
         <div className={classes.innerContainer}>
           <Container fixed>
@@ -221,10 +163,15 @@ const SearchPart = () => {
               </IconButton>
             </Paper>
 
-            <ListenNowButton
-              mt={{ xs: '16px', sm: '24px', xl: '48px' }}
-              mb='0'
-            />
+            <ButtonLink
+              justify='center'
+              margin={{ xs: '16px 0 0 0', sm: '24px 0 0 0', xl: '48px 0 0 0' }}
+              bg='#234bff'
+              color='primary'
+              link='/listen'
+            >
+              Listen now
+            </ButtonLink>
           </Container>
         </div >
       </div>

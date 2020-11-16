@@ -9,8 +9,8 @@ import ImageLink from '../../ImageLink';
 const useStyles = makeStyles((theme) => ({
   root: {
     textAlign: 'center',
-    color: '#010101',
-    background: '#faf9fc',
+    color: '#020104',
+    background: '#D5D3D9',
   },
   container: {
     [theme.breakpoints.down('xl')]: {

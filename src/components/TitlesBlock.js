@@ -6,19 +6,41 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles((theme) => ({
   title: {
     position: 'relative',
-    fontSize: '46px',
-    letterSpacing: '.5px',
+    fontFamily: 'BarlowBold!important',
+    fontSize: '65px',
+    color: 'inherit',
     zIndex: '3',
+    [theme.breakpoints.down('lg')]: {
+      fontSize: '54px',
+    },
+    [theme.breakpoints.down('md')]: {
+      fontSize: '45px',
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '40px',
+    },
     [theme.breakpoints.down('xs')]: {
       textAlign: 'left',
     },
   },
   subtitle: {
     position: 'relative',
-    lineHeight: '34px',
-    fontFamily: 'BarlowThin!important',
-    fontSize: '22px',
+    lineHeight: '42px',
+    fontSize: '28px',
+    color: 'inherit',
     zIndex: '3',
+    [theme.breakpoints.down('lg')]: {
+      lineHeight: '36px',
+      fontSize: '24px',
+    },
+    [theme.breakpoints.down('md')]: {
+      lineHeight: '30px',
+      fontSize: '20px',
+    },
+    [theme.breakpoints.down('sm')]: {
+      lineHeight: '27px',
+      fontSize: '18px',
+    },
     [theme.breakpoints.down('xs')]: {
       textAlign: 'left',
     },
@@ -40,7 +62,6 @@ const TitlesBlock = (props) => {
       >
         <Typography
           variant="h2"
-          color="inherit"
           className={classes.title}
         >
           {props.title}
@@ -53,7 +74,6 @@ const TitlesBlock = (props) => {
       >
         <Typography
           variant="h4"
-          color="inherit"
           className={classes.subtitle}
         >
           {props.subtitle}

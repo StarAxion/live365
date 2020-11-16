@@ -8,7 +8,8 @@ import NumberedBlock from './NumberedBlock';
 const useStyles = makeStyles((theme) => ({
   root: {
     textAlign: 'center',
-    background: '#faf9fc',
+    color: '#020104',
+    background: '#D5D3D9',
   },
   container: {
     [theme.breakpoints.down('xl')]: {

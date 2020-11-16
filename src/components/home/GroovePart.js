@@ -5,13 +5,13 @@ import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import TitlesBlock from '../TitlesBlock';
 import ImageLink from '../ImageLink';
-import ListenNowButton from './ListenNowButton';
+import ButtonLink from '../ButtonLink';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     textAlign: 'center',
-    color: '#010101',
-    background: '#faf9fc',
+    color: '#020104',
+    background: '#F0EFF3',
   },
   container: {
     [theme.breakpoints.down('xl')]: {
@@ -231,10 +231,15 @@ const GroovePart = () => {
           </Box>
 
 
-          <ListenNowButton
-            mt={{ xs: '47px', sm: '75px', md: '95px', lg: '127px', xl: '153px' }}
-            mb='0'
-          />
+          <ButtonLink
+            justify='center'
+            margin={{ xs: '47px 0 0 0', sm: '75px 0 0 0', md: '95px 0 0 0', lg: '127px 0 0 0', xl: '153px 0 0 0' }}
+            bg='#234bff'
+            color='primary'
+            link='/listen'
+          >
+            Listen now
+          </ButtonLink>
         </Box>
       </Container>
     </div>

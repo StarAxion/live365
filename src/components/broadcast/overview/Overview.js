@@ -16,17 +16,21 @@ const useStyles = makeStyles((theme) => ({
   links: {
     display: 'flex',
     alignItems: 'center',
-    fontWeight: 700,
-    letterSpacing: '.5px',
     '& > * + *': {
-      marginLeft: '45px',
+      marginLeft: '44px',
       [theme.breakpoints.down('sm')]: {
         marginLeft: theme.spacing(3),
       },
     },
   },
+  link: {
+    fontFamily: 'BarlowBold!important',
+    fontSize: '18px',
+    color: 'inherit',
+  },
   active: {
-    display: 'inline-block',
+    fontFamily: 'BarlowBold!important',
+    fontSize: '18px',
     paddingTop: theme.spacing(1.25),
     paddingBottom: theme.spacing(1),
     color: 'inherit',
@@ -36,21 +40,24 @@ const useStyles = makeStyles((theme) => ({
     display: 'inline-block',
   },
   menuButton: {
-    padding: 0,
-    lineHeight: 0,
-    fontSize: 'inherit',
-    color: 'inherit',
+    marginLeft: '-10px',
+    padding: '0 0 0 10px',
+    fontSize: '18px',
     textTransform: 'none',
+    color: 'inherit',
+  },
+  buttonIcon: {
+    marginLeft: theme.spacing(1),
   },
   headerButton: {
     height: '40px',
     marginRight: '50px',
     padding: '0 15px',
-    fontWeight: 900,
-    letterSpacing: '.5px',
+    fontSize: '20px',
     textTransform: 'none',
-    background: '#fd6316',
-  }
+    background: '#fd631c',
+    borderRadius: '4px',
+  },
 }));
 
 const Overview = () => {
@@ -65,23 +72,23 @@ const Overview = () => {
 
             <Box className={classes.menu}>
               <Button
-                endIcon={<ExpandMoreIcon />}
                 className={classes.menuButton}
               >
                 Product tour
-            </Button>
+                <ExpandMoreIcon fontSize="large" className={classes.buttonIcon} />
+              </Button>
             </Box>
 
             <Box className={classes.menu}>
               <Button
-                endIcon={<ExpandMoreIcon />}
                 className={classes.menuButton}
               >
                 Live365 for...
-            </Button>
+                <ExpandMoreIcon fontSize="large" className={classes.buttonIcon} />
+              </Button>
             </Box>
 
-            <Link href="/" color="inherit">Pricing</Link>
+            <Link href="/" className={classes.link}>Pricing</Link>
 
             <Box display={{ md: 'none', lg: 'block' }}>
               <Button
@@ -99,8 +106,8 @@ const Overview = () => {
 
         <Box display={{ xs: 'block', md: 'none' }}>
           <Box className={classes.links}>
-            <Link href="/listen" color="inherit">Listen</Link>
-            <Link href="/broadcast" color="inherit">Broadcast</Link>
+            <Link href="/listen" className={classes.link}>Listen</Link>
+            <Link href="/broadcast" className={classes.link}>Broadcast</Link>
           </Box>
         </Box>
       </Header>

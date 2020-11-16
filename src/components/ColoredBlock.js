@@ -8,7 +8,7 @@ const useStyles = makeStyles(() => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: '10px',
+    borderRadius: '8px',
     zIndex: '1',
   },
 }));

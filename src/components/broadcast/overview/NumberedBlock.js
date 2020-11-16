@@ -21,7 +21,7 @@ const useStyles = makeStyles(() => ({
     lineHeight: '50px',
     fontFamily: 'BarlowExtraBold!important',
     fontSize: '58px',
-    color: '#fd6316',
+    color: '#FD631C',
   },
   text: {
     fontSize: '18px',

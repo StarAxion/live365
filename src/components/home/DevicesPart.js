@@ -6,8 +6,8 @@ import TitlesBlock from '../TitlesBlock';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    color: '#010101',
-    background: '#f1f0f5',
+    color: '#020104',
+    background: '#D5D3D9',
   },
   container: {
     [theme.breakpoints.down('xl')]: {

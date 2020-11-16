@@ -5,33 +5,33 @@ import Box from '@material-ui/core/Box';
 const useStyles = makeStyles(() => ({
   block: {
     position: 'absolute',
-    width: '102%',
-    height: '102%',
-    borderRadius: '8px',
+    width: '101.1%',
+    height: '101.1%',
+    borderRadius: '7px',
   },
   topLeftStrong: {
-    background: 'linear-gradient(to top left, transparent 0%, transparent 10%, #06012e 80%)',
+    background: 'linear-gradient(to top left, transparent 0%, transparent 10%, #0f0732 80%)',
   },
   topLeftLight: {
-    background: 'linear-gradient(to top left, transparent 0%, transparent 10%, #06012e 100%)',
+    background: 'linear-gradient(to top left, transparent 0%, transparent 10%, #0f0732 100%)',
   },
   topRightStrong: {
-    background: 'linear-gradient(to top right, transparent 0%, transparent 10%, #06012e 80%)',
+    background: 'linear-gradient(to top right, transparent 0%, transparent 10%, #0f0732 80%)',
   },
   topRightLight: {
-    background: 'linear-gradient(to top right, transparent 0%, transparent 10%, #06012e 100%)',
+    background: 'linear-gradient(to top right, transparent 0%, transparent 10%, #0f0732 100%)',
   },
   bottomLeftStrong: {
-    background: 'linear-gradient(to bottom left, transparent 0%, transparent 10%, #06012e 80%)',
+    background: 'linear-gradient(to bottom left, transparent 0%, transparent 10%, #0f0732 80%)',
   },
   bottomLeftLight: {
-    background: 'linear-gradient(to bottom left, transparent 0%, transparent 10%, #06012e 100%)',
+    background: 'linear-gradient(to bottom left, transparent 0%, transparent 10%, #0f0732 100%)',
   },
   bottomRightStrong: {
-    background: 'linear-gradient(to bottom right, transparent 0%, transparent 10%, #06012e 80%)',
+    background: 'linear-gradient(to bottom right, transparent 0%, transparent 10%, #0f0732 80%)',
   },
   bottomRightLight: {
-    background: 'linear-gradient(to bottom right, transparent 0%, transparent 10%, #06012e 100%)',
+    background: 'linear-gradient(to bottom right, transparent 0%, transparent 10%, #0f0732 100%)',
   },
 }));
 

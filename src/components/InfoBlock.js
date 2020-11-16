@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   link: {
     textDecoration: 'none',
     color: 'inherit',
@@ -13,12 +13,19 @@ const useStyles = makeStyles(() => ({
     width: '112%',
   },
   title: {
-    fontSize: '32px',
+    fontFamily: 'BarlowBold!important',
+    fontSize: '28px',
     textAlign: 'left',
+    [theme.breakpoints.down('md')]: {
+      fontSize: '24px',
+    },
   },
   text: {
-    fontSize: '16px',
+    fontSize: '20px',
     textAlign: 'left',
+    [theme.breakpoints.down('md')]: {
+      fontSize: '18px',
+    },
   },
 }));
 

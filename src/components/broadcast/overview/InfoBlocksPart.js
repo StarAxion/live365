@@ -9,8 +9,8 @@ import InfoBlock from '../../InfoBlock';
 const useStyles = makeStyles((theme) => ({
   root: {
     textAlign: 'center',
-    color: '#010101',
-    background: '#fefeff',
+    color: '#020104',
+    background: '#F0EFF3',
   },
   container: {
     [theme.breakpoints.down('xl')]: {
