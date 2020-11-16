@@ -18,6 +18,9 @@ const useStyles = makeStyles((theme) => ({
   },
   logo: {
     maxWidth: '114px',
+    [theme.breakpoints.down('xs')]: {
+      maxWidth: '100px',
+    },
   },
   links: {
     '& > * + *': {
@@ -53,7 +56,7 @@ const Header = (props) => {
         <Grid container justify="center">
           <Grid item xs={12} xl={8}>
             <Toolbar>
-              <Box flexGrow={1}>
+              <Box flexGrow={1} display="flex" alignItems="center">
                 <Link href="/">
                   <img src="../img/logo.png" alt="logo" className={classes.logo} />
                 </Link>

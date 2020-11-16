@@ -25,15 +25,6 @@
   url('../assets/fonts/barlow/woff2/Barlow-Bold.woff2') format('woff2');
 }
 
-@font-face { 
-  font-family: 'BarlowThin'; 
-  font-style: normal; 
-  font-weight: normal;
-  src: local('BarlowThin'), 
-  url('../assets/fonts/barlow/woff/Barlow-Thin.woff') format('woff'), 
-  url('../assets/fonts/barlow/woff2/Barlow-Thin.woff2') format('woff2');
-}
-
 html {
   overflow-x: hidden;
 }
@@ -42,10 +33,6 @@ body {
   margin: 0;
   font-family: 'Barlow', 'Roboto', sans-serif;
   overflow-x: hidden;
-}
-
-* {
-  font-family: 'Barlow', 'Roboto', sans-serif!important;
 }
 
 a span,

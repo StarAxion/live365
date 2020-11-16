@@ -21,6 +21,9 @@ const useStyles = makeStyles((theme) => ({
       [theme.breakpoints.down('sm')]: {
         marginLeft: theme.spacing(3),
       },
+      [theme.breakpoints.down('xs')]: {
+        marginLeft: theme.spacing(2),
+      },
     },
   },
   link: {
