@@ -71,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: theme.spacing(2),
     },
   },
-  footer: {
+  footerBottomPart: {
     marginTop: '62px',
     textAlign: "right",
     [theme.breakpoints.down('md')]: {
@@ -191,7 +191,7 @@ const Footer = () => {
           </Box>
 
 
-          <Box className={classes.footer}>
+          <Box className={classes.footerBottomPart}>
             <Typography variant="body2" className={classes.copyright}>&copy; 2020 Live365</Typography>
             <Typography className={classes.links}>
               <Link href="/" className={classes.link}>
