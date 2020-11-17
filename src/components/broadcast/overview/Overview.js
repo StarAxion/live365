@@ -49,6 +49,7 @@ const useStyles = makeStyles((theme) => ({
   menuButton: {
     marginLeft: '-10px',
     padding: '0 0 0 10px',
+    fontFamily: 'BarlowBold',
     fontSize: '18px',
     textTransform: 'none',
     color: 'inherit',
@@ -60,6 +61,7 @@ const useStyles = makeStyles((theme) => ({
     height: '40px',
     marginRight: '50px',
     padding: '0 15px',
+    fontFamily: 'BarlowSemiCondensedBold',
     fontSize: '20px',
     textTransform: 'none',
     background: '#fd631c',

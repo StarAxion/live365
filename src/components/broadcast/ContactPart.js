@@ -88,6 +88,7 @@ const useStyles = makeStyles((theme) => ({
   button: {
     width: '100%',
     height: '57px',
+    fontFamily: 'BarlowBold',
     fontSize: '20px',
     textTransform: 'none',
     color: '#ffffff',

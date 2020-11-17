@@ -1,7 +1,7 @@
 @font-face { 
   font-family: 'Barlow'; 
   font-style: normal; 
-  font-weight: normal;
+  font-weight: 400;
   src: local('Barlow'), 
   url('../assets/fonts/barlow/woff/Barlow-Regular.woff') format('woff'), 
   url('../assets/fonts/barlow/woff2/Barlow-Regular.woff2') format('woff2');
@@ -10,16 +10,25 @@
 @font-face { 
   font-family: 'BarlowBold'; 
   font-style: normal; 
-  font-weight: normal;
+  font-weight: 700;
   src: local('BarlowBold'), 
   url('../assets/fonts/barlow/woff/Barlow-Bold.woff') format('woff'), 
   url('../assets/fonts/barlow/woff2/Barlow-Bold.woff2') format('woff2');
 }
 
 @font-face { 
+  font-family: 'BarlowSemiCondensedBold'; 
+  font-style: normal; 
+  font-weight: 700;
+  src: local('BarlowSemiCondensedBold'), 
+  url('../assets/fonts/barlow/woff/BarlowSemiCondensed-Bold.woff') format('woff'), 
+  url('../assets/fonts/barlow/woff2/BarlowSemiCondensed-Bold.woff2') format('woff2');
+}
+
+@font-face { 
   font-family: 'BarlowExtraBold'; 
   font-style: normal; 
-  font-weight: normal;
+  font-weight: 800;
   src: local('BarlowExtraBold'), 
   url('../assets/fonts/barlow/woff/Barlow-ExtraBold.woff') format('woff'), 
   url('../assets/fonts/barlow/woff2/Barlow-ExtraBold.woff2') format('woff2');
@@ -33,9 +42,4 @@ body {
   margin: 0;
   font-family: 'Barlow', 'Roboto', sans-serif;
   overflow-x: hidden;
-}
-
-a span,
-button span {
-  font-family: 'BarlowBold';
 }

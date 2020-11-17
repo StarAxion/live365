@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
     width: 'inherit',
     height: '65px',
     padding: '0 40px',
+    fontFamily: 'BarlowBold',
     fontSize: '20px',
     textTransform: 'none',
     color: '#ffffff',
