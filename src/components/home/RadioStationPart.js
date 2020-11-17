@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
+import Hidden from '@material-ui/core/Hidden';
 import Grid from '@material-ui/core/Grid';
 import TitlesBlock from '../TitlesBlock';
 import InfoBlock from '../InfoBlock';
@@ -68,7 +69,7 @@ const RadioStationPart = () => {
     <div className={classes.root}>
       <Container fixed>
         <Box className={classes.outerContainer}>
-          <Box display={{ xs: 'block', md: 'none' }}>
+          <Hidden mdUp>
             <TitlesBlock
               width='100%'
               margin='0'
@@ -125,11 +126,10 @@ const RadioStationPart = () => {
                 Learn more
               </ButtonLink>
             </Box>
-          </Box>
+          </Hidden>
 
 
-
-          <Box display={{ xs: 'none', md: 'block' }}>
+          <Hidden smDown>
             <Grid container wrap="nowrap" className={classes.innerContainer}>
               <Grid item md={6} className={classes.leftHalf}>
                 <TitlesBlock
@@ -162,7 +162,6 @@ const RadioStationPart = () => {
                 </Box>
               </Grid>
 
-
               <Grid item md={6} className={classes.rightHalf}>
                 <InfoBlock
                   mb={{ md: '30px', lg: '98px' }}
@@ -187,7 +186,7 @@ const RadioStationPart = () => {
                 />
               </Grid>
             </Grid>
-          </Box>
+          </Hidden>
         </Box>
       </Container>
     </div >

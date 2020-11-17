@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import Toolbar from '@material-ui/core/Toolbar';
 import Box from '@material-ui/core/Box';
 import Link from '@material-ui/core/Link';
+import Hidden from '@material-ui/core/Hidden';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -64,11 +65,13 @@ const Header = (props) => {
                 </Link>
               </Box>
               {props.children}
-              <Box component="span" className={classes.separator} display={{ xs: 'none', sm: 'block' }}>&#124;</Box>
-              <Box className={classes.links} display={{ xs: 'none', sm: 'block' }}>
-                <Link href="/signup" className={classes.link}>Sign up</Link>
-                <Link href="/login" className={classes.link}>Log in</Link>
-              </Box>
+              <Hidden xsDown>
+                <Box component="span" className={classes.separator}>&#124;</Box>
+                <Box className={classes.links}>
+                  <Link href="/signup" className={classes.link}>Sign up</Link>
+                  <Link href="/login" className={classes.link}>Log in</Link>
+                </Box>
+              </Hidden>
             </Toolbar>
           </Grid>
         </Grid>

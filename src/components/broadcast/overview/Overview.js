@@ -1,9 +1,10 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import Hidden from '@material-ui/core/Hidden';
 import Box from '@material-ui/core/Box';
-import Link from '@material-ui/core/Link';
 import Button from '@material-ui/core/Button';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Link from '@material-ui/core/Link';
 import Header from '../../Header';
 import TopPart from './TopPart';
 import BlocksPart from './BlocksPart';
@@ -17,7 +18,10 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     '& > * + *': {
-      marginLeft: '44px',
+      marginLeft: theme.spacing(5.5),
+      [theme.breakpoints.down('md')]: {
+        marginLeft: theme.spacing(4.5),
+      },
       [theme.breakpoints.down('sm')]: {
         marginLeft: theme.spacing(3),
       },
@@ -69,7 +73,7 @@ const Overview = () => {
   return (
     <>
       <Header>
-        <Box display={{ xs: 'none', md: 'block' }}>
+        <Hidden smDown>
           <Box className={classes.links}>
             <Box component="span" className={classes.active}>Overview</Box>
 
@@ -93,7 +97,7 @@ const Overview = () => {
 
             <Link href="/" className={classes.link}>Pricing</Link>
 
-            <Box display={{ md: 'none', lg: 'block' }}>
+            <Hidden mdDown>
               <Button
                 variant="contained"
                 color="secondary"
@@ -103,16 +107,16 @@ const Overview = () => {
               >
                 Try it free
             </Button>
-            </Box>
+            </Hidden>
           </Box>
-        </Box>
+        </Hidden>
 
-        <Box display={{ xs: 'block', md: 'none' }}>
+        <Hidden mdUp>
           <Box className={classes.links}>
             <Link href="/listen" className={classes.link}>Listen</Link>
             <Link href="/broadcast" className={classes.link}>Broadcast</Link>
           </Box>
-        </Box>
+        </Hidden>
       </Header>
 
       <main>

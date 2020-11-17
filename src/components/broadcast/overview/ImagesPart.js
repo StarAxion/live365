@@ -1,8 +1,9 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
+import Hidden from '@material-ui/core/Hidden';
+import Grid from '@material-ui/core/Grid';
 import TitlesBlock from '../../TitlesBlock';
 import ImageLink from '../../ImageLink';
 
@@ -63,7 +64,7 @@ const ImagesPart = () => {
             subtitle='Live365 has helped thousands of broadcasters get online since 1999. Learn more about how Live365 can work for your organization, business, or passion.'
           />
 
-          <Box display={{ xs: 'block', md: 'none' }}>
+          <Hidden mdUp>
             <Grid container justify="center">
               <Grid item xs={6} sm={4} className={classes.imageBlock}>
                 <ImageLink
@@ -126,9 +127,9 @@ const ImagesPart = () => {
                 />
               </Grid>
             </Grid>
-          </Box>
+          </Hidden>
 
-          <Box display={{ xs: 'none', md: 'block' }}>
+          <Hidden smDown>
             <Grid container justify="center" wrap="nowrap">
               <Grid item md={2} className={classes.imageBlock}>
                 <ImageLink
@@ -194,7 +195,7 @@ const ImagesPart = () => {
                 />
               </Grid>
             </Grid>
-          </Box>
+          </Hidden>
         </Box>
       </Container>
     </div >

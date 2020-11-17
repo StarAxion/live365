@@ -1,5 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import Hidden from '@material-ui/core/Hidden';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
@@ -63,7 +64,7 @@ const TopPart = () => {
   return (
     <div className={classes.root}>
       <div className={classes.outerContainer}>
-        <Box display={{ xs: 'none', md: 'block' }}>
+        <Hidden smDown>
           <ColoredBlock size={{ md: '139px', lg: '190px', xl: '228px' }} color='#FD631C' left={{ md: '70px', lg: '80px', xl: '290px' }} bottom={{ md: '-45px', lg: '-83px', xl: '-100px' }}>
             <TopRightLight />
           </ColoredBlock>
@@ -88,9 +89,9 @@ const TopPart = () => {
           <ColoredBlock size={{ md: '139px', lg: '190px', xl: '228px' }} color='#FD631C' right={{ md: '62px', lg: '70px', xl: '276px' }} bottom={{ md: '60px', lg: '60px', xl: '72px' }}>
             <TopLeftLight />
           </ColoredBlock>
-        </Box>
+        </Hidden>
 
-        <Box display={{ xs: 'none', sm: 'block', md: 'none' }}>
+        <Hidden xsDown mdUp>
           <ColoredBlock size='139px' color='#FD631C' left='20px' bottom='-50px'>
             <TopRightLight />
           </ColoredBlock>
@@ -106,9 +107,9 @@ const TopPart = () => {
           <ColoredBlock size='139px' color='#FD631C' right='17px' bottom='56px'>
             <TopLeftLight />
           </ColoredBlock>
-        </Box>
+        </Hidden>
 
-        <Box display={{ xs: 'block', sm: 'none' }}>
+        <Hidden smUp>
           <ColoredBlock size='139px' color='#FD631C' left='-22px' bottom='-40px'>
             <TopRightLight />
           </ColoredBlock>
@@ -121,7 +122,7 @@ const TopPart = () => {
           <ColoredBlock size='36px' color='#9CDD07' right='-15px' bottom='97px'>
             <TopLeftLight />
           </ColoredBlock>
-        </Box>
+        </Hidden>
 
 
         <div className={classes.innerContainer}>

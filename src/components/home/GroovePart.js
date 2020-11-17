@@ -1,8 +1,9 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
+import Hidden from '@material-ui/core/Hidden';
+import Grid from '@material-ui/core/Grid';
 import TitlesBlock from '../TitlesBlock';
 import ImageLink from '../ImageLink';
 import ButtonLink from '../ButtonLink';
@@ -84,7 +85,7 @@ const GroovePart = () => {
           />
 
 
-          <Box display={{ xs: 'block', sm: 'none' }}>
+          <Hidden smUp>
             <Grid container justify="center">
               <Grid item xs={6} className={classes.bigBlock}>
                 <ImageLink link='/' image='img/bcr.png' />
@@ -99,10 +100,10 @@ const GroovePart = () => {
                 <ImageLink link='/' image='img/bcr.png' />
               </Grid>
             </Grid>
-          </Box>
+          </Hidden>
 
 
-          <Box display={{ xs: 'none', sm: 'block', lg: 'none' }}>
+          <Hidden xsDown lgUp>
             <Grid container justify="center" wrap="nowrap">
               <Grid item sm={3} md={2} className={classes.bigBlock}>
                 <ImageLink link='/' image='img/bcr.png' />
@@ -150,10 +151,10 @@ const GroovePart = () => {
                 <ImageLink link='/' image='img/blues.png' />
               </Grid>
             </Grid>
-          </Box>
+          </Hidden>
 
 
-          <Box display={{ xs: 'none', lg: 'block' }}>
+          <Hidden mdDown>
             <Grid container justify="center" wrap="nowrap">
               <Grid item lg={3} className={classes.bigBlock}>
                 <ImageLink link='/' image='img/bcr.png' />
@@ -210,10 +211,10 @@ const GroovePart = () => {
                 <ImageLink link='/' image='img/blues.png' />
               </Grid>
             </Grid>
-          </Box>
+          </Hidden>
 
 
-          <Box display={{ xs: 'none', xl: 'block' }}>
+          <Hidden lgDown>
             <Grid container justify="center" wrap="nowrap">
               <Grid item xl={3} className={classes.wideBlock}>
                 <ImageLink link='/' image='img/blues.png' />
@@ -228,7 +229,7 @@ const GroovePart = () => {
                 <ImageLink link='/' image='img/blues.png' />
               </Grid>
             </Grid>
-          </Box>
+          </Hidden>
 
 
           <ButtonLink

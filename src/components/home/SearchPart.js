@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import Hidden from '@material-ui/core/Hidden';
 import Container from '@material-ui/core/Container';
-import Box from '@material-ui/core/Box';
 import Paper from '@material-ui/core/Paper';
 import InputBase from '@material-ui/core/InputBase';
 import IconButton from '@material-ui/core/IconButton';
@@ -86,7 +86,7 @@ const SearchPart = () => {
   return (
     <div className={classes.root}>
       <div className={classes.outerContainer}>
-        <Box display={{ xs: 'none', lg: 'block' }}>
+        <Hidden mdDown>
           <ColoredBlock size={{ lg: '228px', xl: '255px' }} color='#284CFF' left={{ lg: '-102px', xl: '67px' }} top={{ lg: '342px', xl: '355px' }}>
             <TopLeftStrong />
           </ColoredBlock>
@@ -118,10 +118,10 @@ const SearchPart = () => {
           <ColoredBlock size={{ lg: '97px', xl: '109px' }} color='#CD1A1A' right={{ lg: '185px', xl: '515px' }} bottom={{ lg: '142px', xl: '205px' }}>
             <TopLeftLight />
           </ColoredBlock>
-        </Box>
+        </Hidden>
 
 
-        <Box display={{ xs: 'none', sm: 'block', lg: 'none' }}>
+        <Hidden xsDown lgUp>
           <ColoredBlock size={{ sm: '140px', md: '228px' }} color='#284CFF' left={{ sm: '-67px', md: '-155px' }} bottom={{ sm: '48px', md: '80px' }}>
             <TopLeftStrong />
           </ColoredBlock>
@@ -135,7 +135,7 @@ const SearchPart = () => {
           <ColoredBlock size={{ sm: '74px', md: '123px' }} color='#D040EA' right={{ sm: '26px', md: '58px' }} top={{ sm: '37px', md: '132px' }}>
             <TopRightLight />
           </ColoredBlock>
-        </Box>
+        </Hidden>
 
         <div className={classes.innerContainer}>
           <Container fixed>
