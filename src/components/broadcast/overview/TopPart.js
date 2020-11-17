@@ -138,7 +138,6 @@ const TopPart = () => {
               >
                 <Typography
                   variant="h2"
-                  color="inherit"
                   className={classes.title}
                 >
                   The easiest way to build a fully-licensed online radio station.

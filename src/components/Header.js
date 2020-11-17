@@ -25,6 +25,16 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: '100px',
     },
   },
+  separator: {
+    marginLeft: theme.spacing(4),
+    marginRight: theme.spacing(4),
+    fontSize: '29px',
+    color: '#656565',
+    [theme.breakpoints.down('md')]: {
+      marginLeft: theme.spacing(3),
+      marginRight: theme.spacing(3),
+    },
+  },
   links: {
     '& > * + *': {
       marginLeft: theme.spacing(4),
@@ -37,16 +47,6 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'BarlowBold',
     fontSize: '18px',
     color: 'inherit',
-  },
-  separator: {
-    marginLeft: theme.spacing(4),
-    marginRight: theme.spacing(4),
-    fontSize: '29px',
-    color: '#656565',
-    [theme.breakpoints.down('md')]: {
-      marginLeft: theme.spacing(3),
-      marginRight: theme.spacing(3),
-    },
   },
 }));
 

@@ -38,15 +38,16 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: '24px',
     },
   },
+  logo: {
+    maxWidth: "102px",
+  },
   footerInfoText: {
     lineHeight: '20px',
     fontSize: '16px',
   },
-  logo: {
-    maxWidth: "102px",
-  },
   socialLink: {
     marginRight: theme.spacing(3),
+    color: 'inherit',
   },
   footerSection: {
     display: 'flex',
@@ -119,14 +120,14 @@ const Footer = () => {
                     Live 365 is the easiest way to create an online radio station and discover hundreds of stations from every style of music and talk.
                   </Typography>
                 </Box>
-                <Box className={classes.socialLinks}>
-                  <Link href="https://www.facebook.com" target="_blank" rel="noopener" color="inherit" className={classes.socialLink}>
+                <Box>
+                  <Link href="https://www.facebook.com" target="_blank" rel="noopener" className={classes.socialLink}>
                     <FacebookIcon fontSize="large" />
                   </Link>
-                  <Link href="https://www.twitter.com" target="_blank" rel="noopener" color="inherit" className={classes.socialLink}>
+                  <Link href="https://www.twitter.com" target="_blank" rel="noopener" className={classes.socialLink}>
                     <TwitterIcon fontSize="large" />
                   </Link>
-                  <Link href="https://www.instagram.com" target="_blank" rel="noopener" color="inherit" className={classes.socialLink}>
+                  <Link href="https://www.instagram.com" target="_blank" rel="noopener" className={classes.socialLink}>
                     <InstagramIcon fontSize="large" />
                   </Link>
                 </Box>

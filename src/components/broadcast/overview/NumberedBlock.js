@@ -5,19 +5,20 @@ import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
+  container: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    margin: '0 auto',
+  },
   block: {
-    background: '#e2e1e7',
+    background: '#E1E0E6',
     borderRadius: '5px',
   },
   link: {
     display: 'block',
     width: 'inherit',
     height: 'inherit',
-  },
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    margin: '0 auto',
   },
   number: {
     lineHeight: '55px',
@@ -40,13 +41,12 @@ const NumberedBlock = (props) => {
 
   return (
     <Box
-      width={props.containerWidth}
+      maxWidth={props.containerWidth}
       className={classes.container}
     >
       <Box
         width={props.size}
         height={props.size}
-        ml={props.ml}
         mb={props.mb}
         className={classes.block}
         alignSelf={props.align}

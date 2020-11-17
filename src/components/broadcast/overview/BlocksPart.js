@@ -45,11 +45,10 @@ const BlocksPart = () => {
           <Grid container justify="space-between">
             <Grid item xs={12} md={4} className={classes.block}>
               <NumberedBlock
+                containerWidth={{ xs: '303px', md: '284px', lg: '333px' }}
                 size={{ xs: '193px', md: '244px', lg: '333px' }}
-                ml={{ xs: '55px', md: 0 }}
                 mb={{ xs: '40px', md: '58px', lg: '88px' }}
                 align={{ xs: 'left', md: 'center' }}
-                containerWidth={{ xs: '288px', md: '284px', lg: '333px' }}
                 numberWidth={{ xs: '55px', md: '50px', lg: '60px' }}
                 number='1'
                 text='Upload tracks to your library or hook up your existing streaming software.'
@@ -58,11 +57,10 @@ const BlocksPart = () => {
 
             <Grid item xs={12} md={4} className={classes.block}>
               <NumberedBlock
+                containerWidth={{ xs: '303px', md: '284px', lg: '333px' }}
                 size={{ xs: '193px', md: '244px', lg: '333px' }}
-                ml={{ xs: '55px', md: 0 }}
                 mb={{ xs: '40px', md: '58px', lg: '88px' }}
                 align={{ xs: 'left', md: 'center' }}
-                containerWidth={{ xs: '288px', md: '284px', lg: '333px' }}
                 numberWidth={{ xs: '55px', md: '50px', lg: '60px' }}
                 number='2'
                 text='Schedule life events or curated playlists, and let AutoDJ fill in the gaps with a DMCA compliant mix.'
@@ -71,11 +69,10 @@ const BlocksPart = () => {
 
             <Grid item xs={12} md={4} className={classes.block}>
               <NumberedBlock
+                containerWidth={{ xs: '303px', md: '284px', lg: '333px' }}
                 size={{ xs: '193px', md: '244px', lg: '333px' }}
-                ml={{ xs: '55px', md: 0 }}
                 mb={{ xs: '40px', md: '58px', lg: '88px' }}
                 align={{ xs: 'left', md: 'center' }}
-                containerWidth={{ xs: '288px', md: '284px', lg: '333px' }}
                 numberWidth={{ xs: '55px', md: '50px', lg: '60px' }}
                 number='3'
                 text='Visualize listening statistics, monetize your shows, and rest easy - we`ll handle this licensing &amp; reporting.'

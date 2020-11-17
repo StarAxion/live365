@@ -72,12 +72,6 @@ const useStyles = makeStyles((theme) => ({
     padding: '10px 15px 10px 0',
     color: '#f1f0f5',
   },
-  button: {
-    padding: '20px 40px',
-    textTransform: 'none',
-    color: '#ffffff',
-    background: '#234bff',
-  },
 }));
 
 const SearchPart = () => {
