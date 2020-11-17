@@ -1,9 +1,14 @@
 import React from 'react';
+import Typography from '@material-ui/core/Typography';
 
 const Listen = () => {
 
   return (
-    <h1>Listen</h1>
+    <Typography
+      variant="h1"
+    >
+      Listen
+    </Typography>
   )
 }
 

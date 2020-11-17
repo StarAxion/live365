@@ -11,8 +11,6 @@ import Footer from '../Footer';
 
 const useStyles = makeStyles((theme) => ({
   links: {
-    fontFamily: 'BarlowBold!important',
-    fontSize: '18px',
     '& > * + *': {
       marginLeft: theme.spacing(4),
       [theme.breakpoints.down('md')]: {
@@ -24,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   link: {
-    fontFamily: 'BarlowBold!important',
+    fontFamily: 'BarlowBold',
     fontSize: '18px',
     color: 'inherit',
   },

@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     width: '112%',
   },
   title: {
-    fontFamily: 'BarlowBold!important',
+    fontFamily: 'BarlowBold',
     fontSize: '28px',
     textAlign: 'left',
     [theme.breakpoints.down('md')]: {

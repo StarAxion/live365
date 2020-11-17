@@ -22,27 +22,25 @@ const useStyles = makeStyles((theme) => ({
   },
   innerContainer: {
     [theme.breakpoints.down('xl')]: {
-      padding: '190px 0 350px',
+      padding: '260px 0 350px',
     },
     [theme.breakpoints.down('lg')]: {
-      padding: '145px 0 270px',
+      padding: '215px 0 270px',
     },
     [theme.breakpoints.down('md')]: {
-      padding: '130px 0 230px',
+      padding: '200px 0 230px',
     },
     [theme.breakpoints.down('sm')]: {
-      padding: '75px 0 216px',
+      padding: '145px 0 216px',
     },
     [theme.breakpoints.down('xs')]: {
-      padding: '48px 0 225px',
+      padding: '118px 0 225px',
     },
   },
   title: {
-    position: 'relative',
-    fontFamily: 'BarlowBold!important',
+    fontFamily: 'BarlowBold',
     fontSize: '54px',
     color: 'inherit',
-    zIndex: '3',
     [theme.breakpoints.down('lg')]: {
       fontSize: '48px',
     },
@@ -72,10 +70,10 @@ const TopPart = () => {
           <ColoredBlock size={{ md: '36px', lg: '49px', xl: '59px' }} color='#9CDD07' left={{ md: '209px', lg: '270px', xl: '517px' }} bottom={{ md: '94px', lg: '107px', xl: '128px' }}>
             <TopRightLight />
           </ColoredBlock>
-          <ColoredBlock size={{ md: '75px', lg: '102px', xl: '123px' }} color='#284CFF' left={{ md: '300px', lg: '396px', xl: '668px' }} bottom={{ md: '94px', lg: '106px', xl: '128px' }} >
+          <ColoredBlock size={{ md: '75px', lg: '102px', xl: '123px' }} color='#284CFF' left={{ md: '300px', lg: '396px', xl: '668px' }} bottom={{ md: '94px', lg: '106px', xl: '128px' }}>
             <BottomRightStrong />
           </ColoredBlock>
-          <ColoredBlock size={{ md: '59px', lg: '81px', xl: '97px' }} color='#D040EA' left={{ md: '377px', lg: '500px', xl: '790px' }} bottom={{ md: '35px', lg: '26px', xl: '30px' }} >
+          <ColoredBlock size={{ md: '59px', lg: '81px', xl: '97px' }} color='#D040EA' left={{ md: '377px', lg: '500px', xl: '790px' }} bottom={{ md: '35px', lg: '26px', xl: '30px' }}>
             <TopRightLight />
           </ColoredBlock>
           <ColoredBlock size={{ md: '36px', lg: '49px', xl: '59px' }} color='#9CDD07' right={{ md: '382px', lg: '506px', xl: '800px' }} bottom={{ md: '26px', lg: '14px', xl: '17px' }}>
@@ -84,10 +82,10 @@ const TopPart = () => {
           <ColoredBlock size={{ md: '59px', lg: '81px', xl: '97px' }} color='#D040EA' right={{ md: '323px', lg: '426px', xl: '703px' }} bottom={{ md: '62px', lg: '63px', xl: '76px' }}>
             <TopRightLight />
           </ColoredBlock>
-          <ColoredBlock size={{ md: '75px', lg: '102px', xl: '123px' }} color='#284CFF' right={{ md: '200px', lg: '260px', xl: '504px' }} bottom={{ md: '-15px', lg: '-42px', xl: '-50px' }} >
+          <ColoredBlock size={{ md: '75px', lg: '102px', xl: '123px' }} color='#284CFF' right={{ md: '200px', lg: '260px', xl: '504px' }} bottom={{ md: '-15px', lg: '-42px', xl: '-50px' }}>
             <TopLeftStrong />
           </ColoredBlock>
-          <ColoredBlock size={{ md: '139px', lg: '190px', xl: '228px' }} color='#FD631C' right={{ md: '62px', lg: '70px', xl: '276px' }} bottom={{ md: '60px', lg: '60px', xl: '72px' }} >
+          <ColoredBlock size={{ md: '139px', lg: '190px', xl: '228px' }} color='#FD631C' right={{ md: '62px', lg: '70px', xl: '276px' }} bottom={{ md: '60px', lg: '60px', xl: '72px' }}>
             <TopLeftLight />
           </ColoredBlock>
         </Box>

@@ -11,10 +11,12 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   header: {
-    position: 'relative',
     color: '#ffffff',
     background: 'rgba(5, 5, 6, 0.9)',
     zIndex: '3',
+  },
+  nav: {
+    minHeight: '70px',
   },
   logo: {
     maxWidth: '114px',
@@ -31,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   link: {
-    fontFamily: 'BarlowBold!important',
+    fontFamily: 'BarlowBold',
     fontSize: '18px',
     color: 'inherit',
   },
@@ -52,10 +54,10 @@ const Header = (props) => {
 
   return (
     <header className={classes.root}>
-      <AppBar position="static" className={classes.header}>
+      <AppBar position="fixed" className={classes.header}>
         <Grid container justify="center">
           <Grid item xs={12} xl={8}>
-            <Toolbar>
+            <Toolbar className={classes.nav}>
               <Box flexGrow={1} display="flex" alignItems="center">
                 <Link href="/">
                   <img src="../img/logo.png" alt="logo" className={classes.logo} />

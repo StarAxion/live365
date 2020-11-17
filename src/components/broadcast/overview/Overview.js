@@ -27,12 +27,12 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   link: {
-    fontFamily: 'BarlowBold!important',
+    fontFamily: 'BarlowBold',
     fontSize: '18px',
     color: 'inherit',
   },
   active: {
-    fontFamily: 'BarlowBold!important',
+    fontFamily: 'BarlowBold',
     fontSize: '18px',
     paddingTop: theme.spacing(1.25),
     paddingBottom: theme.spacing(1),

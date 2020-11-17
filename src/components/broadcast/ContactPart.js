@@ -65,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   label: {
-    fontFamily: 'BarlowBold!important',
+    fontFamily: 'BarlowBold',
     fontSize: '16px',
     color: 'inherit',
   },

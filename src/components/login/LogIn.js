@@ -1,9 +1,14 @@
 import React from 'react';
+import Typography from '@material-ui/core/Typography';
 
 const LogIn = () => {
 
   return (
-    <h1>LogIn</h1>
+    <Typography
+      variant="h1"
+    >
+      LogIn
+    </Typography>
   )
 }
 

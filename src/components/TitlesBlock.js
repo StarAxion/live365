@@ -5,11 +5,9 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
   title: {
-    position: 'relative',
-    fontFamily: 'BarlowBold!important',
+    fontFamily: 'BarlowBold',
     fontSize: '65px',
     color: 'inherit',
-    zIndex: '3',
     [theme.breakpoints.down('lg')]: {
       fontSize: '54px',
     },
@@ -24,11 +22,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   subtitle: {
-    position: 'relative',
     lineHeight: '42px',
     fontSize: '28px',
     color: 'inherit',
-    zIndex: '3',
     [theme.breakpoints.down('lg')]: {
       lineHeight: '36px',
       fontSize: '24px',

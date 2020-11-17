@@ -57,14 +57,14 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   footerSectionTitle: {
-    fontFamily: 'BarlowBold!important',
+    fontFamily: 'BarlowBold',
     fontSize: '16px',
     textTransform: 'uppercase',
     color: '#94929B',
   },
   footerSectionLink: {
     marginBottom: theme.spacing(1.25),
-    fontFamily: 'BarlowBold!important',
+    fontFamily: 'BarlowBold',
     fontSize: '18px',
     color: '#ffffff',
     [theme.breakpoints.down('xs')]: {
@@ -93,7 +93,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   link: {
-    fontFamily: 'BarlowBold!important',
+    fontFamily: 'BarlowBold',
     fontSize: '16px',
     color: '#94929b',
   }
@@ -193,20 +193,20 @@ const Footer = () => {
 
           <Box className={classes.footerBottomPart}>
             <Typography variant="body2" className={classes.copyright}>&copy; 2020 Live365</Typography>
-            <Typography className={classes.links}>
+            <Box className={classes.links}>
               <Link href="/" className={classes.link}>
                 Terms
-            </Link>
+              </Link>
               <Link href="/" className={classes.link}>
                 DMCA
-            </Link>
+              </Link>
               <Link href="/" className={classes.link}>
                 Privacy
-            </Link>
+              </Link>
               <Link href="/" className={classes.link}>
                 Cookies
-            </Link>
-            </Typography>
+              </Link>
+            </Box>
           </Box>
         </Box>
       </Container>
