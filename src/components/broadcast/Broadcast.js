@@ -5,6 +5,7 @@ import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
 import Header from '../Header';
 import Footer from '../Footer';
+import FooterSection from '../FooterSection';
 
 const useStyles = makeStyles((theme) => ({
   links: {
@@ -25,6 +26,10 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'BarlowBold',
     fontSize: '18px',
     color: 'inherit',
+  },
+  footerSectionTitle: {
+    fontSize: '18px',
+    color: '#ffffff',
   },
 }));
 
@@ -97,7 +102,88 @@ const Broadcast = () => {
         }
       </main>
 
-      <Footer />
+      <Footer
+        containerPadding='75px 0 85px'
+        justifyFooterSections='flex-end'
+        bottomPartDirection={{ xs: 'column', sm: 'row' }}
+        copyrightOrder={{ xs: 1, sm: 2 }}
+        ml={{ xs: 0, sm: 2 }}
+        mb={{ xs: 1, sm: 0 }}
+        linksOrder={{ xs: 2, sm: 1 }}
+      >
+        <FooterSection
+          pr='60px'
+          title={
+            <Typography variant="h6" className={classes.footerSectionTitle}>
+              Listeners
+            </Typography>
+          }
+        >
+          <Link href="/">
+            Where to Listen
+          </Link>
+          <Link href="/">
+            Support
+          </Link>
+        </FooterSection>
+
+        <FooterSection
+          pr='60px'
+          title={
+            <Typography variant="h6" className={classes.footerSectionTitle}>
+              Broadcasters
+            </Typography>
+          }
+        >
+          <Link href="/">
+            Start a Station
+          </Link>
+          <Link href="/">
+            Resources
+          </Link>
+          <Link href="/">
+            Support
+          </Link>
+          <Link href="/">
+            Addons
+          </Link>
+        </FooterSection>
+
+        <FooterSection
+          pr='60px'
+          title={
+            <Typography variant="h6" className={classes.footerSectionTitle}>
+              Podcasters
+            </Typography>
+          }
+        >
+          <Link href="/">
+            Start a Podcast
+          </Link>
+          <Link href="/">
+            Support
+          </Link>
+        </FooterSection>
+
+        <FooterSection
+          pr='0'
+          title={
+            <Typography variant="h6" className={classes.footerSectionTitle}>
+              Company
+            </Typography>
+          }
+        >
+          <Link href="/" className={classes.footerSectionLink}>
+            About
+          </Link>
+          <Link href="/" className={classes.footerSectionLink}>
+            Blog
+          </Link>
+          <Link href="/" className={classes.footerSectionLink}>
+            Jobs
+          </Link>
+        </FooterSection>
+      </Footer>
     </>
   )
 }
