@@ -69,61 +69,61 @@ const ImagesPart = () => {
               <Grid item xs={6} sm={4} className={classes.imageBlock}>
                 <ImageLink
                   link='/'
-                  image='img/blues.png'
+                  image='../img/blues.png'
                 />
               </Grid>
               <Grid item xs={6} sm={4} className={classes.imageBlock}>
                 <ImageLink
                   link='/'
-                  image='img/blues.png'
+                  image='../img/blues.png'
                 />
               </Grid>
               <Grid item xs={6} sm={4} className={classes.imageBlock}>
                 <ImageLink
                   link='/'
-                  image='img/blues.png'
+                  image='../img/blues.png'
                 />
               </Grid>
               <Grid item xs={6} sm={4} className={classes.imageBlock}>
                 <ImageLink
                   link='/'
-                  image='img/blues.png'
+                  image='../img/blues.png'
                 />
               </Grid>
               <Grid item xs={6} sm={4} className={classes.imageBlock}>
                 <ImageLink
                   link='/'
-                  image='img/blues.png'
+                  image='../img/blues.png'
                 />
               </Grid>
               <Grid item xs={6} sm={4} className={classes.imageBlock}>
                 <ImageLink
                   link='/'
-                  image='img/blues.png'
+                  image='../img/blues.png'
                 />
               </Grid>
               <Grid item xs={6} sm={4} className={classes.imageBlock}>
                 <ImageLink
                   link='/'
-                  image='img/blues.png'
+                  image='../img/blues.png'
                 />
               </Grid>
               <Grid item xs={6} sm={4} className={classes.imageBlock}>
                 <ImageLink
                   link='/'
-                  image='img/blues.png'
+                  image='../img/blues.png'
                 />
               </Grid>
               <Grid item xs={6} sm={4} className={classes.imageBlock}>
                 <ImageLink
                   link='/'
-                  image='img/blues.png'
+                  image='../img/blues.png'
                 />
               </Grid>
               <Grid item xs={6} sm={4} className={classes.imageBlock}>
                 <ImageLink
                   link='/'
-                  image='img/blues.png'
+                  image='../img/blues.png'
                 />
               </Grid>
             </Grid>
@@ -134,31 +134,31 @@ const ImagesPart = () => {
               <Grid item md={2} className={classes.imageBlock}>
                 <ImageLink
                   link='/'
-                  image='img/blues.png'
+                  image='../img/blues.png'
                 />
               </Grid>
               <Grid item md={2} className={classes.imageBlock}>
                 <ImageLink
                   link='/'
-                  image='img/blues.png'
+                  image='../img/blues.png'
                 />
               </Grid>
               <Grid item md={2} className={classes.imageBlock}>
                 <ImageLink
                   link='/'
-                  image='img/blues.png'
+                  image='../img/blues.png'
                 />
               </Grid>
               <Grid item md={2} className={classes.imageBlock}>
                 <ImageLink
                   link='/'
-                  image='img/blues.png'
+                  image='../img/blues.png'
                 />
               </Grid>
               <Grid item md={2} className={classes.imageBlock}>
                 <ImageLink
                   link='/'
-                  image='img/blues.png'
+                  image='../img/blues.png'
                 />
               </Grid>
             </Grid>
@@ -167,31 +167,31 @@ const ImagesPart = () => {
               <Grid item md={2} className={classes.imageBlock}>
                 <ImageLink
                   link='/'
-                  image='img/blues.png'
+                  image='../img/blues.png'
                 />
               </Grid>
               <Grid item md={2} className={classes.imageBlock}>
                 <ImageLink
                   link='/'
-                  image='img/blues.png'
+                  image='../img/blues.png'
                 />
               </Grid>
               <Grid item md={2} className={classes.imageBlock}>
                 <ImageLink
                   link='/'
-                  image='img/blues.png'
+                  image='../img/blues.png'
                 />
               </Grid>
               <Grid item md={2} className={classes.imageBlock}>
                 <ImageLink
                   link='/'
-                  image='img/blues.png'
+                  image='../img/blues.png'
                 />
               </Grid>
               <Grid item md={2} className={classes.imageBlock}>
                 <ImageLink
                   link='/'
-                  image='img/blues.png'
+                  image='../img/blues.png'
                 />
               </Grid>
             </Grid>

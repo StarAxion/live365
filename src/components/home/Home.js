@@ -33,7 +33,7 @@ const Home = () => {
 
   return (
     <>
-      <Header>
+      <Header ml={{ sm: 3, lg: 4 }}>
         <Box className={classes.links}>
           <Link href="/listen" className={classes.link}>Listen</Link>
           <Link href="/broadcast" className={classes.link}>Broadcast</Link>

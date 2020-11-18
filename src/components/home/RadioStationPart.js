@@ -81,21 +81,21 @@ const RadioStationPart = () => {
             <Box maxWidth={{ sm: '290px' }}>
               <InfoBlock
                 mb={{ xs: '55px', sm: '30px' }}
-                link='/'
+                link='/broadcast/audience'
                 icon='img/icons/audience.png'
                 title='Audience'
                 text='Access listeners across Live365`s website, mobile applications, home devices, and more.'
               />
               <InfoBlock
                 mb={{ xs: '55px', sm: '30px' }}
-                link='/'
+                link='/broadcast/licensing'
                 icon='img/icons/licensing.png'
                 title='Licensing'
                 text='Music licensing coverage in the United States, United Kingdom, and Canada.'
               />
               <InfoBlock
                 mb='0'
-                link='/'
+                link='/broadcast/monetization'
                 icon='img/icons/monetization.png'
                 title='Monetization'
                 text='Loin Live365`s monetization program to earn revenue and lower your streaming costs.'

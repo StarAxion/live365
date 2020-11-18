@@ -74,7 +74,7 @@ const Overview = () => {
 
   return (
     <>
-      <Header>
+      <Header ml={{ sm: 3, lg: 4 }}>
         <Hidden smDown>
           <Box className={classes.links}>
             <Box component="span" className={classes.active}>Overview</Box>
@@ -108,7 +108,7 @@ const Overview = () => {
                 href="/"
               >
                 Try it free
-            </Button>
+                </Button>
             </Hidden>
           </Box>
         </Hidden>

@@ -26,22 +26,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   separator: {
-    marginLeft: theme.spacing(4),
-    marginRight: theme.spacing(4),
     fontSize: '29px',
     color: '#656565',
-    [theme.breakpoints.down('md')]: {
-      marginLeft: theme.spacing(3),
-      marginRight: theme.spacing(3),
-    },
-  },
-  links: {
-    '& > * + *': {
-      marginLeft: theme.spacing(4),
-      [theme.breakpoints.down('md')]: {
-        marginLeft: theme.spacing(3),
-      },
-    },
   },
   link: {
     fontFamily: 'BarlowBold',
@@ -66,9 +52,11 @@ const Header = (props) => {
               </Box>
               {props.children}
               <Hidden xsDown>
-                <Box component="span" className={classes.separator}>&#124;</Box>
-                <Box className={classes.links}>
+                <Box component="span" ml={props.ml} className={classes.separator}>&#124;</Box>
+                <Box ml={props.ml}>
                   <Link href="/signup" className={classes.link}>Sign up</Link>
+                </Box>
+                <Box ml={props.ml}>
                   <Link href="/login" className={classes.link}>Log in</Link>
                 </Box>
               </Hidden>

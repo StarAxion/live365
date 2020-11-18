@@ -4,6 +4,7 @@ import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import '../styles/App.css';
 import Home from './home/Home';
 import Listen from './listen/Listen';
+import Overview from './broadcast/overview/Overview';
 import Broadcast from './broadcast/Broadcast';
 import SignUp from './signup/SignUp';
 import LogIn from './login/LogIn';
@@ -24,7 +25,7 @@ const App = () => {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/listen' component={Listen} />
-          <Route exact path='/broadcast' component={Broadcast} />
+          <Route exact path='/broadcast' component={Overview} />
           <Route exact path='/broadcast/am-fm' component={Broadcast} />
           <Route exact path='/broadcast/audience' component={Broadcast} />
           <Route exact path='/broadcast/licensing' component={Broadcast} />
