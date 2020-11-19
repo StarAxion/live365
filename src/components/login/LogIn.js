@@ -6,6 +6,7 @@ const LogIn = () => {
   return (
     <Typography
       variant="h1"
+      color="primary"
     >
       LogIn
     </Typography>

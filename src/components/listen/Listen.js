@@ -6,6 +6,7 @@ const Listen = () => {
   return (
     <Typography
       variant="h1"
+      color="primary"
     >
       Listen
     </Typography>

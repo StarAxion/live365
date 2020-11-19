@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import Hidden from '@material-ui/core/Hidden';
 import Box from '@material-ui/core/Box';
@@ -35,14 +36,12 @@ const useStyles = makeStyles((theme) => ({
   link: {
     fontFamily: 'BarlowBold',
     fontSize: '18px',
+    textDecoration: 'none',
     color: 'inherit',
   },
   active: {
-    fontFamily: 'BarlowBold',
-    fontSize: '18px',
-    paddingTop: theme.spacing(1.25),
-    paddingBottom: theme.spacing(1),
-    color: 'inherit',
+    paddingTop: theme.spacing(1),
+    paddingBottom: '6px',
     borderBottom: 'solid 2px #ffffff',
   },
   menu: {
@@ -66,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'BarlowSemiCondensedBold',
     fontSize: '20px',
     textTransform: 'none',
-    background: '#fd631c',
+    background: '#FD631C',
     borderRadius: '4px',
   },
   footerSectionTitle: {
@@ -85,7 +84,13 @@ const Overview = () => {
       <Header ml={{ sm: 3, lg: 4 }}>
         <Hidden smDown>
           <Box className={classes.links}>
-            <Box component="span" className={classes.active}>Overview</Box>
+            <NavLink
+              className={classes.link}
+              activeClassName={classes.active}
+              exact to="/broadcast"
+            >
+              Overview
+            </NavLink>
 
             <Box className={classes.menu}>
               <Button
@@ -105,18 +110,17 @@ const Overview = () => {
               </Button>
             </Box>
 
-            <Link href="/" className={classes.link}>Pricing</Link>
+            <Link href="/broadcast/pricing" className={classes.link}>Pricing</Link>
 
             <Hidden mdDown>
               <Button
                 variant="contained"
                 color="secondary"
-                bgcolor="#fd6316"
                 className={classes.headerButton}
                 href="/"
               >
                 Try it free
-                </Button>
+              </Button>
             </Hidden>
           </Box>
         </Hidden>

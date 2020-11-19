@@ -69,7 +69,7 @@ const InfoBlocksPart = () => {
             <Grid item xs={12} sm={6} md={4} className={classes.block}>
               <InfoBlock
                 mb={{ xs: '75px', md: '95px', lg: '120px' }}
-                link='/'
+                link='/broadcast/management'
                 icon='../img/icons/management.png'
                 title='Management'
                 text='Manage your stations from our web-based dashboard to upload tracks, build playlists, and schedule your 24/7 automation.'

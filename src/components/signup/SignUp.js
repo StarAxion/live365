@@ -6,6 +6,7 @@ const SignUp = () => {
   return (
     <Typography
       variant="h1"
+      color="primary"
     >
       SignUp
     </Typography>

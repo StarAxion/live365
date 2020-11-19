@@ -41,5 +41,6 @@ html {
 body {
   margin: 0;
   font-family: 'Barlow', 'Roboto', sans-serif;
+  background-color: black;
   overflow-x: hidden;
 }
