@@ -8,6 +8,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
 import Header from '../../Header';
+import ButtonLink from '../../ButtonLink';
 import TopPart from './TopPart';
 import BlocksPart from './BlocksPart';
 import InfoBlocksPart from './InfoBlocksPart';
@@ -58,16 +59,6 @@ const useStyles = makeStyles((theme) => ({
   buttonIcon: {
     marginLeft: theme.spacing(1),
   },
-  headerButton: {
-    height: '40px',
-    marginRight: '50px',
-    padding: '0 15px',
-    fontFamily: 'BarlowSemiCondensedBold',
-    fontSize: '20px',
-    textTransform: 'none',
-    background: '#FD631C',
-    borderRadius: '4px',
-  },
   footerSectionTitle: {
     fontFamily: 'BarlowBold',
     fontSize: '16px',
@@ -113,14 +104,18 @@ const Overview = () => {
             <Link href="/broadcast/pricing" className={classes.link}>Pricing</Link>
 
             <Hidden mdDown>
-              <Button
-                variant="contained"
-                color="secondary"
-                className={classes.headerButton}
-                href="/"
+              <ButtonLink
+                margin='0 50px 0 0'
+                color='secondary'
+                link='/'
+                height='40px'
+                padding='0 15px'
+                fontFamily='BarlowSemiCondensedBold'
+                bg='#FD631C'
+                radius='4px'
               >
                 Try it free
-              </Button>
+              </ButtonLink>
             </Hidden>
           </Box>
         </Hidden>

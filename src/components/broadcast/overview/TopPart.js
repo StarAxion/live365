@@ -150,11 +150,14 @@ const TopPart = () => {
               subtitle='A complete solution to get your broadcasting legally in minutes.'
             />
             <ButtonLink
-              justify={{ sm: 'flex-start', md: 'center' }}
               margin='0'
-              bg='#fd6316'
               color='secondary'
               link='/broadcast/am-fm'
+              height='65px'
+              padding='0 40px'
+              fontFamily='BarlowBold'
+              bg='#fd6316'
+              radius='5px'
             >
               Start a station
             </ButtonLink>

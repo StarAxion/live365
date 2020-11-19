@@ -48,8 +48,8 @@ const NumberedBlock = (props) => {
         width={props.size}
         height={props.size}
         mb={props.mb}
-        className={classes.block}
         alignSelf={props.align}
+        className={classes.block}
       >
         <Link to='/' className={classes.link} />
       </Box>

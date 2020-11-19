@@ -108,20 +108,26 @@ const RadioStationPart = () => {
               mt={{ xs: '165px', sm: '78px!important' }}
             >
               <ButtonLink
-                justify='center'
                 margin='0'
-                bg='#fd6316'
                 color='secondary'
                 link='/broadcast/am-fm'
+                height='65px'
+                padding='0 40px'
+                fontFamily='BarlowBold'
+                bg='#fd6316'
+                radius='5px'
               >
                 Start a station
               </ButtonLink>
               <ButtonLink
-                justify='center'
                 margin={{ xs: '16px 0 0 0', sm: '0 0 0 16px' }}
-                bg='#170954'
                 color='primary'
                 link='/'
+                height='65px'
+                padding='0 40px'
+                fontFamily='BarlowBold'
+                bg='#170954'
+                radius='5px'
               >
                 Learn more
               </ButtonLink>
@@ -142,20 +148,26 @@ const RadioStationPart = () => {
 
                 <Box display="flex">
                   <ButtonLink
-                    justify='center'
                     margin='0'
-                    bg='#fd6316'
                     color='secondary'
                     link='/broadcast/am-fm'
+                    height='65px'
+                    padding='0 40px'
+                    fontFamily='BarlowBold'
+                    bg='#fd6316'
+                    radius='5px'
                   >
                     Start a station
                   </ButtonLink>
                   <ButtonLink
-                    justify='center'
-                    margin='0 0 0 16px'
-                    bg='#170954'
+                    margin={{ xs: '16px 0 0 0', sm: '0 0 0 16px' }}
                     color='primary'
                     link='/'
+                    height='65px'
+                    padding='0 40px'
+                    fontFamily='BarlowBold'
+                    bg='#170954'
+                    radius='5px'
                   >
                     Learn more
                   </ButtonLink>

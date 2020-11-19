@@ -156,11 +156,14 @@ const SearchPart = () => {
             </Paper>
 
             <ButtonLink
-              justify='center'
               margin={{ xs: '16px 0 0 0', sm: '24px 0 0 0', xl: '48px 0 0 0' }}
-              bg='#234bff'
               color='primary'
               link='/listen'
+              height='65px'
+              padding='0 40px'
+              fontFamily='BarlowBold'
+              bg='#234bff'
+              radius='5px'
             >
               Listen now
             </ButtonLink>

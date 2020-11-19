@@ -8,6 +8,7 @@ import Hidden from '@material-ui/core/Hidden';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Header from '../Header';
+import ButtonLink from '../ButtonLink';
 import ContactPart from './ContactPart';
 import Footer from '../Footer';
 import FooterSection from '../FooterSection';
@@ -70,17 +71,10 @@ const useStyles = makeStyles((theme) => ({
   active: {
     borderBottom: 'solid 2px #ffffff',
   },
-  button: {
+  buttonContainer: {
     position: 'absolute',
     top: '15px',
     right: 0,
-    height: '40px',
-    padding: '0 15px',
-    fontFamily: 'BarlowSemiCondensedBold',
-    fontSize: '20px',
-    textTransform: 'none',
-    background: '#FD631C',
-    borderRadius: '4px',
   },
   footerSectionTitle: {
     fontSize: '18px',
@@ -141,14 +135,20 @@ const Broadcast = () => {
 
             {!window.location.href.endsWith('/am-fm') && !window.location.href.endsWith('/pricing') &&
               <Hidden mdDown>
-                <Button
-                  variant="contained"
-                  color="secondary"
-                  className={classes.button}
-                  href="/"
-                >
-                  Try it free
-                </Button>
+                <Box className={classes.buttonContainer}>
+                  <ButtonLink
+                    margin='0'
+                    color='secondary'
+                    link='/'
+                    height='40px'
+                    padding='0 15px'
+                    fontFamily='BarlowSemiCondensedBold'
+                    bg='#FD631C'
+                    radius='4px'
+                  >
+                    Try it free
+                  </ButtonLink>
+                </Box>
               </Hidden>
             }
           </Box>
