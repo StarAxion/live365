@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: '70px',
     color: '#ffffff',
     background: 'rgba(15, 7, 50, 0.9)',
-    zIndex: '1',
+    zIndex: '3',
     [theme.breakpoints.down('sm')]: {
       position: 'static',
     },

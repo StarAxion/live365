@@ -5,31 +5,28 @@ import Box from '@material-ui/core/Box';
 const useStyles = makeStyles(() => ({
   block: {
     position: 'absolute',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
     borderRadius: '8px',
     zIndex: '1',
   },
 }));
 
-const ColoredBlock = (props) => {
+const ColoredGradientBlock = (props) => {
   const classes = useStyles();
 
   return (
     <Box
-      top={props.top}
-      right={props.right}
-      bottom={props.bottom}
-      left={props.left}
       width={props.size}
       height={props.size}
-      bgcolor={props.color}
+      left={props.left}
+      right={props.right}
+      top={props.top}
+      bottom={props.bottom}
       className={classes.block}
-    >
-      {props.children}
-    </Box>
+      style={{
+        background: `linear-gradient(${props.deg}deg, ${props.startColor} ${props.startPoint}, ${props.endColor} ${props.endPoint})`
+      }}
+    />
   )
 }
 
-export default ColoredBlock;
+export default ColoredGradientBlock;

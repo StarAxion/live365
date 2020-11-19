@@ -6,8 +6,7 @@ import Paper from '@material-ui/core/Paper';
 import InputBase from '@material-ui/core/InputBase';
 import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
-import ColoredBlock from '../ColoredBlock';
-import { TopLeftStrong, TopLeftLight, TopRightLight } from '../GradientCover';
+import ColoredGradientBlock from '../ColoredGradientBlock';
 import TitlesBlock from '../TitlesBlock';
 import ButtonLink from '../ButtonLink';
 
@@ -81,55 +80,192 @@ const SearchPart = () => {
     <div className={classes.root}>
       <div className={classes.outerContainer}>
         <Hidden mdDown>
-          <ColoredBlock size={{ lg: '228px', xl: '255px' }} color='#284CFF' left={{ lg: '-102px', xl: '67px' }} top={{ lg: '342px', xl: '355px' }}>
-            <TopLeftStrong />
-          </ColoredBlock>
-          <ColoredBlock size={{ lg: '97px', xl: '109px' }} color='#FFE211' left={{ lg: '30px', xl: '212px' }} bottom={{ lg: '-18px', xl: '30px' }}>
-            <TopRightLight />
-          </ColoredBlock>
-          <ColoredBlock size={{ lg: '59px', xl: '66px' }} color='#4826DF' left={{ lg: '126px', xl: '322px' }} top={{ lg: '198px', xl: '195px' }}>
-            <TopRightLight />
-          </ColoredBlock>
-          <ColoredBlock size={{ lg: '123px', xl: '138px' }} color='#FD631C' left={{ lg: '126px', xl: '320px' }} top={{ lg: '570px', xl: '608px' }}>
-            <TopRightLight />
-          </ColoredBlock>
-          <ColoredBlock size={{ lg: '97px', xl: '109px' }} color='#CD1A1A' left={{ lg: '185px', xl: '388px' }} top={{ lg: '100px', xl: '85px' }}>
-            <TopLeftLight />
-          </ColoredBlock>
+          <ColoredGradientBlock
+            size={{ lg: '228px', xl: '255px' }}
+            left={{ lg: '-102px', xl: '67px' }}
+            top={{ lg: '342px', xl: '355px' }}
+            deg='153'
+            startColor='#0F0732'
+            startPoint='20%'
+            endColor='#284CFF'
+            endPoint='100%'
+          />
+          <ColoredGradientBlock
+            size={{ lg: '97px', xl: '109px' }}
+            left={{ lg: '30px', xl: '212px' }}
+            bottom={{ lg: '-18px', xl: '30px' }}
+            deg='45'
+            startColor='#FFE211'
+            startPoint='0%'
+            endColor='#0F0732'
+            endPoint='95%'
+          />
+          <ColoredGradientBlock
+            size={{ lg: '59px', xl: '66px' }}
+            left={{ lg: '126px', xl: '322px' }}
+            top={{ lg: '198px', xl: '195px' }}
+            deg='207'
+            startColor='#0F0732'
+            startPoint='0%'
+            endColor='#4826DF'
+            endPoint='100%'
+          />
+          <ColoredGradientBlock
+            size={{ lg: '123px', xl: '138px' }}
+            left={{ lg: '126px', xl: '320px' }}
+            top={{ lg: '570px', xl: '608px' }}
+            deg='204'
+            startColor='#0F0732'
+            startPoint='0%'
+            endColor='#FD631C'
+            endPoint='95%'
+          />
 
-          <ColoredBlock size={{ lg: '306px', xl: '343px' }} color='#9CDD07' right={{ lg: '-244px', xl: '35px' }} top={{ lg: '238px' }}>
-            <TopRightLight />
-          </ColoredBlock>
-          <ColoredBlock size={{ lg: '228px', xl: '255px' }} color='#16DAED' right={{ lg: '-44px', xl: '258px' }} bottom={{ lg: '-88px', xl: '-50px' }}>
-            <TopLeftLight />
-          </ColoredBlock>
-          <ColoredBlock size={{ lg: '123px', xl: '138px' }} color='#D040EA' right={{ lg: '62px', xl: '378px' }} top={{ lg: '115px', xl: '100px' }}>
-            <TopRightLight />
-          </ColoredBlock>
-          <ColoredBlock size={{ lg: '59px', xl: '66px' }} color='#4826DF' right={{ lg: '62px', xl: '376px' }} bottom={{ lg: '238px', xl: '314px' }}>
-            <TopRightLight />
-          </ColoredBlock>
-          <ColoredBlock size={{ lg: '97px', xl: '109px' }} color='#CD1A1A' right={{ lg: '185px', xl: '515px' }} bottom={{ lg: '142px', xl: '205px' }}>
-            <TopLeftLight />
-          </ColoredBlock>
+          <Hidden lgDown>
+            <ColoredGradientBlock
+              size='109px'
+              left='388px'
+              top='85px'
+              deg='135'
+              startColor='#0F0732'
+              startPoint='5%'
+              endColor='#CD1A1A'
+              endPoint='100%'
+            />
+          </Hidden>
+          <Hidden xlUp>
+            <ColoredGradientBlock
+              size='97px'
+              left='185px'
+              top='100px'
+              deg='135'
+              startColor='#0F0732'
+              startPoint='5%'
+              endColor='#EE2844'
+              endPoint='100%'
+            />
+          </Hidden>
+
+          <ColoredGradientBlock
+            size={{ lg: '306px', xl: '343px' }}
+            right={{ lg: '-244px', xl: '35px' }}
+            top={{ lg: '238px' }}
+            deg='225'
+            startColor='#0F0732'
+            startPoint='5%'
+            endColor='#9CDD07'
+            endPoint='100%'
+          />
+          <ColoredGradientBlock
+            size={{ lg: '228px', xl: '255px' }}
+            right={{ lg: '-44px', xl: '258px' }}
+            bottom={{ lg: '-88px', xl: '-50px' }}
+            deg='-26'
+            startColor='#16DAED'
+            startPoint='5%'
+            endColor='#0F0732'
+            endPoint='100%'
+          />
+          <ColoredGradientBlock
+            size={{ lg: '123px', xl: '138px' }}
+            right={{ lg: '62px', xl: '378px' }}
+            top={{ lg: '115px', xl: '100px' }}
+            deg='63'
+            startColor='#D040EA'
+            startPoint='5%'
+            endColor='#1D1155'
+            endPoint='100%'
+          />
+
+          <Hidden lgDown>
+            <ColoredGradientBlock
+              size='66px'
+              right='376px'
+              bottom='314px'
+              deg='207'
+              startColor='#0F0732'
+              startPoint='0%'
+              endColor='#4826DF'
+              endPoint='100%'
+            />
+            <ColoredGradientBlock
+              size='109px'
+              right='515px'
+              bottom='205px'
+              deg='135'
+              startColor='#0F0732'
+              startPoint='5%'
+              endColor='#CD1A1A'
+              endPoint='100%'
+            />
+          </Hidden>
+          <Hidden xlUp>
+            <ColoredGradientBlock
+              size='59px'
+              right='62px'
+              bottom='238px'
+              deg='-63'
+              startColor='#0F0732'
+              startPoint='0%'
+              endColor='#4826DF'
+              endPoint='100%'
+            />
+            <ColoredGradientBlock
+              size='97px'
+              right='185px'
+              bottom='142px'
+              deg='225'
+              startColor='#0F0732'
+              startPoint='5%'
+              endColor='#CD1A1A'
+              endPoint='100%'
+            />
+          </Hidden>
         </Hidden>
-
 
         <Hidden xsDown lgUp>
-          <ColoredBlock size={{ sm: '140px', md: '228px' }} color='#284CFF' left={{ sm: '-67px', md: '-155px' }} bottom={{ sm: '48px', md: '80px' }}>
-            <TopLeftStrong />
-          </ColoredBlock>
-          <ColoredBlock size={{ sm: '74px', md: '123px' }} color='#FD631C' left={{ sm: '73px', md: '75px' }} bottom={{ sm: '-27px', md: '-45px' }}>
-            <TopRightLight />
-          </ColoredBlock>
-
-          <ColoredBlock size={{ sm: '186px', md: '306px' }} color='#9CDD07' right={{ sm: '-162px', md: '-249px' }} top={{ sm: '112px', md: '256px' }}>
-            <TopRightLight />
-          </ColoredBlock>
-          <ColoredBlock size={{ sm: '74px', md: '123px' }} color='#D040EA' right={{ sm: '26px', md: '58px' }} top={{ sm: '37px', md: '132px' }}>
-            <TopRightLight />
-          </ColoredBlock>
+          <ColoredGradientBlock
+            size={{ sm: '140px', md: '228px' }}
+            left={{ sm: '-67px', md: '-155px' }}
+            bottom={{ sm: '48px', md: '80px' }}
+            deg='153'
+            startColor='#0F0732'
+            startPoint='20%'
+            endColor='#284CFF'
+            endPoint='100%'
+          />
+          <ColoredGradientBlock
+            size={{ sm: '74px', md: '123px' }}
+            left={{ sm: '73px', md: '75px' }}
+            bottom={{ sm: '-27px', md: '-45px' }}
+            deg='204'
+            startColor='#0F0732'
+            startPoint='0%'
+            endColor='#FD631C'
+            endPoint='80%'
+          />
+          <ColoredGradientBlock
+            size={{ sm: '186px', md: '306px' }}
+            right={{ sm: '-162px', md: '-249px' }}
+            top={{ sm: '112px', md: '256px' }}
+            deg='225'
+            startColor='#0F0732'
+            startPoint='0%'
+            endColor='#9CDD07'
+            endPoint='95%'
+          />
+          <ColoredGradientBlock
+            size={{ sm: '74px', md: '123px' }}
+            right={{ sm: '26px', md: '58px' }}
+            top={{ sm: '37px', md: '132px' }}
+            deg='63'
+            startColor='#D040EA'
+            startPoint='5%'
+            endColor='#1D1155'
+            endPoint='100%'
+          />
         </Hidden>
+
 
         <div className={classes.innerContainer}>
           <Container fixed>
