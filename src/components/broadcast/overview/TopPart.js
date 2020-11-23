@@ -257,8 +257,8 @@ const TopPart = () => {
         </Hidden>
 
 
-        <Box className={classes.innerContainer}>
-          <Container fixed>
+        <Container fixed>
+          <Box className={classes.innerContainer}>
             <SectionIntro
               width={{ xs: '100%', lg: '1033px', xl: '1013px' }}
               margin='auto'
@@ -280,8 +280,8 @@ const TopPart = () => {
             >
               Start a station
             </ButtonLink>
-          </Container>
-        </Box>
+          </Box>
+        </Container>
       </Box>
     </section>
   )

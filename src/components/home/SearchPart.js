@@ -295,9 +295,8 @@ const SearchPart = () => {
           />
         </Hidden>
 
-
-        <Box className={classes.innerContainer}>
-          <Container fixed>
+        <Container fixed>
+          <Box className={classes.innerContainer}>
             <SectionIntro
               width='100%'
               margin='auto'
@@ -331,8 +330,8 @@ const SearchPart = () => {
             >
               Listen now
             </ButtonLink>
-          </Container>
-        </Box>
+          </Box>
+        </Container>
       </Box>
     </section>
   )

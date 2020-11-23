@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     color: '#ffffff',
     background: '#0F0732',
   },
-  outerContainer: {
+  container: {
     [theme.breakpoints.down('xl')]: {
       padding: '113px 0 153px',
     },
@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
       padding: '65px 0',
     },
   },
-  innerContainer: {
+  gridContainer: {
     [theme.breakpoints.down('xl')]: {
       justifyContent: 'space-between',
     },
@@ -80,7 +80,7 @@ const RadioStationPart = () => {
   return (
     <section className={classes.root}>
       <Container fixed>
-        <Box className={classes.outerContainer}>
+        <Box className={classes.container}>
           <Hidden mdUp>
             <SectionIntro
               width='100%'
@@ -146,7 +146,7 @@ const RadioStationPart = () => {
 
 
           <Hidden smDown>
-            <Grid container wrap="nowrap" className={classes.innerContainer}>
+            <Grid container wrap="nowrap" className={classes.gridContainer}>
               <Grid item md={6} className={classes.leftHalf}>
                 <SectionIntro
                   width={{ md: '322px', lg: '100%' }}

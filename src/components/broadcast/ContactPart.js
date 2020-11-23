@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     color: '#ffffff',
     background: '#0F0732',
   },
-  outerContainer: {
+  container: {
     [theme.breakpoints.down('xl')]: {
       padding: '107px 0 155px',
     },
@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
       paddingBottom: '72px',
     },
   },
-  innerContainer: {
+  gridContainer: {
     [theme.breakpoints.down('xl')]: {
       justifyContent: 'space-between',
     },
@@ -131,8 +131,8 @@ const ContactPart = (props) => {
   return (
     <section className={classes.root}>
       <Container fixed>
-        <Box className={classes.outerContainer}>
-          <Grid container className={classes.innerContainer}>
+        <Box className={classes.container}>
+          <Grid container className={classes.gridContainer}>
             <Grid item xs={12} md={6} className={classes.leftHalf}>
               <SectionIntro
                 width={{ xs: '100%', sm: '443px', md: '100%', lg: '530px', xl: '100%' }}

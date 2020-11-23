@@ -146,8 +146,8 @@ const TopPart = () => {
         </Hidden>
 
 
-        <Box className={classes.innerContainer}>
-          <Container fixed>
+        <Container fixed>
+          <Box className={classes.innerContainer}>
             <SectionIntro
               width='562px'
               margin='0'
@@ -179,8 +179,8 @@ const TopPart = () => {
                 </ButtonLink>
               </CardActions>
             </Card>
-          </Container>
-        </Box>
+          </Box>
+        </Container>
       </Box>
     </section>
   )
