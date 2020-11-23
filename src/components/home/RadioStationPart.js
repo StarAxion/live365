@@ -62,7 +62,6 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     fontSize: '65px',
-    textAlign: 'left',
     [theme.breakpoints.down('lg')]: {
       fontSize: '54px',
     },
@@ -122,7 +121,6 @@ const RadioStationPart = () => {
             >
               <ButtonLink
                 margin='0'
-                color='secondary'
                 link='/broadcast/am-fm'
                 height='65px'
                 padding='0 40px'
@@ -134,7 +132,6 @@ const RadioStationPart = () => {
               </ButtonLink>
               <ButtonLink
                 margin={{ xs: '16px 0 0 0', sm: '0 0 0 16px' }}
-                color='primary'
                 link='/'
                 height='65px'
                 padding='0 40px'
@@ -162,7 +159,6 @@ const RadioStationPart = () => {
                 <Box display="flex">
                   <ButtonLink
                     margin='0'
-                    color='secondary'
                     link='/broadcast/am-fm'
                     height='65px'
                     padding='0 40px'
@@ -174,7 +170,6 @@ const RadioStationPart = () => {
                   </ButtonLink>
                   <ButtonLink
                     margin={{ xs: '16px 0 0 0', sm: '0 0 0 16px' }}
-                    color='primary'
                     link='/'
                     height='65px'
                     padding='0 40px'

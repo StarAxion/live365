@@ -23,7 +23,6 @@ const StartStationButton = (props) => {
     >
       <Button
         variant="contained"
-        color={props.color}
         href={props.link}
         className={classes.button}
         style={{

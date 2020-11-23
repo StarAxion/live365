@@ -55,7 +55,6 @@ const useStyles = makeStyles((theme) => ({
   par: {
     lineHeight: '42px',
     fontSize: '28px',
-    textAlign: 'center',
     [theme.breakpoints.down('lg')]: {
       lineHeight: '36px',
       fontSize: '24px',
@@ -272,7 +271,6 @@ const TopPart = () => {
             />
             <ButtonLink
               margin='0'
-              color='secondary'
               link='/broadcast/am-fm'
               height='65px'
               padding='0 40px'

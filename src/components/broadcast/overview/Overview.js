@@ -106,7 +106,6 @@ const Overview = () => {
             <Hidden mdDown>
               <ButtonLink
                 margin='0 50px 0 0'
-                color='secondary'
                 link='/'
                 height='40px'
                 padding='0 15px'

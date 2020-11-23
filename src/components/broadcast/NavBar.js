@@ -100,7 +100,6 @@ const NavBar = () => {
               <Box className={classes.buttonContainer}>
                 <ButtonLink
                   margin='0'
-                  color='secondary'
                   link='/'
                   height='40px'
                   padding='0 15px'
@@ -109,7 +108,7 @@ const NavBar = () => {
                   radius='4px'
                 >
                   Try it free
-                  </ButtonLink>
+                </ButtonLink>
               </Box>
             </Hidden>
           }

@@ -10,7 +10,6 @@ import SectionIntro from '../SectionIntro';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    textAlign: 'left',
     color: '#ffffff',
     background: '#0F0732',
   },
@@ -66,7 +65,6 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     fontSize: '65px',
-    textAlign: 'left',
     [theme.breakpoints.down('lg')]: {
       fontSize: '54px',
     },
@@ -80,7 +78,6 @@ const useStyles = makeStyles((theme) => ({
   par: {
     lineHeight: '42px',
     fontSize: '28px',
-    textAlign: 'left',
     [theme.breakpoints.down('lg')]: {
       lineHeight: '36px',
       fontSize: '24px',

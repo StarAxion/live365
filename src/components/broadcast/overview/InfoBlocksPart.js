@@ -31,7 +31,6 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     fontSize: '65px',
-    textAlign: 'center',
     [theme.breakpoints.down('lg')]: {
       fontSize: '54px',
     },
