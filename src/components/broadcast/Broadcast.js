@@ -1,14 +1,17 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 import Link from '@material-ui/core/Link';
-import Container from '@material-ui/core/Container';
-import Hidden from '@material-ui/core/Hidden';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Header from '../Header';
-import ButtonLink from '../ButtonLink';
+import NavBar from './NavBar';
+import AmFm from './am-fm/AmFm';
+import Management from './management/Management';
+import Audience from './audience/Audience';
+import Licensing from './licensing/Licensing';
+import Statistics from './statistics/Statistics';
+import Monetization from './monetization/Monetization';
+import Pricing from './pricing/Pricing';
 import ContactPart from './ContactPart';
 import Footer from '../Footer';
 import FooterSection from '../FooterSection';
@@ -33,49 +36,6 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '18px',
     color: 'inherit',
   },
-  navContainer: {
-    position: 'fixed',
-    width: '100%',
-    marginTop: '70px',
-    color: '#ffffff',
-    background: 'rgba(15, 7, 50, 0.9)',
-    zIndex: '3',
-    [theme.breakpoints.down('sm')]: {
-      position: 'static',
-    },
-  },
-  nav: {
-    position: 'relative',
-    display: 'flex',
-    justifyContent: 'space-between',
-    padding: '23px 185px 17px',
-    [theme.breakpoints.down('md')]: {
-      paddingLeft: 0,
-      paddingRight: 0,
-    },
-    [theme.breakpoints.down('sm')]: {
-      flexWrap: 'wrap',
-      justifyContent: 'center',
-    },
-  },
-  navLink: {
-    paddingBottom: '6px',
-    fontFamily: 'BarlowBold',
-    fontSize: '18px',
-    textDecoration: 'none',
-    color: 'inherit',
-    [theme.breakpoints.down('sm')]: {
-      margin: '10px 10px 4px',
-    },
-  },
-  active: {
-    borderBottom: 'solid 2px #ffffff',
-  },
-  buttonContainer: {
-    position: 'absolute',
-    top: '15px',
-    right: 0,
-  },
   footerSectionTitle: {
     fontSize: '18px',
     color: '#ffffff',
@@ -94,140 +54,35 @@ const Broadcast = () => {
         </Box>
       </Header>
 
-      <Box className={classes.navContainer}>
-        <Container fixed>
-          <Box className={classes.nav}>
-            <NavLink
-              className={classes.navLink} activeClassName={classes.active} exact to="/broadcast"
-            >
-              Overview
-            </NavLink>
-            <NavLink
-              className={classes.navLink} activeClassName={classes.active} exact to="/broadcast/management"
-            >
-              Management
-            </NavLink>
-            <NavLink
-              className={classes.navLink} activeClassName={classes.active} exact to="/broadcast/audience"
-            >
-              Audience
-            </NavLink>
-            <NavLink
-              className={classes.navLink} activeClassName={classes.active} exact to="/broadcast/licensing"
-            >
-              Licensing
-            </NavLink>
-            <NavLink
-              className={classes.navLink} activeClassName={classes.active} exact to="/broadcast/statistics"
-            >
-              Statistics
-            </NavLink>
-            <NavLink
-              className={classes.navLink} activeClassName={classes.active} exact to="/broadcast/monetization"
-            >
-              Monetization
-            </NavLink>
-            <NavLink
-              className={classes.navLink} activeClassName={classes.active} exact to="/broadcast/pricing"
-            >
-              Pricing
-            </NavLink>
-
-            {!window.location.href.endsWith('/am-fm') && !window.location.href.endsWith('/pricing') &&
-              <Hidden mdDown>
-                <Box className={classes.buttonContainer}>
-                  <ButtonLink
-                    margin='0'
-                    color='secondary'
-                    link='/'
-                    height='40px'
-                    padding='0 15px'
-                    fontFamily='BarlowSemiCondensedBold'
-                    bg='#FD631C'
-                    radius='4px'
-                  >
-                    Try it free
-                  </ButtonLink>
-                </Box>
-              </Hidden>
-            }
-          </Box>
-        </Container>
-      </Box>
 
       <main>
+        <NavBar />
+
         {window.location.href.endsWith('/am-fm') &&
-          <Box padding="170px 0 30px" textAlign="center">
-            <Typography
-              variant="h1"
-              color="secondary"
-            >
-              AM/FM
-            </Typography>
-          </Box>
+          <AmFm />
         }
         {window.location.href.endsWith('/management') &&
-          <Box padding="170px 0 30px" textAlign="center">
-            <Typography
-              variant="h1"
-              color="secondary"
-            >
-              Management
-            </Typography>
-          </Box>
+          <Management />
         }
         {window.location.href.endsWith('/audience') &&
-          <Box padding="170px 0 30px" textAlign="center">
-            <Typography
-              variant="h1"
-              color="secondary"
-            >
-              Audience
-            </Typography>
-          </Box>
+          <Audience />
         }
         {window.location.href.endsWith('/licensing') &&
-          <Box padding="170px 0 30px" textAlign="center">
-            <Typography
-              variant="h1"
-              color="secondary"
-            >
-              Licensing
-            </Typography>
-          </Box>
+          <Licensing />
         }
         {window.location.href.endsWith('/statistics') &&
-          <Box padding="170px 0 30px" textAlign="center">
-            <Typography
-              variant="h1"
-              color="secondary"
-            >
-              Statistics
-            </Typography>
-          </Box>
+          <Statistics />
         }
         {window.location.href.endsWith('/monetization') &&
-          <Box padding="170px 0 30px" textAlign="center">
-            <Typography
-              variant="h1"
-              color="secondary"
-            >
-              Monetization
-            </Typography>
-          </Box>
+          <Monetization />
         }
         {window.location.href.endsWith('/pricing') &&
-          <Box padding="170px 0 30px" textAlign="center">
-            <Typography
-              variant="h1"
-              color="secondary"
-            >
-              Pricing
-            </Typography>
-          </Box>
+          <Pricing />
         }
+
         <ContactPart />
       </main>
+
 
       <Footer
         containerPadding='75px 0 85px'
