@@ -8,7 +8,7 @@ import InputBase from '@material-ui/core/InputBase';
 import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
 import ColoredGradientBlock from '../ColoredGradientBlock';
-import TitlesBlock from '../TitlesBlock';
+import SectionIntro from '../SectionIntro';
 import ButtonLink from '../ButtonLink';
 
 const useStyles = makeStyles((theme) => ({
@@ -35,6 +35,36 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down('xs')]: {
       padding: '132px 0 15px',
+    },
+  },
+  title: {
+    fontSize: '65px',
+    textAlign: 'center',
+    [theme.breakpoints.down('lg')]: {
+      fontSize: '54px',
+    },
+    [theme.breakpoints.down('md')]: {
+      fontSize: '45px',
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '40px',
+    },
+  },
+  par: {
+    lineHeight: '42px',
+    fontSize: '28px',
+    textAlign: 'center',
+    [theme.breakpoints.down('lg')]: {
+      lineHeight: '36px',
+      fontSize: '24px',
+    },
+    [theme.breakpoints.down('md')]: {
+      lineHeight: '30px',
+      fontSize: '20px',
+    },
+    [theme.breakpoints.down('sm')]: {
+      lineHeight: '27px',
+      fontSize: '18px',
     },
   },
   searchForm: {
@@ -270,15 +300,15 @@ const SearchPart = () => {
 
         <Box className={classes.innerContainer}>
           <Container fixed>
-            <TitlesBlock
+            <SectionIntro
               width='100%'
               margin='auto'
               mbTitle={{ xs: '48px', lg: '50px', xl: '75px' }}
-              alignTitle='center'
               title='Start listening for free.'
-              mbSubitle={{ xs: '75px', sm: '88px', md: '104px', lg: '100px', xl: '138px' }}
-              alignSubtitle='center'
-              subtitle='Every station is made by a real human.'
+              titleClass={classes.title}
+              mbPar={{ xs: '75px', sm: '88px', md: '104px', lg: '100px', xl: '138px' }}
+              par='Every station is made by a real human.'
+              parClass={classes.par}
             />
 
             <Paper component="form" className={classes.searchForm}>

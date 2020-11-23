@@ -40,7 +40,7 @@ const InfoBlock = (props) => {
             <img src={props.icon} alt="icon" className={classes.icon}></img>
           </Box>
           <Box ml={{ xs: '16px', lg: '35px' }}>
-            <Typography variant="h5" className={classes.title}>
+            <Typography variant="h3" className={classes.title}>
               {props.title}
             </Typography>
           </Box>

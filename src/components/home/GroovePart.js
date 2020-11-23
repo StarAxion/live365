@@ -4,7 +4,7 @@ import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
 import Hidden from '@material-ui/core/Hidden';
 import Grid from '@material-ui/core/Grid';
-import TitlesBlock from '../TitlesBlock';
+import SectionIntro from '../SectionIntro';
 import ImageLink from '../ImageLink';
 import ButtonLink from '../ButtonLink';
 
@@ -29,6 +29,37 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down('xs')]: {
       padding: '65px 0',
+    },
+  },
+  title: {
+    fontSize: '65px',
+    textAlign: 'center',
+    [theme.breakpoints.down('lg')]: {
+      fontSize: '54px',
+    },
+    [theme.breakpoints.down('md')]: {
+      fontSize: '45px',
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '40px',
+    },
+  },
+  par: {
+    lineHeight: '42px',
+    fontSize: '28px',
+    textAlign: 'center',
+    [theme.breakpoints.down('lg')]: {
+      lineHeight: '36px',
+      fontSize: '24px',
+    },
+    [theme.breakpoints.down('md')]: {
+      lineHeight: '30px',
+      fontSize: '20px',
+    },
+    [theme.breakpoints.down('sm')]: {
+      lineHeight: '27px',
+      fontSize: '18px',
+      textAlign: 'left',
     },
   },
   bigBlock: {
@@ -73,15 +104,15 @@ const GroovePart = () => {
     <section className={classes.root}>
       <Container fixed>
         <Box className={classes.container}>
-          <TitlesBlock
+          <SectionIntro
             width={{ xs: '100%', sm: '412px', md: '100%' }}
             margin='auto'
             mbTitle={{ xs: '37px', sm: '42px', lg: '50px', xl: '75px' }}
-            alignTitle='center'
             title='Find your groove.'
-            mbSubitle={{ xs: '93px', sm: '72px', md: '93px', lg: '132px', xl: '164px' }}
-            alignSubtitle={{ sm: 'left', md: 'center' }}
-            subtitle='Explore thousands of unique stations for any genre of music or talk.'
+            titleClass={classes.title}
+            mbPar={{ xs: '93px', sm: '72px', md: '93px', lg: '132px', xl: '164px' }}
+            par='Explore thousands of unique stations for any genre of music or talk.'
+            parClass={classes.par}
           />
 
 

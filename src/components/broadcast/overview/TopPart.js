@@ -3,9 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 import Hidden from '@material-ui/core/Hidden';
 import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
 import ColoredGradientBlock from '../../ColoredGradientBlock';
-import TitlesBlock from '../../TitlesBlock';
+import SectionIntro from '../../SectionIntro';
 import ButtonLink from '../../ButtonLink';
 
 const useStyles = makeStyles((theme) => ({
@@ -38,9 +37,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   title: {
-    fontFamily: 'BarlowBold',
     fontSize: '54px',
-    color: 'inherit',
+    textAlign: 'left',
     [theme.breakpoints.down('lg')]: {
       fontSize: '48px',
     },
@@ -52,6 +50,23 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down('xs')]: {
       fontSize: '32px',
+    },
+  },
+  par: {
+    lineHeight: '42px',
+    fontSize: '28px',
+    textAlign: 'center',
+    [theme.breakpoints.down('lg')]: {
+      lineHeight: '36px',
+      fontSize: '24px',
+    },
+    [theme.breakpoints.down('md')]: {
+      lineHeight: '30px',
+      fontSize: '20px',
+    },
+    [theme.breakpoints.down('sm')]: {
+      lineHeight: '27px',
+      fontSize: '18px',
       textAlign: 'left',
     },
   },
@@ -245,27 +260,15 @@ const TopPart = () => {
 
         <Box className={classes.innerContainer}>
           <Container fixed>
-            <Box
-              maxWidth={{ xs: '100%', lg: '1033px', xl: '1013px' }}
-              ml="auto"
-              mr="auto"
-            >
-              <Box
-                mb={{ xs: '42px', sm: '46px', md: '52px', lg: '88px' }}
-                textAlign="left"
-              >
-                <Typography
-                  variant="h2"
-                  className={classes.title}
-                >
-                  The easiest way to build a fully-licensed online radio station.
-                </Typography>
-              </Box>
-            </Box>
-            <TitlesBlock
-              mbSubitle={{ xs: '60px', sm: '52px', md: '55px', lg: '80px' }}
-              alignSubtitle={{ sm: 'left', md: 'center' }}
-              subtitle='A complete solution to get your broadcasting legally in minutes.'
+            <SectionIntro
+              width={{ xs: '100%', lg: '1033px', xl: '1013px' }}
+              margin='auto'
+              mbTitle={{ xs: '42px', sm: '46px', md: '52px', lg: '88px' }}
+              title='The easiest way to build a fully-licensed online radio station.'
+              titleClass={classes.title}
+              mbPar={{ xs: '60px', sm: '52px', md: '55px', lg: '80px' }}
+              par='A complete solution to get your broadcasting legally in minutes.'
+              parClass={classes.par}
             />
             <ButtonLink
               margin='0'

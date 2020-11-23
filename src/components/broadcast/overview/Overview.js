@@ -148,7 +148,7 @@ const Overview = () => {
         <FooterSection
           pr='60px'
           title={
-            <Typography variant="h6" className={classes.footerSectionTitle}>
+            <Typography variant="h4" className={classes.footerSectionTitle}>
               Listeners
             </Typography>
           }
@@ -164,7 +164,7 @@ const Overview = () => {
         <FooterSection
           pr='60px'
           title={
-            <Typography variant="h6" className={classes.footerSectionTitle}>
+            <Typography variant="h4" className={classes.footerSectionTitle}>
               Broadcasters
             </Typography>
           }
@@ -186,7 +186,7 @@ const Overview = () => {
         <FooterSection
           pr='0'
           title={
-            <Typography variant="h6" className={classes.footerSectionTitle}>
+            <Typography variant="h4" className={classes.footerSectionTitle}>
               Company
             </Typography>
           }

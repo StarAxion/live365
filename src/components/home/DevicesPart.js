@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
-import TitlesBlock from '../TitlesBlock';
+import SectionIntro from '../SectionIntro';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,6 +26,36 @@ const useStyles = makeStyles((theme) => ({
       padding: '65px 0 60px',
     },
   },
+  title: {
+    fontSize: '65px',
+    textAlign: 'left',
+    [theme.breakpoints.down('lg')]: {
+      fontSize: '54px',
+    },
+    [theme.breakpoints.down('md')]: {
+      fontSize: '45px',
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '40px',
+    },
+  },
+  par: {
+    lineHeight: '42px',
+    fontSize: '28px',
+    textAlign: 'left',
+    [theme.breakpoints.down('lg')]: {
+      lineHeight: '36px',
+      fontSize: '24px',
+    },
+    [theme.breakpoints.down('md')]: {
+      lineHeight: '30px',
+      fontSize: '20px',
+    },
+    [theme.breakpoints.down('sm')]: {
+      lineHeight: '27px',
+      fontSize: '18px',
+    },
+  },
 }));
 
 const DevicesPart = () => {
@@ -35,15 +65,15 @@ const DevicesPart = () => {
     <section className={classes.root}>
       <Container fixed>
         <Box className={classes.container}>
-          <TitlesBlock
+          <SectionIntro
             width={{ xs: '100%', md: '352px', lg: '535px', xl: '752px' }}
             margin='0'
             mbTitle={{ xs: '35px', sm: '42px', md: '48px', lg: '60px', xl: '70px' }}
-            alignTitle='left'
             title='Listen anytime, anywhere.'
-            mbSubitle={{ xs: '66px', sm: '105px', md: '68px', lg: '80px', xl: '130px' }}
-            alignSubtitle='left'
-            subtitle='Available for iOS, Android, Alexa, or right here on the web. Coming soon to more of your devices.'
+            titleClass={classes.title}
+            mbPar={{ xs: '66px', sm: '105px', md: '68px', lg: '80px', xl: '130px' }}
+            par='Available for iOS, Android, Alexa, or right here on the web. Coming soon to more of your devices.'
+            parClass={classes.par}
           />
         </Box>
       </Container>

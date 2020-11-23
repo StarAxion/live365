@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
-import TitlesBlock from '../../TitlesBlock';
+import SectionIntro from '../../SectionIntro';
 import InfoBlock from '../../InfoBlock';
 
 const useStyles = makeStyles((theme) => ({
@@ -27,6 +27,20 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down('xs')]: {
       padding: '70px 0 47px',
+    },
+  },
+  title: {
+    fontSize: '65px',
+    textAlign: 'center',
+    [theme.breakpoints.down('lg')]: {
+      fontSize: '54px',
+    },
+    [theme.breakpoints.down('md')]: {
+      fontSize: '45px',
+      textAlign: 'left',
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '40px',
     },
   },
   gridContainer: {
@@ -57,12 +71,12 @@ const InfoBlocksPart = () => {
     <section className={classes.root}>
       <Container fixed>
         <Box className={classes.container}>
-          <TitlesBlock
+          <SectionIntro
             width='100%'
             margin='0'
             mbTitle={{ xs: '87px', md: '78px', lg: '132px', xl: '120px' }}
-            alignTitle={{ sm: 'left', lg: 'center!important' }}
             title='Batteries included, and then some.'
+            titleClass={classes.title}
           />
 
           <Grid container className={classes.gridContainer}>

@@ -4,7 +4,7 @@ import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
 import Hidden from '@material-ui/core/Hidden';
 import Grid from '@material-ui/core/Grid';
-import TitlesBlock from '../../TitlesBlock';
+import SectionIntro from '../../SectionIntro';
 import ImageLink from '../../ImageLink';
 
 const useStyles = makeStyles((theme) => ({
@@ -30,6 +30,39 @@ const useStyles = makeStyles((theme) => ({
       padding: '70px 0 57px',
     },
   },
+  title: {
+    fontSize: '65px',
+    textAlign: 'center',
+    [theme.breakpoints.down('lg')]: {
+      fontSize: '54px',
+    },
+    [theme.breakpoints.down('md')]: {
+      fontSize: '45px',
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '40px',
+      textAlign: 'left',
+    },
+  },
+  par: {
+    lineHeight: '42px',
+    fontSize: '28px',
+    textAlign: 'left',
+    [theme.breakpoints.down('lg')]: {
+      lineHeight: '36px',
+      fontSize: '24px',
+    },
+    [theme.breakpoints.down('md')]: {
+      lineHeight: '30px',
+      fontSize: '20px',
+      textAlign: 'center',
+    },
+    [theme.breakpoints.down('sm')]: {
+      lineHeight: '27px',
+      fontSize: '18px',
+      textAlign: 'left',
+    },
+  },
   imageBlock: {
     [theme.breakpoints.down('xl')]: {
       maxWidth: '225px',
@@ -53,15 +86,15 @@ const ImagesPart = () => {
     <section className={classes.root}>
       <Container fixed>
         <Box className={classes.container}>
-          <TitlesBlock
+          <SectionIntro
             width={{ xs: '100%', md: '782px', lg: '890px', xl: '895px' }}
             margin='auto'
             mbTitle={{ xs: '48px', lg: '68px', xl: '88px' }}
-            alignTitle={{ sm: 'left', md: 'center' }}
             title='Built for broadcasters.'
-            mbSubitle={{ xs: '78px', md: '104px', lg: '132px', xl: '110px' }}
-            alignSubtitle={{ sm: 'left', md: 'center!important', lg: 'left!important' }}
-            subtitle='Live365 has helped thousands of broadcasters get online since 1999. Learn more about how Live365 can work for your organization, business, or passion.'
+            titleClass={classes.title}
+            mbPar={{ xs: '78px', md: '104px', lg: '132px', xl: '110px' }}
+            par='Live365 has helped thousands of broadcasters get online since 1999. Learn more about how Live365 can work for your organization, business, or passion.'
+            parClass={classes.par}
           />
 
           <Hidden mdUp>

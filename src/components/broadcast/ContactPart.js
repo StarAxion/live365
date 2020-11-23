@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import FormLabel from '@material-ui/core/FormLabel';
 import InputBase from '@material-ui/core/InputBase';
 import Button from '@material-ui/core/Button';
-import TitlesBlock from '../TitlesBlock';
+import SectionIntro from '../SectionIntro';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -64,6 +64,36 @@ const useStyles = makeStyles((theme) => ({
       minWidth: '100%',
     },
   },
+  title: {
+    fontSize: '65px',
+    textAlign: 'left',
+    [theme.breakpoints.down('lg')]: {
+      fontSize: '54px',
+    },
+    [theme.breakpoints.down('md')]: {
+      fontSize: '45px',
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '40px',
+    },
+  },
+  par: {
+    lineHeight: '42px',
+    fontSize: '28px',
+    textAlign: 'left',
+    [theme.breakpoints.down('lg')]: {
+      lineHeight: '36px',
+      fontSize: '24px',
+    },
+    [theme.breakpoints.down('md')]: {
+      lineHeight: '30px',
+      fontSize: '20px',
+    },
+    [theme.breakpoints.down('sm')]: {
+      lineHeight: '27px',
+      fontSize: '18px',
+    },
+  },
   label: {
     fontFamily: 'BarlowBold',
     fontSize: '16px',
@@ -107,15 +137,15 @@ const ContactPart = (props) => {
         <Box className={classes.outerContainer}>
           <Grid container className={classes.innerContainer}>
             <Grid item xs={12} md={6} className={classes.leftHalf}>
-              <TitlesBlock
-                width={{ xs: '100%', sm: '392px', md: '100%', lg: '530px', xl: '100%' }}
+              <SectionIntro
+                width={{ xs: '100%', sm: '443px', md: '100%', lg: '530px', xl: '100%' }}
                 margin='0'
                 mbTitle={{ xs: '42px', lg: '65px', xl: '60px' }}
-                alignTitle='left'
                 title='Join the world`s radio.'
-                mbSubitle={{ xs: '52px', sm: '128px', md: '0' }}
-                alignSubtitle='left'
-                subtitle='Any questions? Reach out to a Live365 product consultant to discuss your broadcasting needs.'
+                titleClass={classes.title}
+                mbPar={{ xs: '52px', sm: '128px', md: '0' }}
+                par='Any questions? Reach out to a Live365 product consultant to discuss your broadcasting needs.'
+                parClass={classes.par}
               />
             </Grid>
 

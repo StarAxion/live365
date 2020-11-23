@@ -4,7 +4,7 @@ import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
 import Hidden from '@material-ui/core/Hidden';
 import Grid from '@material-ui/core/Grid';
-import TitlesBlock from '../TitlesBlock';
+import SectionIntro from '../SectionIntro';
 import InfoBlock from '../InfoBlock';
 import ButtonLink from '../ButtonLink';
 
@@ -60,6 +60,19 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: '288px',
     },
   },
+  title: {
+    fontSize: '65px',
+    textAlign: 'left',
+    [theme.breakpoints.down('lg')]: {
+      fontSize: '54px',
+    },
+    [theme.breakpoints.down('md')]: {
+      fontSize: '45px',
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '40px',
+    },
+  },
 }));
 
 const RadioStationPart = () => {
@@ -70,12 +83,12 @@ const RadioStationPart = () => {
       <Container fixed>
         <Box className={classes.outerContainer}>
           <Hidden mdUp>
-            <TitlesBlock
+            <SectionIntro
               width='100%'
               margin='0'
               mbTitle={{ xs: '67px', sm: '88px' }}
-              alignTitle='left'
               title='Create your own internet radio station.'
+              titleClass={classes.title}
             />
 
             <Box maxWidth={{ sm: '290px' }}>
@@ -138,12 +151,12 @@ const RadioStationPart = () => {
           <Hidden smDown>
             <Grid container wrap="nowrap" className={classes.innerContainer}>
               <Grid item md={6} className={classes.leftHalf}>
-                <TitlesBlock
+                <SectionIntro
                   width={{ md: '322px', lg: '100%' }}
                   margin='0'
                   mbTitle={{ md: '80px', lg: '108px', xl: '140px' }}
-                  alignTitle='left'
                   title='Create your own internet radio station.'
+                  titleClass={classes.title}
                 />
 
                 <Box display="flex">
