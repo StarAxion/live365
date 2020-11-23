@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 import Link from '@material-ui/core/Link';
+import Hidden from '@material-ui/core/Hidden';
 import Typography from '@material-ui/core/Typography';
 import Header from '../Header';
 import NavBar from './NavBar';
@@ -12,6 +13,7 @@ import Licensing from './licensing/Licensing';
 import Statistics from './statistics/Statistics';
 import Monetization from './monetization/Monetization';
 import Pricing from './pricing/Pricing';
+import ColoredGradientBlock from '../ColoredGradientBlock';
 import ContactPart from './ContactPart';
 import Footer from '../Footer';
 import FooterSection from '../FooterSection';
@@ -80,7 +82,57 @@ const Broadcast = () => {
           <Pricing />
         }
 
-        <ContactPart textTransform="none" />
+        <Box position="relative">
+          {window.location.href.endsWith('/am-fm') &&
+            <Hidden smDown>
+              <ColoredGradientBlock
+                size='75px'
+                left='40px'
+                bottom='383px'
+                deg='169'
+                startColor='#FF6740'
+                startPoint='0%'
+                endColor='#9E0022'
+                endPoint='100%'
+              />
+              <ColoredGradientBlock
+                size='110px'
+                left='115px'
+                bottom='272px'
+                deg='207'
+                startColor='#A83DAE'
+                startPoint='0%'
+                endColor='#3C1A96'
+                endPoint='100%'
+              />
+            </Hidden>
+          }
+          {window.location.href.endsWith('/pricing') &&
+            <Hidden smDown>
+              <ColoredGradientBlock
+                size='228px'
+                left='-95px'
+                bottom='175px'
+                deg='162'
+                startColor='#CC1919'
+                startPoint='-20%'
+                endColor='#CD761A'
+                endPoint='80%'
+              />
+              <ColoredGradientBlock
+                size='97px'
+                left='133px'
+                bottom='78px'
+                deg='162'
+                startColor='#FF2146'
+                startPoint='-20%'
+                endColor='#971590'
+                endPoint='100%'
+              />
+            </Hidden>
+          }
+          <ContactPart textTransform="none" />
+        </Box>
       </main>
 
 
