@@ -50,7 +50,7 @@ const ImagesPart = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <section className={classes.root}>
       <Container fixed>
         <Box className={classes.container}>
           <TitlesBlock
@@ -198,7 +198,7 @@ const ImagesPart = () => {
           </Hidden>
         </Box>
       </Container>
-    </div >
+    </section>
   )
 }
 

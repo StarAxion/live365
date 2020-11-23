@@ -1,8 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import Box from '@material-ui/core/Box';
 import Hidden from '@material-ui/core/Hidden';
 import Container from '@material-ui/core/Container';
-import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import ColoredGradientBlock from '../../ColoredGradientBlock';
 import TitlesBlock from '../../TitlesBlock';
@@ -61,8 +61,8 @@ const TopPart = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <div className={classes.outerContainer}>
+    <section className={classes.root}>
+      <Box className={classes.outerContainer}>
         <Hidden smDown>
           <ColoredGradientBlock
             size={{ md: '139px', lg: '190px', xl: '228px' }}
@@ -243,7 +243,7 @@ const TopPart = () => {
         </Hidden>
 
 
-        <div className={classes.innerContainer}>
+        <Box className={classes.innerContainer}>
           <Container fixed>
             <Box
               maxWidth={{ xs: '100%', lg: '1033px', xl: '1013px' }}
@@ -280,9 +280,9 @@ const TopPart = () => {
               Start a station
             </ButtonLink>
           </Container>
-        </div>
-      </div>
-    </div >
+        </Box>
+      </Box>
+    </section>
   )
 }
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import Box from '@material-ui/core/Box';
 import Hidden from '@material-ui/core/Hidden';
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
@@ -77,8 +78,8 @@ const SearchPart = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <div className={classes.outerContainer}>
+    <section className={classes.root}>
+      <Box className={classes.outerContainer}>
         <Hidden mdDown>
           <ColoredGradientBlock
             size={{ lg: '228px', xl: '255px' }}
@@ -267,7 +268,7 @@ const SearchPart = () => {
         </Hidden>
 
 
-        <div className={classes.innerContainer}>
+        <Box className={classes.innerContainer}>
           <Container fixed>
             <TitlesBlock
               width='100%'
@@ -304,9 +305,9 @@ const SearchPart = () => {
               Listen now
             </ButtonLink>
           </Container>
-        </div>
-      </div>
-    </div>
+        </Box>
+      </Box>
+    </section>
   )
 }
 

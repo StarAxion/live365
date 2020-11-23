@@ -32,7 +32,7 @@ const DevicesPart = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <section className={classes.root}>
       <Container fixed>
         <Box className={classes.container}>
           <TitlesBlock
@@ -45,10 +45,9 @@ const DevicesPart = () => {
             alignSubtitle='left'
             subtitle='Available for iOS, Android, Alexa, or right here on the web. Coming soon to more of your devices.'
           />
-          <Box></Box>
         </Box>
       </Container>
-    </div >
+    </section>
   )
 }
 

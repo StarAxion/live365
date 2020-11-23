@@ -54,7 +54,7 @@ const InfoBlocksPart = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <section className={classes.root}>
       <Container fixed>
         <Box className={classes.container}>
           <TitlesBlock
@@ -123,7 +123,7 @@ const InfoBlocksPart = () => {
           </Grid>
         </Box>
       </Container >
-    </div >
+    </section >
   )
 }
 

@@ -66,7 +66,7 @@ const RadioStationPart = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <section className={classes.root}>
       <Container fixed>
         <Box className={classes.outerContainer}>
           <Hidden mdUp>
@@ -201,7 +201,7 @@ const RadioStationPart = () => {
           </Hidden>
         </Box>
       </Container>
-    </div >
+    </section>
   )
 }
 

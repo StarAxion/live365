@@ -102,7 +102,7 @@ const ContactPart = (props) => {
   const preventDefault = (event) => event.preventDefault();
 
   return (
-    <div className={classes.root}>
+    <section className={classes.root}>
       <Container fixed>
         <Box className={classes.outerContainer}>
           <Grid container className={classes.innerContainer}>
@@ -208,7 +208,7 @@ const ContactPart = (props) => {
           </Grid>
         </Box>
       </Container>
-    </div>
+    </section>
   )
 }
 
