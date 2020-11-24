@@ -5,6 +5,7 @@ import Hidden from '@material-ui/core/Hidden';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import ColoredGradientBlock from '../../ColoredGradientBlock';
+import Package from './Package';
 import SectionIntro from '../../SectionIntro';
 
 const useStyles = makeStyles((theme) => ({
@@ -35,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
   },
   rightHalf: {
     [theme.breakpoints.down('xl')]: {
-      maxWidth: '692px',
+      minWidth: '692px',
     },
   },
   title: {
@@ -80,10 +81,10 @@ const PackagesPart = () => {
         <Container fixed>
           <Box className={classes.innerContainer}>
             <Grid container className={classes.gridContainer}>
-              <Grid item md={6} className={classes.leftHalf}>
-
+              <Grid item xs={12} lg={6} className={classes.leftHalf}>
+                <Package />
               </Grid>
-              <Grid item md={6} className={classes.rightHalf}>
+              <Grid item xs={12} lg={6} className={classes.rightHalf}>
                 <SectionIntro
                   width='600px'
                   margin='0'
