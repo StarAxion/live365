@@ -26,34 +26,10 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     fontSize: '54px',
-    [theme.breakpoints.down('lg')]: {
-      fontSize: '48px',
-    },
-    [theme.breakpoints.down('md')]: {
-      fontSize: '40px',
-    },
-    [theme.breakpoints.down('sm')]: {
-      fontSize: '36px',
-    },
-    [theme.breakpoints.down('xs')]: {
-      fontSize: '32px',
-    },
   },
   par: {
-    lineHeight: '42px',
-    fontSize: '28px',
-    [theme.breakpoints.down('lg')]: {
-      lineHeight: '36px',
-      fontSize: '24px',
-    },
-    [theme.breakpoints.down('md')]: {
-      lineHeight: '30px',
-      fontSize: '20px',
-    },
-    [theme.breakpoints.down('sm')]: {
-      lineHeight: '27px',
-      fontSize: '18px',
-    },
+    lineHeight: '36px',
+    fontSize: '24px',
   },
   contactBlock: {
     display: 'flex',

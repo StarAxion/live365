@@ -17,16 +17,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   title: {
-    fontSize: '65px',
-    [theme.breakpoints.down('lg')]: {
-      fontSize: '54px',
-    },
-    [theme.breakpoints.down('md')]: {
-      fontSize: '45px',
-    },
-    [theme.breakpoints.down('sm')]: {
-      fontSize: '40px',
-    },
+    fontSize: '54px',
   },
   gridContainer: {
     [theme.breakpoints.down('xl')]: {

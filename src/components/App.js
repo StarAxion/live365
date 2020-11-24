@@ -9,18 +9,23 @@ import Broadcast from './broadcast/Broadcast';
 import SignUp from './signup/SignUp';
 import LogIn from './login/LogIn';
 
-const barlow = createMuiTheme({
+const theme = createMuiTheme({
   typography: {
     fontFamily: [
       'Barlow',
       'sans-serif',
     ].join(','),
   },
+  props: {
+    MuiLink: {
+      underline: 'none'
+    }
+  },
 });
 
 const App = () => {
   return (
-    <ThemeProvider theme={barlow}>
+    <ThemeProvider theme={theme}>
       <Router>
         <Switch>
           <Route exact path='/' component={Home} />
