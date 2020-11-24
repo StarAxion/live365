@@ -1,6 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import clsx from 'clsx';
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 
@@ -34,7 +33,7 @@ const SectionIntro = (props) => {
       >
         <Typography
           variant="h2"
-          className={clsx(classes.title, props.titleClass)}
+          className={`${classes.title} ${props.titleClass}`}
         >
           {props.title}
         </Typography>
@@ -45,7 +44,7 @@ const SectionIntro = (props) => {
       >
         <Typography
           variant="body1"
-          className={clsx(classes.par, props.parClass)}
+          className={`${classes.par} ${props.parClass}`}
         >
           {props.par}
         </Typography>

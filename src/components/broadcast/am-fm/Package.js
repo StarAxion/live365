@@ -8,7 +8,6 @@ import List from '@material-ui/core/List';
 import ListSubheader from '@material-ui/core/ListSubheader';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import clsx from 'clsx';
 
 const useStyles = makeStyles((theme) => ({
   package: {
@@ -49,7 +48,6 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: '16px',
   },
   listItem: {
-    margin: 0,
     padding: 0,
   },
   listItemIcon: {
@@ -97,7 +95,7 @@ const Package = () => {
         component="ul"
         aria-labelledby="package-list"
         subheader={
-          <ListSubheader component="h3" id="package-list" className={clsx(classes.subTitle, classes.listTitle)}>
+          <ListSubheader component="h3" id="package-list" className={`${classes.subTitle} ${classes.listTitle}`}>
             Your package can include:
           </ListSubheader>
         }

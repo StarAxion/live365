@@ -4,6 +4,7 @@ import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import SectionIntro from '../../SectionIntro';
+import InfoBlock from '../../InfoBlock';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -51,13 +52,19 @@ const InfoBlocksPart = () => {
 
           <Grid container className={classes.gridContainer}>
             <Grid item xs={12} lg={4} className={classes.block}>
-
+              <InfoBlock
+                link='/broadcast/licensing'
+              />
             </Grid>
             <Grid item xs={12} lg={4} className={classes.block}>
-
+              <InfoBlock
+                link='/broadcast/audience'
+              />
             </Grid>
             <Grid item xs={12} lg={4} className={classes.block}>
-
+              <InfoBlock
+                link='/'
+              />
             </Grid>
           </Grid>
         </Box>
