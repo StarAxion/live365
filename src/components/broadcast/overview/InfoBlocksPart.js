@@ -61,6 +61,20 @@ const useStyles = makeStyles((theme) => ({
       minWidth: '100%',
     },
   },
+  infoBlockTitle: {
+    fontSize: '28px',
+    [theme.breakpoints.down('md')]: {
+      fontSize: '24px',
+    },
+  },
+  infoBlockPar: {
+    lineHeight: '30px',
+    fontSize: '20px',
+    [theme.breakpoints.down('md')]: {
+      lineHeight: '27px',
+      fontSize: '18px',
+    },
+  },
 }));
 
 const InfoBlocksPart = () => {
@@ -83,8 +97,16 @@ const InfoBlocksPart = () => {
               <InfoBlock
                 mb={{ xs: '75px', md: '95px', lg: '120px' }}
                 link='/broadcast/management'
+                direction='row'
+                iconWidth={{ xs: '46px', lg: '60px' }}
                 icon='../img/icons/management.png'
+                mlTitle={{ xs: '17px', lg: '36px' }}
+                mtTitle='0'
+                titleClass={classes.infoBlockTitle}
                 title='Management'
+                mlText={{ xs: '63px', lg: '96px' }}
+                mtText='8px'
+                parClass={classes.infoBlockPar}
                 text='Manage your stations from our web-based dashboard to upload tracks, build playlists, and schedule your 24/7 automation.'
               />
             </Grid>
@@ -92,8 +114,16 @@ const InfoBlocksPart = () => {
               <InfoBlock
                 mb={{ xs: '75px', md: '95px', lg: '120px' }}
                 link='/broadcast/audience'
+                direction='row'
+                iconWidth={{ xs: '46px', lg: '60px' }}
                 icon='../img/icons/audience.png'
+                mlTitle={{ xs: '17px', lg: '36px' }}
+                mtTitle='0'
+                titleClass={classes.infoBlockTitle}
                 title='Audience'
+                mlText={{ xs: '63px', lg: '96px' }}
+                mtText='8px'
+                parClass={classes.infoBlockPar}
                 text='Access listeners across Live365`s website, mobile applications, home devices, and more.'
               />
             </Grid>
@@ -101,8 +131,16 @@ const InfoBlocksPart = () => {
               <InfoBlock
                 mb={{ xs: '75px', md: '95px', lg: '120px' }}
                 link='/broadcast/licensing'
+                direction='row'
+                iconWidth={{ xs: '46px', lg: '60px' }}
                 icon='../img/icons/licensing.png'
+                mlTitle={{ xs: '17px', lg: '36px' }}
+                mtTitle='0'
+                titleClass={classes.infoBlockTitle}
                 title='Licensing'
+                mlText={{ xs: '63px', lg: '96px' }}
+                mtText='8px'
+                parClass={classes.infoBlockPar}
                 text='Music licensing coverage in the United States, United Kingdom, and Canada.'
               />
             </Grid>
@@ -110,8 +148,16 @@ const InfoBlocksPart = () => {
               <InfoBlock
                 mb={{ xs: '75px', md: '95px', lg: '120px' }}
                 link='/broadcast/statistics'
+                direction='row'
+                iconWidth={{ xs: '46px', lg: '60px' }}
                 icon='../img/icons/statistics.png'
+                mlTitle={{ xs: '17px', lg: '36px' }}
+                mtTitle='0'
+                titleClass={classes.infoBlockTitle}
                 title='Statistics'
+                mlText={{ xs: '63px', lg: '96px' }}
+                mtText='8px'
+                parClass={classes.infoBlockPar}
                 text='See real-time and historical listening data to gain insight on what events drive engagement.'
               />
             </Grid>
@@ -119,8 +165,16 @@ const InfoBlocksPart = () => {
               <InfoBlock
                 mb={{ xs: '75px', md: '95px', lg: '120px' }}
                 link='/broadcast/monetization'
+                direction='row'
+                iconWidth={{ xs: '46px', lg: '60px' }}
                 icon='../img/icons/monetization.png'
+                mlTitle={{ xs: '17px', lg: '36px' }}
+                mtTitle='0'
+                titleClass={classes.infoBlockTitle}
                 title='Monetization'
+                mlText={{ xs: '63px', lg: '96px' }}
+                mtText='8px'
+                parClass={classes.infoBlockPar}
                 text='Loin Live365`s monetization program to earn revenue and lower your streaming costs.'
               />
             </Grid>
@@ -128,8 +182,16 @@ const InfoBlocksPart = () => {
               <InfoBlock
                 mb={{ xs: '75px', md: '95px', lg: '120px' }}
                 link='/'
+                direction='row'
+                iconWidth={{ xs: '46px', lg: '60px' }}
                 icon='../img/icons/compatibility.png'
+                mlTitle={{ xs: '17px', lg: '36px' }}
+                mtTitle='0'
+                titleClass={classes.infoBlockTitle}
                 title='Compatibility'
+                mlText={{ xs: '63px', lg: '96px' }}
+                mtText='8px'
+                parClass={classes.infoBlockPar}
                 text='Bring your favorite Icecast encoder for plug-and-play live streaming. Or we can recommend a few.'
               />
             </Grid>

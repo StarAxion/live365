@@ -33,6 +33,14 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: '324px',
     },
   },
+  infoBlockTitle: {
+    textAlign: 'center',
+    fontSize: '26px',
+  },
+  infoBlockPar: {
+    lineHeight: '27px',
+    fontSize: '18px',
+  },
 }));
 
 const InfoBlocksPart = () => {
@@ -53,17 +61,53 @@ const InfoBlocksPart = () => {
           <Grid container className={classes.gridContainer}>
             <Grid item xs={12} lg={4} className={classes.block}>
               <InfoBlock
+                mb={{ md: '30px', lg: '98px' }}
                 link='/broadcast/licensing'
+                direction='column'
+                iconWidth='96px'
+                icon='../img/icons/licensing.png'
+                mlTitle='0'
+                mtTitle='10px'
+                titleClass={classes.infoBlockTitle}
+                title='Licensing'
+                mlText='0'
+                mtText='18px'
+                parClass={classes.infoBlockPar}
+                text='Let Live365 cover your SoundExchange reporting and payments. Just focus on creating the best content.'
               />
             </Grid>
             <Grid item xs={12} lg={4} className={classes.block}>
               <InfoBlock
+                mb={{ md: '30px', lg: '98px' }}
                 link='/broadcast/audience'
+                direction='column'
+                iconWidth='96px'
+                icon='../img/icons/audience.png'
+                mlTitle='0'
+                mtTitle='10px'
+                titleClass={classes.infoBlockTitle}
+                title='Audience'
+                mlText='0'
+                mtText='18px'
+                parClass={classes.infoBlockPar}
+                text='On mobile, home devices, and the web, your station will be in front of a growing audience on the Live365 Radio Network. Also distribute on aggregators such as TuneIn, iTunes, and more.'
               />
             </Grid>
             <Grid item xs={12} lg={4} className={classes.block}>
               <InfoBlock
+                mb={{ md: '30px', lg: '98px' }}
                 link='/'
+                direction='column'
+                iconWidth='96px'
+                icon='../img/icons/compatibility.png'
+                mlTitle='0'
+                mtTitle='10px'
+                titleClass={classes.infoBlockTitle}
+                title='Software Agnostic'
+                mlText='0'
+                mtText='18px'
+                parClass={classes.infoBlockPar}
+                text='Your current encoder and automation are plug-and-play with Live365’s agnostic Icecast streaming.'
               />
             </Grid>
           </Grid>

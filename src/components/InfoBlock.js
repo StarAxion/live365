@@ -14,18 +14,9 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     fontFamily: 'BarlowBold',
-    fontSize: '28px',
-    textAlign: 'left',
-    [theme.breakpoints.down('md')]: {
-      fontSize: '24px',
-    },
   },
-  text: {
-    fontSize: '20px',
+  par: {
     textAlign: 'left',
-    [theme.breakpoints.down('md')]: {
-      fontSize: '18px',
-    },
   },
 }));
 
@@ -35,19 +26,19 @@ const InfoBlock = (props) => {
   return (
     <Box mb={props.mb}>
       <Link to={props.link} className={classes.link}>
-        <Box display="flex" alignItems="center">
-          <Box display="flex" alignItems="center" width={{ xs: '50px', lg: '65px' }}>
+        <Box display="flex" flexDirection={props.direction} alignItems="center">
+          <Box display="flex" justifyContent="center" width={props.iconWidth}>
             <img src={props.icon} alt="icon" className={classes.icon}></img>
           </Box>
-          <Box ml={{ xs: '16px', lg: '35px' }}>
-            <Typography variant="h3" className={classes.title}>
+          <Box ml={props.mlTitle} mt={props.mtTitle}>
+            <Typography variant="h3" className={`${classes.title} ${props.titleClass}`}>
               {props.title}
             </Typography>
           </Box>
         </Box>
       </Link>
-      <Box mt={1} ml={{ xs: '66px', lg: '100px' }}>
-        <Typography variant="body1" className={classes.text}>
+      <Box ml={props.mlText} mt={props.mtText}>
+        <Typography variant="body1" className={`${classes.par} ${props.parClass}`}>
           {props.text}
         </Typography>
       </Box>

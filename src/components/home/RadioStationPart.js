@@ -30,6 +30,18 @@ const useStyles = makeStyles((theme) => ({
       padding: '65px 0',
     },
   },
+  title: {
+    fontSize: '65px',
+    [theme.breakpoints.down('lg')]: {
+      fontSize: '54px',
+    },
+    [theme.breakpoints.down('md')]: {
+      fontSize: '45px',
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '40px',
+    },
+  },
   gridContainer: {
     [theme.breakpoints.down('xl')]: {
       justifyContent: 'space-between',
@@ -60,16 +72,18 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: '288px',
     },
   },
-  title: {
-    fontSize: '65px',
-    [theme.breakpoints.down('lg')]: {
-      fontSize: '54px',
-    },
+  infoBlockTitle: {
+    fontSize: '28px',
     [theme.breakpoints.down('md')]: {
-      fontSize: '45px',
+      fontSize: '24px',
     },
-    [theme.breakpoints.down('sm')]: {
-      fontSize: '40px',
+  },
+  infoBlockPar: {
+    lineHeight: '30px',
+    fontSize: '20px',
+    [theme.breakpoints.down('md')]: {
+      lineHeight: '27px',
+      fontSize: '18px',
     },
   },
 }));
@@ -94,22 +108,46 @@ const RadioStationPart = () => {
               <InfoBlock
                 mb={{ xs: '55px', sm: '30px' }}
                 link='/broadcast/audience'
+                direction='row'
+                iconWidth={{ xs: '46px', lg: '60px' }}
                 icon='img/icons/audience.png'
+                mlTitle={{ xs: '17px', lg: '36px' }}
+                mtTitle='0'
+                titleClass={classes.infoBlockTitle}
                 title='Audience'
+                mlText={{ xs: '63px', lg: '96px' }}
+                mtText='8px'
+                parClass={classes.infoBlockPar}
                 text='Access listeners across Live365`s website, mobile applications, home devices, and more.'
               />
               <InfoBlock
                 mb={{ xs: '55px', sm: '30px' }}
                 link='/broadcast/licensing'
+                direction='row'
+                iconWidth={{ xs: '46px', lg: '60px' }}
                 icon='img/icons/licensing.png'
+                mlTitle={{ xs: '17px', lg: '36px' }}
+                mtTitle='0'
+                titleClass={classes.infoBlockTitle}
                 title='Licensing'
+                mlText={{ xs: '63px', lg: '96px' }}
+                mtText='8px'
+                parClass={classes.infoBlockPar}
                 text='Music licensing coverage in the United States, United Kingdom, and Canada.'
               />
               <InfoBlock
                 mb='0'
                 link='/broadcast/monetization'
+                direction='row'
+                iconWidth={{ xs: '46px', lg: '60px' }}
                 icon='img/icons/monetization.png'
+                mlTitle={{ xs: '17px', lg: '36px' }}
+                mtTitle='0'
+                titleClass={classes.infoBlockTitle}
                 title='Monetization'
+                mlText={{ xs: '63px', lg: '96px' }}
+                mtText='8px'
+                parClass={classes.infoBlockPar}
                 text='Loin Live365`s monetization program to earn revenue and lower your streaming costs.'
               />
             </Box>
@@ -186,22 +224,46 @@ const RadioStationPart = () => {
                 <InfoBlock
                   mb={{ md: '30px', lg: '98px' }}
                   link='/broadcast/audience'
+                  direction='row'
+                  iconWidth={{ xs: '46px', lg: '60px' }}
                   icon='img/icons/audience.png'
+                  mlTitle={{ xs: '17px', lg: '36px' }}
+                  mtTitle='0'
+                  titleClass={classes.infoBlockTitle}
                   title='Audience'
+                  mlText={{ xs: '63px', lg: '96px' }}
+                  mtText='8px'
+                  parClass={classes.infoBlockPar}
                   text='Access listeners across Live365`s website, mobile applications, home devices, and more.'
                 />
                 <InfoBlock
                   mb={{ md: '30px', lg: '98px' }}
                   link='/broadcast/licensing'
+                  direction='row'
+                  iconWidth={{ xs: '46px', lg: '60px' }}
                   icon='img/icons/licensing.png'
+                  mlTitle={{ xs: '17px', lg: '36px' }}
+                  mtTitle='0'
+                  titleClass={classes.infoBlockTitle}
                   title='Licensing'
+                  mlText={{ xs: '63px', lg: '96px' }}
+                  mtText='8px'
+                  parClass={classes.infoBlockPar}
                   text='Music licensing coverage in the United States, United Kingdom, and Canada.'
                 />
                 <InfoBlock
                   mb='0'
                   link='/broadcast/monetization'
+                  direction='row'
+                  iconWidth={{ xs: '46px', lg: '60px' }}
                   icon='img/icons/monetization.png'
+                  mlTitle={{ xs: '17px', lg: '36px' }}
+                  mtTitle='0'
+                  titleClass={classes.infoBlockTitle}
                   title='Monetization'
+                  mlText={{ xs: '63px', lg: '96px' }}
+                  mtText='8px'
+                  parClass={classes.infoBlockPar}
                   text='Loin Live365`s monetization program to earn revenue and lower your streaming costs.'
                 />
               </Grid>
