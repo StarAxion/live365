@@ -77,12 +77,12 @@ const Package = () => {
 
   return (
     <Paper variant="outlined" className={classes.package}>
-      <Typography variant="h3" className={classes.title}>
+      <Typography variant="h4" className={classes.title}>
         AM/FM Broadcasting
       </Typography>
 
       <Box mt="29px" mb="33px">
-        <Typography variant="h3" className={classes.subTitle}>
+        <Typography variant="h5" className={classes.subTitle}>
           Starting at
         </Typography>
         <Box display="flex" justifyContent="center" alignItems="baseline">
@@ -96,7 +96,7 @@ const Package = () => {
         component="ul"
         aria-labelledby="package-list"
         subheader={
-          <ListSubheader component="h3" id="package-list" className={`${classes.subTitle} ${classes.listTitle}`}>
+          <ListSubheader component="h5" id="package-list" className={`${classes.subTitle} ${classes.listTitle}`}>
             Your package can include:
           </ListSubheader>
         }

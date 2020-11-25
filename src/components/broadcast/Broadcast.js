@@ -38,6 +38,9 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '18px',
     color: 'inherit',
   },
+  main: {
+    background: '#ffffff',
+  },
   footerSectionTitle: {
     fontSize: '18px',
     color: '#ffffff',
@@ -57,7 +60,7 @@ const Broadcast = () => {
       </Header>
 
 
-      <main>
+      <main className={classes.main}>
         <NavBar />
 
         {window.location.href.endsWith('/am-fm') &&
