@@ -10,64 +10,29 @@ import ImageLink from '../../ImageLink';
 const useStyles = makeStyles((theme) => ({
   root: {
     textAlign: 'center',
-    color: '#020104',
-    background: '#D5D3D9',
+    color: '#0F0732',
+    background: '#ffffff',
   },
   container: {
     [theme.breakpoints.down('xl')]: {
-      padding: '182px 0 210px',
-    },
-    [theme.breakpoints.down('lg')]: {
-      padding: '155px 0 177px',
-    },
-    [theme.breakpoints.down('md')]: {
-      padding: '90px 0 128px',
-    },
-    [theme.breakpoints.down('sm')]: {
-      padding: '65px 0 80px',
-    },
-    [theme.breakpoints.down('xs')]: {
-      padding: '70px 0 57px',
+      padding: '100px 0 174px',
     },
   },
   title: {
-    fontSize: '65px',
-    [theme.breakpoints.down('lg')]: {
-      fontSize: '54px',
-    },
-    [theme.breakpoints.down('md')]: {
-      fontSize: '45px',
-    },
-    [theme.breakpoints.down('sm')]: {
-      fontSize: '40px',
-      textAlign: 'left',
-    },
+    fontSize: '54px',
   },
   par: {
-    lineHeight: '42px',
-    fontSize: '28px',
-    textAlign: 'left',
-    [theme.breakpoints.down('lg')]: {
-      lineHeight: '36px',
-      fontSize: '24px',
-    },
-    [theme.breakpoints.down('md')]: {
-      lineHeight: '30px',
-      fontSize: '20px',
-      textAlign: 'center',
-    },
-    [theme.breakpoints.down('sm')]: {
-      lineHeight: '27px',
-      fontSize: '18px',
-      textAlign: 'left',
-    },
+    lineHeight: '36px',
+    fontSize: '24px',
   },
   imageBlock: {
     [theme.breakpoints.down('xl')]: {
-      minWidth: '238px',
+      minWidth: '240px',
+      margin: '3px',
     },
     [theme.breakpoints.down('md')]: {
       minWidth: '184px',
+      margin: 0,
     },
     [theme.breakpoints.down('xs')]: {
       maxWidth: '240px',
@@ -83,13 +48,13 @@ const ImagesPart = () => {
       <Container fixed>
         <Box className={classes.container}>
           <SectionIntro
-            width={{ xs: '100%', md: '782px', lg: '890px', xl: '895px' }}
+            width='919px'
             margin='auto'
-            mbTitle={{ xs: '48px', lg: '68px', xl: '88px' }}
-            title='Built for broadcasters.'
+            mbTitle='49px'
+            title='Need something different?'
             titleClass={classes.title}
-            mbPar={{ xs: '78px', md: '104px', lg: '132px', xl: '110px' }}
-            par='Live365 has helped thousands of broadcasters get online since 1999. Learn more about how Live365 can work for your organization, business, or passion.'
+            mbPar='127px'
+            par='Live365 has helped thousands of broadcasters get online since 1999. We offer customized packages to fit the unique needs of our broadcasters.'
             parClass={classes.par}
           />
 
