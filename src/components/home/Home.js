@@ -110,13 +110,13 @@ const Home = () => {
             </Typography>
           }
         >
-          <Link href="/" className={classes.footerSectionLink}>
+          <Link href="/">
             About
           </Link>
-          <Link href="/" className={classes.footerSectionLink}>
+          <Link href="/">
             Blog
           </Link>
-          <Link href="/" className={classes.footerSectionLink}>
+          <Link href="/">
             Jobs
           </Link>
         </FooterSection>
