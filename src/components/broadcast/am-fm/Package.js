@@ -9,7 +9,7 @@ import ListSubheader from '@material-ui/core/ListSubheader';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   package: {
     maxWidth: '412px',
     padding: '22px 0 27px',
@@ -29,9 +29,10 @@ const useStyles = makeStyles((theme) => ({
     color: '#656565',
   },
   icon: {
-    paddingBottom: '8px',
+    paddingBottom: '5px',
   },
   number: {
+    marginRight: '7px',
     fontFamily: 'BarlowExtraBold',
     fontSize: '36px',
   },
@@ -72,7 +73,7 @@ const Package = () => {
     'Custom web player',
     'US licensing coverage and reporting',
     'Cloud-based backup',
-    'Ad network with revenue share']
+    'Ad network with revenue share'];
 
   return (
     <Paper variant="outlined" className={classes.package}>
@@ -86,7 +87,7 @@ const Package = () => {
         </Typography>
         <Box display="flex" justifyContent="center" alignItems="baseline">
           <AttachMoneyIcon className={classes.icon} />
-          <Box component="span" mr="7px" className={classes.number}>79</Box>
+          <Box component="span" className={classes.number}>79</Box>
           <Typography variant="body1" className={classes.par}>/month</Typography>
         </Box>
       </Box>

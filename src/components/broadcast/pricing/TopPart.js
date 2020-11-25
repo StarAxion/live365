@@ -6,6 +6,7 @@ import Container from '@material-ui/core/Container';
 import ColoredGradientBlock from '../../ColoredGradientBlock';
 import SectionIntro from '../../SectionIntro';
 import CheckboxControl from './CheckboxControl';
+import Package from './Package';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,6 +29,14 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: '36px',
     fontSize: '24px',
   },
+  packagesContainer: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    bottom: '-97px',
+    display: 'flex',
+    justifyContent: 'center',
+  },
 }));
 
 const TopPart = () => {
@@ -37,6 +46,15 @@ const TopPart = () => {
   const handleChange = (event) => {
     setChecked(event.target.checked);
   };
+
+  const list = ['25 GB storage',
+    '1,500 Licensed TLH',
+    'Unlimited Listeners',
+    'Unlimited Bandwidth',
+    '128 kbps bitrate',
+    'Broadcast Live',
+    'Music Licensing (USA, Canada, UK)',
+    'Monetization Included'];
 
   return (
     <section className={classes.root}>
@@ -112,6 +130,24 @@ const TopPart = () => {
             />
           </Box>
         </Container>
+
+        <Box className={classes.packagesContainer}>
+          <Package
+            margin='0 16px'
+            price='59'
+            list={list}
+          />
+          <Package
+            margin='0 16px'
+            price='99'
+            list={list}
+          />
+          <Package
+            margin='0 16px'
+            price='199'
+            list={list}
+          />
+        </Box>
       </Box>
     </section>
   )
