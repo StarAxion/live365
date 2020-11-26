@@ -60,7 +60,6 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'BarlowBold',
     fontSize: '20px',
     letterSpacing: '.24px',
-    textTransform: 'none',
     background: '#2E206E',
     borderRadius: '5px',
   },

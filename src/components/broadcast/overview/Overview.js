@@ -53,7 +53,6 @@ const useStyles = makeStyles((theme) => ({
     padding: '0 0 0 10px',
     fontFamily: 'BarlowBold',
     fontSize: '18px',
-    textTransform: 'none',
     color: 'inherit',
   },
   buttonIcon: {
@@ -132,7 +131,7 @@ const Overview = () => {
         <BlocksPart />
         <InfoBlocksPart />
         <ImagesPart />
-        <ContactPart textTransform="uppercase" />
+        <ContactPart textTransform='uppercase' />
       </main>
 
       <Footer

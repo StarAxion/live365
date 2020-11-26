@@ -6,7 +6,6 @@ import Button from '@material-ui/core/Button';
 const useStyles = makeStyles((theme) => ({
   button: {
     fontSize: '20px',
-    textTransform: 'none',
     color: '#ffffff',
     [theme.breakpoints.down('xs')]: {
       width: '100%',

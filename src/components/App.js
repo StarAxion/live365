@@ -15,6 +15,9 @@ const theme = createMuiTheme({
       'Barlow',
       'sans-serif',
     ].join(','),
+    button: {
+      textTransform: 'none',
+    },
   },
   props: {
     MuiLink: {

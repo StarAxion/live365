@@ -117,7 +117,6 @@ const useStyles = makeStyles((theme) => ({
     height: '57px',
     fontFamily: 'BarlowBold',
     fontSize: '20px',
-    textTransform: 'none',
     color: '#ffffff',
     background: '#fd631c',
     borderRadius: '4px',

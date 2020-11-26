@@ -134,7 +134,7 @@ const Broadcast = () => {
               />
             </Hidden>
           }
-          <ContactPart textTransform="none" />
+          <ContactPart textTransform='none' />
         </Box>
       </main>
 
