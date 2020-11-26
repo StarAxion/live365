@@ -62,35 +62,43 @@ const useStyles = makeStyles((theme) => ({
   },
   bigBlock: {
     [theme.breakpoints.down('xl')]: {
-      maxWidth: '230px',
+      maxWidth: '272px',
     },
     [theme.breakpoints.down('lg')]: {
-      maxWidth: '230px',
+      maxWidth: '244px',
     },
     [theme.breakpoints.down('md')]: {
-      maxWidth: '170px',
+      minWidth: '184px',
     },
     [theme.breakpoints.down('sm')]: {
-      maxWidth: '128px',
+      minWidth: '140px',
     },
     [theme.breakpoints.down('xs')]: {
-      maxWidth: '225px',
+      minWidth: '150px',
+      maxWidth: '240px',
     },
   },
   smallBlock: {
     [theme.breakpoints.down('xl')]: {
-      maxWidth: '137px',
+      maxWidth: '150px',
     },
     [theme.breakpoints.down('lg')]: {
-      maxWidth: '123px',
+      maxWidth: '136px',
     },
   },
   wideBlock: {
     [theme.breakpoints.down('xl')]: {
-      maxWidth: '230px',
+      maxWidth: '272px',
     },
     [theme.breakpoints.down('lg')]: {
-      maxWidth: '230px',
+      maxWidth: '244px',
+    },
+    [theme.breakpoints.down('sm')]: {
+      minWidth: '187px',
+    },
+    [theme.breakpoints.down('xs')]: {
+      minWidth: '150px',
+      maxWidth: '240px',
     },
   },
 }));
@@ -129,6 +137,21 @@ const GroovePart = () => {
                 <ImageLink link='/' image='img/bcr.png' />
               </Grid>
             </Grid>
+
+            <Grid container justify="center">
+              <Grid item xs={6} className={classes.wideBlock}>
+                <ImageLink link='/' image='img/blues.png' />
+              </Grid>
+              <Grid item xs={6} className={classes.wideBlock}>
+                <ImageLink link='/' image='img/blues.png' />
+              </Grid>
+              <Grid item xs={6} className={classes.wideBlock}>
+                <ImageLink link='/' image='img/blues.png' />
+              </Grid>
+              <Grid item xs={6} className={classes.wideBlock}>
+                <ImageLink link='/' image='img/blues.png' />
+              </Grid>
+            </Grid>
           </Hidden>
 
 
@@ -163,23 +186,51 @@ const GroovePart = () => {
               </Grid>
             </Grid>
 
-            <Grid container justify="center" wrap="nowrap">
-              <Grid item sm={6} className={classes.wideBlock}>
-                <ImageLink link='/' image='img/blues.png' />
+            <Hidden mdUp>
+              <Grid container justify="center" wrap="nowrap">
+                <Grid item sm={4} className={classes.wideBlock}>
+                  <ImageLink link='/' image='img/blues.png' />
+                </Grid>
+                <Grid item sm={4} className={classes.wideBlock}>
+                  <ImageLink link='/' image='img/blues.png' />
+                </Grid>
+                <Grid item sm={4} className={classes.wideBlock}>
+                  <ImageLink link='/' image='img/blues.png' />
+                </Grid>
               </Grid>
-              <Grid item sm={6} className={classes.wideBlock}>
-                <ImageLink link='/' image='img/blues.png' />
-              </Grid>
-            </Grid>
 
-            <Grid container justify="center" wrap="nowrap">
-              <Grid item sm={6} className={classes.wideBlock}>
-                <ImageLink link='/' image='img/blues.png' />
+              <Grid container justify="center" wrap="nowrap">
+                <Grid item sm={4} className={classes.wideBlock}>
+                  <ImageLink link='/' image='img/blues.png' />
+                </Grid>
+                <Grid item sm={4} className={classes.wideBlock}>
+                  <ImageLink link='/' image='img/blues.png' />
+                </Grid>
+                <Grid item sm={4} className={classes.wideBlock}>
+                  <ImageLink link='/' image='img/blues.png' />
+                </Grid>
               </Grid>
-              <Grid item sm={6} className={classes.wideBlock}>
-                <ImageLink link='/' image='img/blues.png' />
+            </Hidden>
+
+            <Hidden smDown>
+              <Grid container justify="center" wrap="nowrap">
+                <Grid item sm={6} className={classes.wideBlock}>
+                  <ImageLink link='/' image='img/blues.png' />
+                </Grid>
+                <Grid item sm={6} className={classes.wideBlock}>
+                  <ImageLink link='/' image='img/blues.png' />
+                </Grid>
               </Grid>
-            </Grid>
+
+              <Grid container justify="center" wrap="nowrap">
+                <Grid item sm={6} className={classes.wideBlock}>
+                  <ImageLink link='/' image='img/blues.png' />
+                </Grid>
+                <Grid item sm={6} className={classes.wideBlock}>
+                  <ImageLink link='/' image='img/blues.png' />
+                </Grid>
+              </Grid>
+            </Hidden>
           </Hidden>
 
 

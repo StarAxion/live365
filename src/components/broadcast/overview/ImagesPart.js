@@ -70,6 +70,7 @@ const useStyles = makeStyles((theme) => ({
       minWidth: '184px',
     },
     [theme.breakpoints.down('xs')]: {
+      minWidth: '150px',
       maxWidth: '240px',
     },
   },
@@ -92,6 +93,7 @@ const ImagesPart = () => {
             par='Live365 has helped thousands of broadcasters get online since 1999. Learn more about how Live365 can work for your organization, business, or passion.'
             parClass={classes.par}
           />
+
 
           <Hidden mdUp>
             <Grid container justify="center">
@@ -157,6 +159,7 @@ const ImagesPart = () => {
               </Grid>
             </Grid>
           </Hidden>
+
 
           <Hidden smDown>
             <Grid container justify="center" wrap="nowrap">
