@@ -69,9 +69,9 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     height: '65px',
     margin: '0 auto',
-    border: 'solid 2px #f1f0f5',
+    border: 'solid 2px #D5D3D9',
     borderRadius: '5px',
-    background: 'inherit',
+    background: 'transparent',
     [theme.breakpoints.down('xl')]: {
       width: '525px',
     },
@@ -84,20 +84,27 @@ const useStyles = makeStyles((theme) => ({
   },
   inputBase: {
     width: '100%',
-    padding: '0 25px',
+    [theme.breakpoints.down('xl')]: {
+      padding: '0 29px',
+    },
+    [theme.breakpoints.down('lg')]: {
+      padding: '0 20px',
+    },
+    [theme.breakpoints.down('xs')]: {
+      padding: '0 16px',
+    },
   },
   input: {
-    fontSize: '18px',
-    color: '#f1f0f5',
+    fontSize: '20px',
+    color: '#ffffff',
     '&::placeholder': {
-      fontSize: '18px',
-      letterSpacing: '.5px',
-      color: '#f1f0f5',
-      opacity: .8,
+      fontSize: '20px',
+      color: '#D5D3D9',
+      opacity: .9,
     },
   },
   iconButton: {
-    padding: '10px 15px 10px 0',
+    padding: '22px 12px 21px 0',
     color: '#f1f0f5',
   },
 }));

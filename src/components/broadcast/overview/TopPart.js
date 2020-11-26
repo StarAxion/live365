@@ -275,6 +275,7 @@ const TopPart = () => {
               height='65px'
               padding='0 40px'
               fontFamily='BarlowBold'
+              ls='.24px'
               bg='#fd6316'
               radius='5px'
             >

@@ -85,9 +85,13 @@ const Footer = (props) => {
                 </Link>
               </div>
               <Box mb={{ xs: '24px', lg: '48px' }} width={{ xs: '100%', sm: '276px', lg: '100%' }}>
-                <Typography variant="body2" className={classes.footerInfoText}>
+                <Typography
+                  variant="body2"
+                  className={classes.footerInfoText}
+                  style={{ letterSpacing: props.parLs }}
+                >
                   Live 365 is the easiest way to create an online radio station and discover hundreds of stations from every style of music and talk.
-                  </Typography>
+                </Typography>
               </Box>
               <Box>
                 <Link href="https://www.facebook.com" target="_blank" rel="noopener" className={classes.socialLink}>
@@ -112,7 +116,13 @@ const Footer = (props) => {
 
           <Box display="flex" flexDirection={props.bottomPartDirection} justifyContent="flex-end" className={classes.footerBottomPart}>
             <Box order={props.copyrightOrder} ml={props.ml} mb={props.mb}>
-              <Typography variant="body2" className={classes.copyright}>&copy; 2020 Live365</Typography>
+              <Typography
+                variant="body2"
+                className={classes.copyright}
+                style={{ letterSpacing: props.copyrightLs }}
+              >
+                &copy; 2020 Live365
+              </Typography>
             </Box>
 
             <Box order={props.linksOrder} className={classes.links}>

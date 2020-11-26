@@ -65,6 +65,7 @@ const CardPart = () => {
               height='57px'
               padding='0 26px'
               fontFamily='BarlowBold'
+              ls='.24px'
               bg='#FD631C'
               radius='5px'
             >

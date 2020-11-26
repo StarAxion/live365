@@ -141,11 +141,13 @@ const Broadcast = () => {
 
       <Footer
         containerPadding='75px 0 85px'
+        parLs={!window.location.href.endsWith('/broadcast') && '.19px'}
         justifyFooterSections='flex-end'
         bottomPartDirection={{ xs: 'column', sm: 'row' }}
         copyrightOrder={{ xs: 1, sm: 2 }}
         ml={{ xs: 0, sm: 2 }}
         mb={{ xs: 1, sm: 0 }}
+        copyrightLs={!window.location.href.endsWith('/broadcast') && '.21px'}
         linksOrder={{ xs: 2, sm: 1 }}
       >
         <FooterSection

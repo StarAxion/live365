@@ -36,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
   infoBlockTitle: {
     textAlign: 'center',
     fontSize: '26px',
+    letterSpacing: '.31px',
   },
   infoBlockPar: {
     lineHeight: '27px',

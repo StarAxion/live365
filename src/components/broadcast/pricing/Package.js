@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
     padding: '0 27.5px',
     fontFamily: 'BarlowBold',
     fontSize: '20px',
-    letterSpacing: '0.24px',
+    letterSpacing: '.24px',
     textTransform: 'none',
     background: '#2E206E',
     borderRadius: '5px',

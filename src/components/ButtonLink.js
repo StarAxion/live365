@@ -26,11 +26,12 @@ const StartStationButton = (props) => {
         href={props.link}
         className={classes.button}
         style={{
-          height: `${props.height}`,
-          padding: `${props.padding}`,
-          fontFamily: `${props.fontFamily}`,
-          background: `${props.bg}`,
-          borderRadius: `${props.radius}`
+          height: props.height,
+          padding: props.padding,
+          fontFamily: props.fontFamily,
+          letterSpacing: props.ls,
+          background: props.bg,
+          borderRadius: props.radius
         }}
       >
         {props.children}
