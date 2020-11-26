@@ -106,10 +106,7 @@ const MiddlePart = () => {
                   mbTitle='52px'
                   title='All-in-one platform for management and distribution. '
                   titleClass={classes.title}
-                />
-                <SectionIntro
-                  width='443px'
-                  margin='0'
+                  parWidth='443px'
                   mbPar='0'
                   par='Our cloud-based station management platform gives you the tools to easily visualize streaming analytics and listener engagement.'
                   parClass={classes.par}
@@ -131,10 +128,7 @@ const MiddlePart = () => {
                   mbTitle='52px'
                   title='Now streaming: everywhere.'
                   titleClass={classes.title}
-                />
-                <SectionIntro
-                  width='443px'
-                  margin='0'
+                  parWidth='443px'
                   mbPar='0'
                   par='Enhance your online presence with custom mobile apps and web players. Plus get your station in front of millions of listeners on the Live365 network.'
                   parClass={classes.par}

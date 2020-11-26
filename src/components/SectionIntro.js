@@ -40,6 +40,7 @@ const SectionIntro = (props) => {
       </Box>
 
       <Box
+        maxWidth={props.parWidth}
         mb={props.mbPar}
       >
         <Typography

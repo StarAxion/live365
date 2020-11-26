@@ -64,11 +64,12 @@ const DevicesPart = () => {
       <Container fixed>
         <Box className={classes.container}>
           <SectionIntro
-            width={{ xs: '100%', md: '352px', lg: '535px', xl: '752px' }}
+            width={{ xs: '100%', md: '368px', lg: '546px', xl: '759px' }}
             margin='0'
             mbTitle={{ xs: '35px', sm: '42px', md: '48px', lg: '60px', xl: '70px' }}
             title='Listen anytime, anywhere.'
             titleClass={classes.title}
+            parWidth={{ xl: '627px' }}
             mbPar={{ xs: '66px', sm: '105px', md: '68px', lg: '80px', xl: '130px' }}
             par='Available for iOS, Android, Alexa, or right here on the web. Coming soon to more of your devices.'
             parClass={classes.par}

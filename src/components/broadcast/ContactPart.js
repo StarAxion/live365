@@ -34,22 +34,13 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('lg')]: {
       justifyContent: 'center',
     },
-    [theme.breakpoints.down('md')]: {
-      justifyContent: 'space-between',
-    },
-    [theme.breakpoints.down('sm')]: {
-      justifyContent: 'center',
-    },
   },
   leftHalf: {
     [theme.breakpoints.down('xl')]: {
       minWidth: '641px',
     },
-    [theme.breakpoints.down('lg')]: {
-      maxWidth: '656px',
-    },
     [theme.breakpoints.down('md')]: {
-      maxWidth: '443px',
+      minWidth: '515px',
     },
     [theme.breakpoints.down('sm')]: {
       minWidth: '100%',
@@ -57,6 +48,9 @@ const useStyles = makeStyles((theme) => ({
   },
   rightHalf: {
     [theme.breakpoints.down('xl')]: {
+      maxWidth: '400px',
+    },
+    [theme.breakpoints.down('md')]: {
       maxWidth: '368px',
     },
     [theme.breakpoints.down('sm')]: {
@@ -69,9 +63,6 @@ const useStyles = makeStyles((theme) => ({
       fontSize: '54px',
     },
     [theme.breakpoints.down('md')]: {
-      fontSize: '45px',
-    },
-    [theme.breakpoints.down('sm')]: {
       fontSize: '40px',
     },
   },
@@ -134,11 +125,12 @@ const ContactPart = (props) => {
           <Grid container className={classes.gridContainer}>
             <Grid item xs={12} md={6} className={classes.leftHalf}>
               <SectionIntro
-                width={{ xs: '100%', sm: '443px', lg: '538px', xl: '641px' }}
+                width={{ xs: '100%', sm: '443px', lg: '538px', xl: '100%' }}
                 margin='0'
                 mbTitle={{ xs: '28px', sm: '26px', md: '24px', lg: '44px', xl: '35px' }}
                 title='Join the world`s radio.'
                 titleClass={classes.title}
+                parWidth={{ xl: '460px' }}
                 mbPar={{ xs: '42px', sm: '119px', md: '0' }}
                 par='Any questions? Reach out to a Live365 product consultant to discuss your broadcasting needs.'
                 parClass={classes.par}
@@ -146,7 +138,7 @@ const ContactPart = (props) => {
             </Grid>
 
             <Grid item xs={12} md={6} className={classes.rightHalf}>
-              <Box maxWidth={{ xs: '100%', sm: '368px', md: '100%' }} margin="0 auto">
+              <Box maxWidth={{ xs: '100%', sm: '368px' }} margin="0 auto">
                 <form onSubmit={preventDefault}>
                   <FormLabel
                     style={{ marginBottom: '12px', textTransform: props.textTransform }}
