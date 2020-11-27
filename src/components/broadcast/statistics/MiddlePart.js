@@ -45,7 +45,7 @@ const MiddlePart = () => {
             title='Historical analytics'
             titleClass={classes.title}
             mbPar='0'
-            par='Listener analytics give you a view into your audience. Station managers can look back on their week to see how shows and playlists are performing. '
+            par='Listener analytics give you a view into your audience. Station managers can look back on their week to see how shows and playlists are performing.'
             parClass={classes.par}
           />
         </Box>
