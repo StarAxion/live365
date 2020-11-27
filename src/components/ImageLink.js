@@ -10,8 +10,6 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     alignItems: 'center',
     margin: theme.spacing(1),
-    background: '#cecbd6',
-    borderRadius: '8px',
   },
 }));
 
@@ -19,7 +17,14 @@ const ImageLink = (props) => {
   const classes = useStyles();
 
   return (
-    <Link to={props.link} className={classes.card}>
+    <Link
+      to={props.link}
+      className={classes.card}
+      style={{
+        border: props.border,
+        borderRadius: props.br
+      }}
+    >
       {props.children}
       <CardMedia
         width='inherit'

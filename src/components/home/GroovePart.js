@@ -62,28 +62,28 @@ const useStyles = makeStyles((theme) => ({
   },
   bigBlock: {
     [theme.breakpoints.down('xl')]: {
-      maxWidth: '272px',
+      maxWidth: '274px',
     },
     [theme.breakpoints.down('lg')]: {
-      maxWidth: '244px',
+      maxWidth: '246px',
     },
     [theme.breakpoints.down('md')]: {
-      minWidth: '184px',
+      minWidth: '186px',
     },
     [theme.breakpoints.down('sm')]: {
-      minWidth: '140px',
+      minWidth: '142px',
     },
     [theme.breakpoints.down('xs')]: {
-      minWidth: '150px',
-      maxWidth: '240px',
+      minWidth: '152px',
+      maxWidth: '242px',
     },
   },
   smallBlock: {
     [theme.breakpoints.down('xl')]: {
-      maxWidth: '150px',
+      maxWidth: '152px',
     },
     [theme.breakpoints.down('lg')]: {
-      maxWidth: '136px',
+      maxWidth: '138px',
     },
   },
   wideBlock: {
@@ -125,16 +125,16 @@ const GroovePart = () => {
           <Hidden smUp>
             <Grid container justify="center">
               <Grid item xs={6} className={classes.bigBlock}>
-                <ImageLink link='/' image='img/bcr.png' />
+                <ImageLink link='/' image='img/bcr.png' border='solid 1px #cecbd6' br='10px' />
               </Grid>
               <Grid item xs={6} className={classes.bigBlock}>
-                <ImageLink link='/' image='img/bcr.png' />
+                <ImageLink link='/' image='img/bcr.png' border='solid 1px #cecbd6' br='10px' />
               </Grid>
               <Grid item xs={6} className={classes.bigBlock}>
-                <ImageLink link='/' image='img/bcr.png' />
+                <ImageLink link='/' image='img/bcr.png' border='solid 1px #cecbd6' br='10px' />
               </Grid>
               <Grid item xs={6} className={classes.bigBlock}>
-                <ImageLink link='/' image='img/bcr.png' />
+                <ImageLink link='/' image='img/bcr.png' border='solid 1px #cecbd6' br='10px' />
               </Grid>
             </Grid>
 
@@ -158,31 +158,31 @@ const GroovePart = () => {
           <Hidden xsDown lgUp>
             <Grid container justify="center" wrap="nowrap">
               <Grid item sm={3} md={2} className={classes.bigBlock}>
-                <ImageLink link='/' image='img/bcr.png' />
+                <ImageLink link='/' image='img/bcr.png' border='solid 1px #cecbd6' br='10px' />
               </Grid>
               <Grid item sm={3} md={2} className={classes.bigBlock}>
-                <ImageLink link='/' image='img/bcr.png' />
+                <ImageLink link='/' image='img/bcr.png' border='solid 1px #cecbd6' br='10px' />
               </Grid>
               <Grid item sm={3} md={2} className={classes.bigBlock}>
-                <ImageLink link='/' image='img/bcr.png' />
+                <ImageLink link='/' image='img/bcr.png' border='solid 1px #cecbd6' br='10px' />
               </Grid>
               <Grid item sm={3} md={2} className={classes.bigBlock}>
-                <ImageLink link='/' image='img/bcr.png' />
+                <ImageLink link='/' image='img/bcr.png' border='solid 1px #cecbd6' br='10px' />
               </Grid>
             </Grid>
 
             <Grid container justify="center" wrap="nowrap">
               <Grid item sm={3} md={2} className={classes.bigBlock}>
-                <ImageLink link='/' image='img/bcr.png' />
+                <ImageLink link='/' image='img/bcr.png' border='solid 1px #cecbd6' br='10px' />
               </Grid>
               <Grid item sm={3} md={2} className={classes.bigBlock}>
-                <ImageLink link='/' image='img/bcr.png' />
+                <ImageLink link='/' image='img/bcr.png' border='solid 1px #cecbd6' br='10px' />
               </Grid>
               <Grid item sm={3} md={2} className={classes.bigBlock}>
-                <ImageLink link='/' image='img/bcr.png' />
+                <ImageLink link='/' image='img/bcr.png' border='solid 1px #cecbd6' br='10px' />
               </Grid>
               <Grid item sm={3} md={2} className={classes.bigBlock}>
-                <ImageLink link='/' image='img/bcr.png' />
+                <ImageLink link='/' image='img/bcr.png' border='solid 1px #cecbd6' br='10px' />
               </Grid>
             </Grid>
 
@@ -237,43 +237,43 @@ const GroovePart = () => {
           <Hidden mdDown>
             <Grid container justify="center" wrap="nowrap">
               <Grid item lg={3} className={classes.bigBlock}>
-                <ImageLink link='/' image='img/bcr.png' />
+                <ImageLink link='/' image='img/bcr.png' border='solid 1px #cecbd6' br='10px' />
               </Grid>
               <Grid item lg={3} className={classes.bigBlock}>
-                <ImageLink link='/' image='img/bcr.png' />
+                <ImageLink link='/' image='img/bcr.png' border='solid 1px #cecbd6' br='10px' />
               </Grid>
               <Grid item lg={3} className={classes.bigBlock}>
-                <ImageLink link='/' image='img/bcr.png' />
+                <ImageLink link='/' image='img/bcr.png' border='solid 1px #cecbd6' br='10px' />
               </Grid>
               <Grid item lg={3} className={classes.bigBlock}>
-                <ImageLink link='/' image='img/bcr.png' />
+                <ImageLink link='/' image='img/bcr.png' border='solid 1px #cecbd6' br='10px' />
               </Grid>
             </Grid>
 
             <Grid container justify="center" wrap="nowrap">
               <Grid item lg={2} className={classes.smallBlock}>
-                <ImageLink link='/' image='img/bcr.png' />
+                <ImageLink link='/' image='img/bcr.png' border='solid 1px #cecbd6' br='5px' />
               </Grid>
               <Grid item lg={2} className={classes.smallBlock}>
-                <ImageLink link='/' image='img/bcr.png' />
+                <ImageLink link='/' image='img/bcr.png' border='solid 1px #cecbd6' br='5px' />
               </Grid>
               <Grid item lg={2} className={classes.smallBlock}>
-                <ImageLink link='/' image='img/bcr.png' />
+                <ImageLink link='/' image='img/bcr.png' border='solid 1px #cecbd6' br='5px' />
               </Grid>
               <Grid item lg={2} className={classes.smallBlock}>
-                <ImageLink link='/' image='img/bcr.png' />
+                <ImageLink link='/' image='img/bcr.png' border='solid 1px #cecbd6' br='5px' />
               </Grid>
               <Grid item lg={2} className={classes.smallBlock}>
-                <ImageLink link='/' image='img/bcr.png' />
+                <ImageLink link='/' image='img/bcr.png' border='solid 1px #cecbd6' br='5px' />
               </Grid>
               <Grid item lg={2} className={classes.smallBlock}>
-                <ImageLink link='/' image='img/bcr.png' />
+                <ImageLink link='/' image='img/bcr.png' border='solid 1px #cecbd6' br='5px' />
               </Grid>
               <Grid item lg={2} className={classes.smallBlock}>
-                <ImageLink link='/' image='img/bcr.png' />
+                <ImageLink link='/' image='img/bcr.png' border='solid 1px #cecbd6' br='5px' />
               </Grid>
               <Grid item lg={2} className={classes.smallBlock}>
-                <ImageLink link='/' image='img/bcr.png' />
+                <ImageLink link='/' image='img/bcr.png' border='solid 1px #cecbd6' br='5px' />
               </Grid>
             </Grid>
 
