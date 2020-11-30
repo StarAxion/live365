@@ -142,7 +142,7 @@ const Broadcast = () => {
       <Footer
         containerPadding='75px 0 85px'
         parLs={!window.location.href.endsWith('/broadcast') && '.19px'}
-        justifyFooterSections='flex-end'
+        justifyFooterSections={{ sm: 'flex-start', lg: 'flex-end' }}
         bottomPartDirection={{ xs: 'column', sm: 'row' }}
         copyrightOrder={{ xs: 1, sm: 2 }}
         ml={{ xs: 0, sm: 2 }}

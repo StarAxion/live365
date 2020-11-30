@@ -35,8 +35,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   rightHalf: {
+    paddingTop: '49px',
     [theme.breakpoints.down('xl')]: {
-      minWidth: '692px',
+      maxWidth: '692px',
     },
   },
   title: {
@@ -81,10 +82,10 @@ const PackagesPart = () => {
         <Container fixed>
           <Box className={classes.innerContainer}>
             <Grid container className={classes.gridContainer}>
-              <Grid item xs={12} lg={6} className={classes.leftHalf}>
+              <Grid item xs={12} lg={5} className={classes.leftHalf}>
                 <Package />
               </Grid>
-              <Grid item xs={12} lg={6} className={classes.rightHalf}>
+              <Grid item xs={12} lg={7} className={classes.rightHalf}>
                 <SectionIntro
                   width='600px'
                   margin='0'

@@ -49,24 +49,18 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('md')]: {
       justifyContent: 'flex-start',
     },
-    [theme.breakpoints.down('sm')]: {
-      justifyContent: 'center',
-    },
   },
   leftHalf: {
     [theme.breakpoints.down('xl')]: {
-      maxWidth: '470px',
-    },
-    [theme.breakpoints.down('lg')]: {
-      maxWidth: '520px',
+      maxWidth: '548px',
     },
     [theme.breakpoints.down('md')]: {
-      minWidth: '500px',
+      maxWidth: '449px',
     },
   },
   rightHalf: {
     [theme.breakpoints.down('xl')]: {
-      maxWidth: '555px',
+      maxWidth: '580px',
     },
     [theme.breakpoints.down('md')]: {
       maxWidth: '288px',
@@ -104,7 +98,7 @@ const RadioStationPart = () => {
               titleClass={classes.title}
             />
 
-            <Box maxWidth={{ sm: '290px' }}>
+            <Box maxWidth={{ sm: '288px' }}>
               <InfoBlock
                 mb={{ xs: '55px', sm: '30px' }}
                 link='/broadcast/audience'
@@ -185,9 +179,9 @@ const RadioStationPart = () => {
 
           <Hidden smDown>
             <Grid container wrap="nowrap" className={classes.gridContainer}>
-              <Grid item md={6} className={classes.leftHalf}>
+              <Grid item md={8} lg={6} className={classes.leftHalf}>
                 <SectionIntro
-                  width={{ md: '322px', lg: '100%' }}
+                  width={{ md: '376px', lg: '100%' }}
                   margin='0'
                   mbTitle={{ md: '80px', lg: '108px', xl: '140px' }}
                   title='Create your own internet radio station.'
@@ -220,7 +214,7 @@ const RadioStationPart = () => {
                 </Box>
               </Grid>
 
-              <Grid item md={6} className={classes.rightHalf}>
+              <Grid item md={4} lg={6} className={classes.rightHalf}>
                 <InfoBlock
                   mb={{ md: '30px', lg: '98px' }}
                   link='/broadcast/audience'

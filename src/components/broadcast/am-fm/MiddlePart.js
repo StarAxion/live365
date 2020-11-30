@@ -32,10 +32,14 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   textBlock: {
-    maxWidth: '484px',
+    [theme.breakpoints.down('xl')]: {
+      maxWidth: '484px',
+    }
   },
   pictureBlock: {
-    maxWidth: '584px',
+    [theme.breakpoints.down('xl')]: {
+      maxWidth: '584px',
+    }
   },
   title: {
     fontSize: '48px',

@@ -58,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: '285px',
     },
     [theme.breakpoints.down('xs')]: {
-      minWidth: '100%',
+      maxWidth: '100%',
     },
   },
   infoBlockTitle: {

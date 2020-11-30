@@ -37,13 +37,13 @@ const useStyles = makeStyles((theme) => ({
   },
   leftHalf: {
     [theme.breakpoints.down('xl')]: {
-      minWidth: '641px',
+      maxWidth: '641px',
     },
     [theme.breakpoints.down('md')]: {
-      minWidth: '515px',
+      maxWidth: '515px',
     },
     [theme.breakpoints.down('sm')]: {
-      minWidth: '100%',
+      maxWidth: '100%',
     },
   },
   rightHalf: {
@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: '368px',
     },
     [theme.breakpoints.down('sm')]: {
-      minWidth: '100%',
+      maxWidth: '100%',
     },
   },
   title: {
@@ -123,7 +123,7 @@ const ContactPart = (props) => {
       <Container fixed>
         <Box className={classes.container}>
           <Grid container className={classes.gridContainer}>
-            <Grid item xs={12} md={6} className={classes.leftHalf}>
+            <Grid item xs={12} md={7} className={classes.leftHalf}>
               <SectionIntro
                 width={{ xs: '100%', sm: '443px', lg: '538px', xl: '100%' }}
                 margin='0'
@@ -137,7 +137,7 @@ const ContactPart = (props) => {
               />
             </Grid>
 
-            <Grid item xs={12} md={6} className={classes.rightHalf}>
+            <Grid item xs={12} md={5} className={classes.rightHalf}>
               <Box maxWidth={{ xs: '100%', sm: '368px' }} margin="0 auto">
                 <form onSubmit={preventDefault}>
                   <FormLabel
